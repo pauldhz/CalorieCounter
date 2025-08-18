@@ -1,0 +1,26 @@
+<style>
+  .header {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    padding: 2px;
+  }
+
+  .column {
+    margin: 0 2px 0 2px;
+  }
+</style>
+
+<div>
+  <div class="header">
+    <div class="column" [style.width.px] = "rowDimensions.nameW">Nom</div>
+    <div class="column" [style.width.px] = "rowDimensions.macroW">Protéines</div>
+    <div class="column" [style.width.px] = "rowDimensions.macroW">Glucides</div>
+    <div class="column" [style.width.px] = "rowDimensions.macroW">Lipides</div>
+  </div>
+  @for (food of foods; track food.name) {
+    <app-food-row [food]="food" [dimensions]="rowDimensions"></app-food-row>
+  }
+
+  <app-food-preview [foodPreview]="foodPreview"></app-food-preview>
+</div>

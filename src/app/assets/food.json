@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Œufs entiers",
+    "fat": 5,
+    "carbs": 0,
+    "protein": 6,
+    "calories": 70,
+    "quantity": 1,
+    "unit": "u"
+  },
+  {
+    "name": "Flocons d’avoine",
+    "fat": 7.5,
+    "carbs": 67.5,
+    "protein": 12.5,
+    "calories": 375,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Fromage blanc 0%",
+    "fat": 0,
+    "carbs": 4,
+    "protein": 9,
+    "calories": 50,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Beurre de cacahuète (1 c. à c.)",
+    "fat": 4,
+    "carbs": 3,
+    "protein": 3,
+    "calories": 90,
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "name": "Riz basmati cuit",
+    "fat": 0,
+    "carbs": 30,
+    "protein": 3.3,
+    "calories": 140,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Huile d’olive (1 c. à s.)",
+    "fat": 10,
+    "carbs": 0,
+    "protein": 0,
+    "calories": 90,
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "name": "Amandes",
+    "fat": 10,
+    "carbs": 3,
+    "protein": 4,
+    "calories": 120,
+    "quantity": 20,
+    "unit": "g"
+  },
+  {
+    "name": "Yaourt nature 0%",
+    "fat": 4,
+    "carbs": 8,
+    "protein": 8,
+    "calories": 104,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Steak haché 5%",
+    "fat": 8,
+    "carbs": 0,
+    "protein": 18,
+    "calories": 166,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Sardines à l’huile",
+    "fat": 13,
+    "carbs": 0,
+    "protein": 24,
+    "calories": 210,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Cabillaud",
+    "fat": 0.7,
+    "carbs": 0,
+    "protein": 18.7,
+    "calories": 80,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Patates douces cuites",
+    "fat": 0,
+    "carbs": 20,
+    "protein": 2,
+    "calories": 90,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Parmesan",
+    "fat": 3,
+    "carbs": 0,
+    "protein": 4,
+    "calories": 40,
+    "quantity": 10,
+    "unit": "g"
+  },
+  {
+    "name": "Poulet",
+    "fat": 2,
+    "carbs": 0,
+    "protein": 22,
+    "calories": 106,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pommes de terre cuites",
+    "fat": 0,
+    "carbs": 18,
+    "protein": 2,
+    "calories": 80,
+    "quantity": 100,
+    "unit": "g"
+  }
+]
