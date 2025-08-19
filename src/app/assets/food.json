@@ -133,5 +133,545 @@
     "calories": 80,
     "quantity": 100,
     "unit": "g"
+  },
+  {
+    "name": "Pomme",
+    "fat": 0.2,
+    "carbs": 14,
+    "protein": 0.3,
+    "calories": 52,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Banane",
+    "fat": 0.3,
+    "carbs": 23,
+    "protein": 1.1,
+    "calories": 89,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Orange",
+    "fat": 0.1,
+    "carbs": 12,
+    "protein": 0.9,
+    "calories": 47,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Poire",
+    "fat": 0.2,
+    "carbs": 15,
+    "protein": 0.4,
+    "calories": 57,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Fraises",
+    "fat": 0.3,
+    "carbs": 8,
+    "protein": 0.7,
+    "calories": 32,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Raisins",
+    "fat": 0.2,
+    "carbs": 17,
+    "protein": 0.6,
+    "calories": 69,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Mangue",
+    "fat": 0.4,
+    "carbs": 15,
+    "protein": 0.8,
+    "calories": 60,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Ananas",
+    "fat": 0.1,
+    "carbs": 13,
+    "protein": 0.5,
+    "calories": 50,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pastèque",
+    "fat": 0.2,
+    "carbs": 8,
+    "protein": 0.6,
+    "calories": 30,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Abricot",
+    "fat": 0.1,
+    "carbs": 11,
+    "protein": 0.9,
+    "calories": 48,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Cerises",
+    "fat": 0.3,
+    "carbs": 16,
+    "protein": 1,
+    "calories": 63,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Kiwi",
+    "fat": 0.5,
+    "carbs": 15,
+    "protein": 1.1,
+    "calories": 61,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pêche",
+    "fat": 0.2,
+    "carbs": 10,
+    "protein": 0.9,
+    "calories": 39,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Prune",
+    "fat": 0.3,
+    "carbs": 11,
+    "protein": 0.7,
+    "calories": 46,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Framboises",
+    "fat": 0.7,
+    "carbs": 12,
+    "protein": 1.2,
+    "calories": 52,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Tomates",
+    "fat": 0.2,
+    "carbs": 4,
+    "protein": 0.9,
+    "calories": 18,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Concombre",
+    "fat": 0.1,
+    "carbs": 4,
+    "protein": 0.7,
+    "calories": 16,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Carottes",
+    "fat": 0.2,
+    "carbs": 10,
+    "protein": 0.9,
+    "calories": 41,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Brocoli",
+    "fat": 0.4,
+    "carbs": 7,
+    "protein": 2.8,
+    "calories": 34,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Épinards",
+    "fat": 0.4,
+    "carbs": 4,
+    "protein": 2.9,
+    "calories": 23,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Courgette",
+    "fat": 0.3,
+    "carbs": 3,
+    "protein": 1.2,
+    "calories": 17,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Lentilles cuites",
+    "fat": 0.4,
+    "carbs": 20,
+    "protein": 9,
+    "calories": 116,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pois chiches cuits",
+    "fat": 2.6,
+    "carbs": 27,
+    "protein": 8.9,
+    "calories": 164,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Haricots rouges cuits",
+    "fat": 0.5,
+    "carbs": 22,
+    "protein": 8.7,
+    "calories": 127,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pain complet",
+    "fat": 2.5,
+    "carbs": 43,
+    "protein": 13,
+    "calories": 247,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Croissant",
+    "fat": 21,
+    "carbs": 45,
+    "protein": 8,
+    "calories": 406,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Lait entier",
+    "fat": 3.7,
+    "carbs": 5,
+    "protein": 3.3,
+    "calories": 61,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Fromage cheddar",
+    "fat": 33,
+    "carbs": 1.3,
+    "protein": 25,
+    "calories": 402,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Saumon",
+    "fat": 13,
+    "carbs": 0,
+    "protein": 20,
+    "calories": 208,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Thon en conserve",
+    "fat": 1,
+    "carbs": 0,
+    "protein": 23,
+    "calories": 100,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Chou-fleur",
+    "fat": 0.3,
+    "carbs": 5,
+    "protein": 2,
+    "calories": 25,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Betterave cuite",
+    "fat": 0.2,
+    "carbs": 10,
+    "protein": 1.6,
+    "calories": 43,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Poivron rouge",
+    "fat": 0.3,
+    "carbs": 6,
+    "protein": 1,
+    "calories": 31,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Champignons",
+    "fat": 0.3,
+    "carbs": 3,
+    "protein": 3.1,
+    "calories": 22,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Oignons",
+    "fat": 0.1,
+    "carbs": 9,
+    "protein": 1.1,
+    "calories": 40,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Aubergine",
+    "fat": 0.2,
+    "carbs": 6,
+    "protein": 1,
+    "calories": 25,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Salade verte",
+    "fat": 0.2,
+    "carbs": 3,
+    "protein": 1.4,
+    "calories": 15,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Chou kale",
+    "fat": 0.9,
+    "carbs": 9,
+    "protein": 4.3,
+    "calories": 49,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Courge butternut",
+    "fat": 0.1,
+    "carbs": 12,
+    "protein": 1,
+    "calories": 45,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Haricots verts",
+    "fat": 0.2,
+    "carbs": 7,
+    "protein": 1.8,
+    "calories": 31,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pois frais",
+    "fat": 0.4,
+    "carbs": 14,
+    "protein": 5,
+    "calories": 81,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Artichaut",
+    "fat": 0.2,
+    "carbs": 11,
+    "protein": 3.3,
+    "calories": 47,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Asperges",
+    "fat": 0.1,
+    "carbs": 4,
+    "protein": 2.2,
+    "calories": 20,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pois cassés cuits",
+    "fat": 0.4,
+    "carbs": 21,
+    "protein": 8,
+    "calories": 118,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Quinoa cuit",
+    "fat": 1.9,
+    "carbs": 21,
+    "protein": 4.4,
+    "calories": 120,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Boulgour cuit",
+    "fat": 0.2,
+    "carbs": 18,
+    "protein": 3.1,
+    "calories": 83,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Orge perlé cuit",
+    "fat": 0.4,
+    "carbs": 28,
+    "protein": 2.3,
+    "calories": 123,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pain blanc",
+    "fat": 1,
+    "carbs": 49,
+    "protein": 9,
+    "calories": 265,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Baguette française",
+    "fat": 1,
+    "carbs": 57,
+    "protein": 8,
+    "calories": 270,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Biscottes",
+    "fat": 6,
+    "carbs": 73,
+    "protein": 11,
+    "calories": 410,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Galettes de riz",
+    "fat": 2.5,
+    "carbs": 81,
+    "protein": 7.5,
+    "calories": 387,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Muesli",
+    "fat": 7,
+    "carbs": 60,
+    "protein": 12,
+    "calories": 350,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Couscous cuit",
+    "fat": 0.3,
+    "carbs": 23,
+    "protein": 3.6,
+    "calories": 112,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Pâtes complètes cuites",
+    "fat": 1.5,
+    "carbs": 25,
+    "protein": 5.5,
+    "calories": 124,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Crêpe nature",
+    "fat": 8,
+    "carbs": 36,
+    "protein": 6,
+    "calories": 227,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Madeleine",
+    "fat": 23,
+    "carbs": 52,
+    "protein": 6,
+    "calories": 435,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Yaourt grec nature",
+    "fat": 10,
+    "carbs": 4,
+    "protein": 9,
+    "calories": 120,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Camembert",
+    "fat": 21,
+    "carbs": 0.5,
+    "protein": 20,
+    "calories": 264,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Jambon blanc",
+    "fat": 3,
+    "carbs": 0.5,
+    "protein": 20,
+    "calories": 110,
+    "quantity": 100,
+    "unit": "g"
+  },
+  {
+    "name": "Dinde rôtie",
+    "fat": 6,
+    "carbs": 0,
+    "protein": 29,
+    "calories": 189,
+    "quantity": 100,
+    "unit": "g"
   }
 ]

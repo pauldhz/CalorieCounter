@@ -1,5 +1,22 @@
-<p>food-preview works!</p>
+<div>Proteins : {{foodPreview()?.proteins}}</div>
+<div>Fat : {{foodPreview()?.fat}}</div>
+<div>Carbs : {{foodPreview()?.carbs}}</div>
+<div>Calories : {{foodPreview()?.calories}}</div>
+
+<div class="foods">
+  <h2>Éléments sélectionnés</h2>
+  @for (food of foods(); track food.id) {
+    <button class="button" (click)="removeFood(food)">X {{food.name + ' - ' + food.quantity + food.unit}}</button>
+  }
+</div>
 
 <style>
+  .foods {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .button {
+    width: fit-content;
+  }
 </style>
