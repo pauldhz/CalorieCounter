@@ -20,7 +20,6 @@ export class FoodRow {
   private foodCalculator: FoodCalculator = inject(FoodCalculator);
 
   amount = new FormControl(0);
-  unit = new FormControl('g');
 
   dimensions = input<RowDimension>();
   food = input<Food>();
@@ -33,14 +32,12 @@ export class FoodRow {
   }
 
   addSpecificAmount(food: Food | undefined) {
-    console.log(food + ' ' + this.amount.value + ' ' + this.unit.value)
     if (!food) {
       return;
     }
     const newFood = this.foodCalculator.calculateFromAmountAndUnit(
       food,
-      this.amount.value as number,
-      this.unit.value as 'g' | 'u');
+      this.amount.value as number, this.food()?.unit as 'g' | 'u');
 
     if(newFood) {
       this.foodAdded.emit(newFood);

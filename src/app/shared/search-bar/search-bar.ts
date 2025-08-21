@@ -18,7 +18,7 @@ export class SearchBar implements OnInit {
 
   ngOnInit(): void {
     this.searchControl.valueChanges
-      .pipe(debounceTime(200), distinctUntilChanged())
+      .pipe(debounceTime(50), distinctUntilChanged())
       .subscribe(value => {
         this.search.emit(value || '');
       });

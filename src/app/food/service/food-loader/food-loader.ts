@@ -13,7 +13,8 @@ export class FoodLoader {
   constructor() {}
 
   loadFood(): Observable<Food[]> {
-    return of(foods as Food[]);
+    return of(foods.sort((a, b) =>
+      a.name.localeCompare(b.name)) as Food[]);
   }
 
 }

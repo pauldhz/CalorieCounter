@@ -8,12 +8,7 @@
   <div style="display: flex; gap: 4px;">
     <input type="number" [formControl]="amount" class="no-spinners specific-amount">
 
-    <div class="container">
-      <select id="unit" name="unit" [formControl]="unit">
-        <option value="g">g</option>
-        <option value="u">u</option>
-      </select>
-    </div>
+    <input type="text" disabled [value]="food()?.unit" class="unit"/>
 
     <button type="button" (click)="addSpecificAmount(food())" class="specific-amount-button">ajouter mesure</button>
   </div>
@@ -49,6 +44,10 @@
   .specific-amount {
     margin-left: 10px;
     width: 30px;
+  }
+
+  .unit {
+    width: 10px;
   }
 
   .specific-amount-button {

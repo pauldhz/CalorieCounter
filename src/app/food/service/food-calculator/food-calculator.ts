@@ -7,13 +7,10 @@ import {Food} from '../../model/food';
 export class FoodCalculator {
 
   calculateFromAmountAndUnit(food: Food, amount: number, unit: 'g' | 'u'): Food {
-    console.log("unit : ", unit);
-// Copie de base pour ne pas modifier l'original
     const result: Food = { ...food };
 
     if (unit === 'g') {
       const ratio = amount / food.quantity
-      console.log("Ratio : ", ratio)
 
       for (const [key, value] of Object.entries(food)) {
         if (typeof value === 'number') {
@@ -31,7 +28,6 @@ export class FoodCalculator {
       }
     }
 
-    console.log("Result : ", result);
     return result;
   }
 }

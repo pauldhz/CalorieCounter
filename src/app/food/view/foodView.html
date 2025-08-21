@@ -2,20 +2,22 @@
   <div class="container">
     <div class="flex-column">
       <div class="header">
-        <div class="column" [style.width.px] = "rowDimensions.nameW">Nom</div>
-        <div class="column" [style.width.px] = "rowDimensions.macroW">Protéines</div>
-        <div class="column" [style.width.px] = "rowDimensions.macroW">Glucides</div>
-        <div class="column" [style.width.px] = "rowDimensions.macroW">Lipides</div>
+        <app-food-list-header class="header" [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Protéines'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="column" [label]="'Glucides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="column" [label]="'Lipides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
       </div>
       <app-search-bar (search)="onSearch($event)"></app-search-bar>
-    @for (food of foodsFiltered(); track food.name) {
-      <app-food-row [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-food-row>
-    }
+      <div style="height: 90vh; overflow: scroll">
+        @for (food of foodsFiltered(); track food.name) {
+          <app-food-row [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-food-row>
+        }
+      </div>
     </div>
     <div class="preview flex-column">
       <h2>Preview</h2>
-      <app-food-preview [foodPreview]="foodPreview()" [foods]="selectedFoods()"
-      (foodRemoved)="onRemoveFood($event)"></app-food-preview>
+      <app-food-preview [foods]="selectedFoods()"
+                        (foodRemoved)="onRemoveFood($event)"></app-food-preview>
     </div>
   </div>
 </div>
@@ -28,10 +30,6 @@
     padding: 2px;
   }
 
-  .column {
-    margin: 0 2px 0 2px;
-  }
-
   .flex-column {
     flex-direction: column;
   }
@@ -41,6 +39,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   .preview {
     margin-left: 2vw;
     justify-content: center;
@@ -49,6 +48,10 @@
 
   h2 {
     margin: 0;
+  }
+
+  .header {
+    margin: 0 2px 0 2px;
   }
 
 </style>
