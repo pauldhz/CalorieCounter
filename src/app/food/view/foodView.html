@@ -2,11 +2,15 @@
   <div class="container">
     <div class="flex-column">
       <div class="header">
-        <app-food-list-header class="header" [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
+        <app-food-list-header [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
         <app-food-list-header class="header" [label]="'Protéines'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-        <app-food-list-header class="column" [label]="'Glucides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-        <app-food-list-header class="column" [label]="'Lipides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Glucides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Lipides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Calories'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
       </div>
+
+      <ng-container *ngTemplateOutlet="manualInput"></ng-container>
+
       <app-search-bar (search)="onSearch($event)"></app-search-bar>
       <div style="height: 90vh; overflow: scroll">
         @for (food of foodsFiltered(); track food.name) {
@@ -23,12 +27,33 @@
   </div>
 </div>
 
+<ng-template #manualInput>
+  <div>
+    <input [formControl]="manualName" class="input" [style.width.px]="rowDimensions.nameW - 10" type="text" placeholder="nom"/>
+    <input [formControl]="manualProteins" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="protéines"/>
+    <input [formControl]="manualCarbs" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="glucides"/>
+    <input [formControl]="manualFat" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="lipides"/>
+    <input [formControl]="manualCalories" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="calories"/>
+    <input type="number" [formControl]="manualAmount" class="no-spinners specific-amount">
+    <input type="text" disabled value="g" class="unit"/>
+    <button type="button" (click)="addManualFood()" class="specific-amount-button">ajouter mesure</button>
+
+  </div>
+
+</ng-template>
+
 <style>
+
+  .input {
+    margin: 0 10px 0 0;
+    padding: 0;
+    padding-block: 0 !important;
+    padding-inline: 0 !important;
+  }
   .header {
     display: flex;
     flex-direction: row;
     font-weight: bold;
-    padding: 2px;
   }
 
   .flex-column {
@@ -53,6 +78,15 @@
 
   .header {
     margin: 0 2px 0 2px;
+  }
+
+  .unit {
+    width: 10px;
+  }
+
+  .specific-amount {
+    margin-left: 10px;
+    width: 30px;
   }
 
 </style>

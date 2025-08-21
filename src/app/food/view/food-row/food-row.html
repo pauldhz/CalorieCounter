@@ -1,8 +1,9 @@
 <div class="row container">
-  <div class="column" [style.width.px]="dimensions()?.nameW">{{ food()?.name }}</div>
+  <div class="column" [style.width.px]=dimensions()?.nameW>{{ food()?.name }}</div>
   <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.protein }} g</div>
   <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.carbs }} g</div>
   <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.fat }} g</div>
+  <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.calories }} kcal</div>
 
   <button type="button" (click)="addFood(food())">{{ food()?.quantity + '' + food()?.unit }}</button>
   <div style="display: flex; gap: 4px;">
@@ -28,12 +29,6 @@
 
   .column {
     margin: 0 2px 0 2px;
-  }
-
-  .no-spinners::-webkit-outer-spin-button,
-  .no-spinners::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
   }
 
   .no-spinners {

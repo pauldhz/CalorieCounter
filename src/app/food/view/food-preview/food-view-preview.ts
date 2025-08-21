@@ -11,7 +11,6 @@ export class FoodViewPreview {
 
   foods = input<Food[]| undefined >([]);
   foodPreview = computed(() => {
-    console.log("preview ??")
     const totalProteins = (this.foods() ?? []).reduce((acc, cur) => acc + (cur.protein || 0), 0);
     const totalCarbs = (this.foods() ?? []).reduce((acc, cur) => acc + (cur.carbs || 0), 0);
     const totalFat = (this.foods() ?? []).reduce((acc, cur) => acc + (cur.fat || 0), 0);

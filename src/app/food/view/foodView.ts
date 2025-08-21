@@ -10,13 +10,23 @@ import {AppState} from '../../app.reducer';
 import {Store} from '@ngrx/store';
 import * as FoodsActions from '../store/preview.actions';
 import {selectFoods} from '../store/preview.selectors';
+import {NgTemplateOutlet} from "@angular/common";
+import {FormControl, ReactiveFormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-food',
-  imports: [FoodRow, FoodViewPreview, SearchBar, FoodListHeader],
+  imports: [FoodRow, FoodViewPreview, SearchBar, FoodListHeader, NgTemplateOutlet, ReactiveFormsModule],
   templateUrl: './foodView.html'
 })
 export class FoodView {
+
+  manualName = new FormControl('');
+  manualProteins = new FormControl(0);
+  manualCarbs = new FormControl(0);
+  manualFat = new FormControl(0);
+  manualCalories = new FormControl(0);
+  manualAmount = new FormControl(0);
+
 
   private store = inject<Store<AppState>>(Store);
 
@@ -31,13 +41,25 @@ export class FoodView {
   foodSearch = signal('');
 
   rowDimensions: RowDimension = {
-    macroW: 100,
-    nameW: 220
+    macroW: 80,
+    nameW: 230
   }
 
   onAddFood(food: Food) {
-    // this.foodPreviewService.addFood(food);
     this.store.dispatch(FoodsActions.addFood({ food: food }));
+  }
+
+  addManualFood() {
+    this.store.dispatch(FoodsActions.addFood({ food: {
+        name: this.manualName.value as string,
+        protein: this.manualProteins.value as number,
+        carbs: this.manualCarbs.value as number,
+        fat: this.manualFat.value as number,
+        calories: this.manualCalories.value as number,
+        unit: "g",
+        quantity: this.manualAmount.value as number,
+        id: ""
+      }}));
   }
 
   onRemoveFood(food: Food) {
