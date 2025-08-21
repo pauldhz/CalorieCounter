@@ -44,6 +44,10 @@ export class FoodView {
     this.store.dispatch(FoodsActions.removeFood({food: food}));
   }
 
+  clearPreview() {
+    this.store.dispatch(FoodsActions.removeAll())
+  }
+
   onSearch(text: string) {
     this.foodSearch.set(text);
   }

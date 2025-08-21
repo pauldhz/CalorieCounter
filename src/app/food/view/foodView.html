@@ -17,6 +17,7 @@
     <div class="preview flex-column">
       <h2>Preview</h2>
       <app-food-preview [foods]="selectedFoods()"
+                        (removeAll)="clearPreview()"
                         (foodRemoved)="onRemoveFood($event)"></app-food-preview>
     </div>
   </div>

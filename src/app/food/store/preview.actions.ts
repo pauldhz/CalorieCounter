@@ -7,4 +7,7 @@ export const addFood =
 export const removeFood =
   createAction('[Food] Remove', props <{food: Food }>());
 
+export const removeAll =
+  createAction('[Food] Remove All');
+
 export const loadFoods = createAction('[Foods] Load');

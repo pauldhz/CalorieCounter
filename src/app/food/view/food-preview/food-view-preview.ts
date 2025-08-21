@@ -25,7 +25,8 @@ export class FoodViewPreview {
     } as FoodPreview
   });
 
-  foodRemoved = output<Food>()
+  foodRemoved = output<Food>();
+  removeAll = output();
 
   removeFood(food: Food) {
     this.foodRemoved.emit(food)

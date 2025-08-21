@@ -16,9 +16,8 @@ export const initialState: FoodsState = {
 export const foodsReducer = createReducer(
   initialState,
   on(FoodsActions.loadFoods, (state) => ({ ...state, loaded: true })),
-  on(FoodsActions.removeFood, (state, {food}) => ({
-    ...state, list: state.list.filter(f => f.id !== food.id)
-    })),
+  on(FoodsActions.removeFood, (state, {food}) => ({...state, list: state.list.filter(f => f.id !== food.id)})),
+  on(FoodsActions.removeAll, (state) => ({...state, list: []})),
   on(FoodsActions.addFood, (state, { food }) => {
     const foodWithUUID = {...food, id: uuidv4()}
     return {...state, list: [...state.list, foodWithUUID]};

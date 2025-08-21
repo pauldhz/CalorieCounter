@@ -4,7 +4,11 @@
 <div>Calories : {{foodPreview()?.calories}}</div>
 
 <div class="foods">
-  <h2>Éléments sélectionnés</h2>
+  <div class="selected-elements-header">
+    <h2>Éléments sélectionnés</h2>
+    <button class="button" (click)="removeAll.emit()">Tout effacer</button>
+  </div>
+
   @for (food of foods(); track food.id) {
     <button class="button" (click)="removeFood(food)">X {{food.name + ' - ' + food.quantity + food.unit}}</button>
   }
@@ -16,7 +20,20 @@
     flex-direction: column;
   }
 
+  .selected-elements-header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .selected-elements-header .button {
+    max-height: 28px !important;
+    height: 28px;
+  }
+
   .button {
+    max-height: 20px;
     width: fit-content;
   }
 </style>
