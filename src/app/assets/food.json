@@ -1663,5 +1663,14 @@
     "calories": 90.0,
     "quantity": 1,
     "unit": "u"
+  },
+  {
+    "name": "Meal (30g oaks, 130g banana, 10g cacahuete butter, 100g yog 0%)",
+    "fat": 10.5,
+    "carbs": 59,
+    "protein": 16.2,
+    "calories": 420.0,
+    "quantity": 1,
+    "unit": "u"
   }
 ]

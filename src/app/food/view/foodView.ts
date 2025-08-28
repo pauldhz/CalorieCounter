@@ -27,7 +27,6 @@ export class FoodView {
   manualCalories = new FormControl(0);
   manualAmount = new FormControl(0);
 
-
   private store = inject<Store<AppState>>(Store);
 
   private foodLoader: FoodLoader = inject(FoodLoader);

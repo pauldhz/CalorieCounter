@@ -1,7 +1,7 @@
-<div>Proteins : {{foodPreview()?.proteins}}</div>
-<div>Fat : {{foodPreview()?.fat}}</div>
-<div>Carbs : {{foodPreview()?.carbs}}</div>
-<div>Calories : {{foodPreview()?.calories}}</div>
+<div>Protéines : {{foodPreview().proteins | number:'1.0-1' }}</div>
+<div>Lipides : {{foodPreview().fat | number:'1.0-1' }}</div>
+<div>Glucides : {{foodPreview().carbs | number:'1.0-1' }}</div>
+<div>Calories : {{foodPreview().calories | number:'1.0-1' }}</div>
 
 <div class="foods">
   <div class="selected-elements-header">

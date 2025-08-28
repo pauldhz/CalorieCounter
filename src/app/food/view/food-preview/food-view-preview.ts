@@ -1,10 +1,11 @@
 import {Component, computed, input, output} from '@angular/core';
 import {FoodPreview} from '../../model/food-preview';
 import {Food} from '../../model/food';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-food-preview',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './food-view-preview.html'
 })
 export class FoodViewPreview {
