@@ -1,20 +1,46 @@
-<div>Protéines : {{foodPreview().proteins | number:'1.0-1' }}</div>
-<div>Lipides : {{foodPreview().fat | number:'1.0-1' }}</div>
-<div>Glucides : {{foodPreview().carbs | number:'1.0-1' }}</div>
-<div>Calories : {{foodPreview().calories | number:'1.0-1' }}</div>
-
-<div class="foods">
-  <div class="selected-elements-header">
-    <h2>Éléments sélectionnés</h2>
-    <button class="button" (click)="removeAll.emit()">Tout effacer</button>
+<div class="preview-container">
+  <div [ngClass]="{'flex-row': mobileStyle()}">
+    <div>Protéines : {{ foodPreview().proteins | number:'1.0-1' }}</div>
+    <div>Lipides : {{ foodPreview().fat | number:'1.0-1' }}</div>
+    <div>Glucides : {{ foodPreview().carbs | number:'1.0-1' }}</div>
+    <div>Calories : {{ foodPreview().calories | number:'1.0-1' }}</div>
   </div>
 
-  @for (food of foods(); track food.id) {
-    <button class="button" (click)="removeFood(food)">X {{food.name + ' - ' + food.quantity + food.unit}}</button>
-  }
+  <div class="foods">
+    <div class="selected-elements-header">
+      <h2>Éléments sélectionnés</h2>
+      <button class="button" (click)="removeAll.emit()">Tout effacer</button>
+    </div>
+
+    <div class="select-elements-content">
+      @for (food of foods(); track food.id) {
+        <button class="button" (click)="removeFood(food)">X {{ food.name + ' - ' + food.quantity + food.unit }}</button>
+      }
+    </div>
+  </div>
 </div>
 
 <style>
+
+  .preview-container {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .select-elements-content {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    max-height: 15vh;
+    overflow: scroll;
+  }
+
+  .flex-row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
   .foods {
     display: flex;
     flex-direction: column;

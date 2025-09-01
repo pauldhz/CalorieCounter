@@ -8,10 +8,17 @@
   -moz-appearance: textfield;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;     /* centre verticalement */
+  flex-direction: row;
+  align-items: start;     /* centre verticalement */
   min-height: 100vh;       /* prend toute la hauteur de la fenêtre */
   max-width: 100vw;
   background-color: #fbfbff; /* exemple */

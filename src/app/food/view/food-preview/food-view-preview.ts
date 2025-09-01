@@ -11,6 +11,7 @@ import {CommonModule} from '@angular/common';
 export class FoodViewPreview {
 
   foods = input<Food[]| undefined >([]);
+  mobileStyle = input<boolean>(false);
   foodPreview = computed(() => {
     const totalProteins = (this.foods() ?? []).reduce((acc, cur) => acc + (cur.protein || 0), 0);
     const totalCarbs = (this.foods() ?? []).reduce((acc, cur) => acc + (cur.carbs || 0), 0);

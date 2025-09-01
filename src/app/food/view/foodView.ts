@@ -16,10 +16,11 @@ import {MobileFoodRow} from './food-row/mobile/mobile-food-row';
 import {ModalInput} from './food-row/mobile/modal-input/modal-input';
 import {MacrosDisplay} from './food-row/mobile/macro-values/macros-display.component';
 import {AddFood} from './add-food/add-food';
+import {BottomPreview} from './food-row/mobile/bottom-preview/bottom-preview';
 
 @Component({
   selector: 'app-food',
-  imports: [MobileFoodRow, FoodViewPreview, SearchBar, FoodListHeader, NgTemplateOutlet, ReactiveFormsModule, MobileFoodRow, ModalInput, MacrosDisplay, AddFood, FoodRow],
+  imports: [MobileFoodRow, FoodViewPreview, SearchBar, FoodListHeader, NgTemplateOutlet, ReactiveFormsModule, MobileFoodRow, ModalInput, MacrosDisplay, AddFood, FoodRow, BottomPreview],
   templateUrl: './foodView.html'
 })
 export class FoodView {
