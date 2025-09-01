@@ -1,0 +1,87 @@
+<div class="food-header">
+  <div class="food-name"> {{ food().name }}</div>
+  <div class="macro-header" style="gap: 4px;">
+    <div class="macro-column">
+      <span class="macro-name">pro</span>
+      <span class="macro-value">{{ food().protein }}</span>
+    </div>
+    <div class="macro-column">
+      <span class="macro-name">lip</span>
+      <span class="macro-value">{{ food().fat }}</span>
+    </div>
+    <div class="macro-column">
+      <span class="macro-name">glu</span>
+      <span class="macro-value">{{ food().carbs }}</span>
+    </div>
+    <div class="macro-column">
+      <span class="macro-name">kcal</span>
+      <span class="macro-value">{{ food().calories }}</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .food-header {
+    padding: 4px;
+    width: 80%;
+  }
+
+  .food-header, .macro-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .macro-name {
+    color: #8f8f8f;
+    font-size: 8px;
+  }
+
+  .macro-value, .food-name {
+    margin: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 24px;
+  }
+
+  .food-name {
+    width: 35%;
+  }
+
+  .macro-value {
+    text-align: center;
+  }
+
+  .macro-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    padding: 2px;
+  }
+
+  .column {
+    margin: 0 2px 0 2px;
+  }
+
+  .no-spinners {
+    -moz-appearance: textfield;
+  }
+
+  .specific-amount {
+    margin-left: 10px;
+    width: 30px;
+  }
+
+  .unit {
+    width: 10px;
+  }
+
+  .specific-amount-button {
+    width: 100px;
+  }
+</style>

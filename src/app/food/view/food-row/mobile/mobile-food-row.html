@@ -1,0 +1,28 @@
+<div class="food-container" (click)="clicked.emit(food())">
+  <app-macro-display [food]="food()" style="width: 80%"></app-macro-display>
+  <div class="add-label">Ajouter</div>
+</div>
+
+<style>
+
+  .food-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edf1f8;
+    border-radius: 14px;
+    padding: 2px 0;
+    margin: 2px 0;
+    width: 100%;
+  }
+
+  .add-label {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #576371;
+    margin-right: 4px;
+    width: 20%;
+  }
+
+</style>

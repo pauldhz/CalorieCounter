@@ -1,10 +1,4 @@
-<div class="row container">
-  <div class="column" [style.width.px]=dimensions()?.nameW>{{ food()?.name }}</div>
-  <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.protein }} g</div>
-  <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.carbs }} g</div>
-  <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.fat }} g</div>
-  <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.calories }} kcal</div>
-
+<div style="display: flex">
   <button type="button" (click)="addFood(food())">{{ food()?.quantity + '' + food()?.unit }}</button>
   <div style="display: flex; gap: 4px;">
     <input type="number" [formControl]="amount" class="no-spinners specific-amount">
@@ -13,27 +7,11 @@
 
     <button type="button" (click)="addSpecificAmount(food())" class="specific-amount-button">ajouter mesure</button>
   </div>
-
 </div>
 
 <style>
-
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .row {
-    padding: 2px;
-  }
-
-  .column {
-    margin: 0 2px 0 2px;
-  }
-
   .no-spinners {
     -moz-appearance: textfield;
-  / / Firefox
   }
 
   .specific-amount {
@@ -48,5 +26,4 @@
   .specific-amount-button {
     width: 100px;
   }
-
 </style>

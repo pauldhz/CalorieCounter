@@ -6,10 +6,10 @@ import {Food} from '../../model/food';
 })
 export class FoodCalculator {
 
-  calculateFromAmountAndUnit(food: Food, amount: number, unit: 'g' | 'u'): Food {
+  calculateFromAmountAndUnit(food: Food, amount: number, unit: 'g' | 'u' | 'ml'): Food {
     const result: Food = { ...food };
 
-    if (unit === 'g') {
+    if (unit === 'g' || unit === 'ml') {
       const ratio = amount / food.quantity
 
       for (const [key, value] of Object.entries(food)) {

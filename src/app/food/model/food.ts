@@ -10,5 +10,5 @@ export interface Food {
   calories: number;
 
   quantity: number; // related to fat, carbs, protein, calories. if 100 & g, fat amount is based on 100g
-  unit : "g" | "u";
+  unit : 'g' | 'u' | 'ml';
 }

@@ -1,7 +1,7 @@
-import {Component, computed, inject, signal, Signal} from '@angular/core';
+import {Component, computed, HostListener, inject, signal, Signal} from '@angular/core';
 import {FoodLoader} from '../service/food-loader/food-loader';
 import {Food} from '../model/food';
-import {FoodRow, RowDimension} from './food-row/food-row';
+import {FoodRow, RowDimension} from './food-row/desktop/food-row';
 import {FoodViewPreview} from './food-preview/food-view-preview';
 import {toSignal} from '@angular/core/rxjs-interop';
 import {SearchBar} from '../../shared/search-bar/search-bar';
@@ -12,10 +12,14 @@ import * as FoodsActions from '../store/preview.actions';
 import {selectFoods} from '../store/preview.selectors';
 import {NgTemplateOutlet} from "@angular/common";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
+import {MobileFoodRow} from './food-row/mobile/mobile-food-row';
+import {ModalInput} from './food-row/mobile/modal-input/modal-input';
+import {MacrosDisplay} from './food-row/mobile/macro-values/macros-display.component';
+import {AddFood} from './add-food/add-food';
 
 @Component({
   selector: 'app-food',
-  imports: [FoodRow, FoodViewPreview, SearchBar, FoodListHeader, NgTemplateOutlet, ReactiveFormsModule],
+  imports: [MobileFoodRow, FoodViewPreview, SearchBar, FoodListHeader, NgTemplateOutlet, ReactiveFormsModule, MobileFoodRow, ModalInput, MacrosDisplay, AddFood, FoodRow],
   templateUrl: './foodView.html'
 })
 export class FoodView {
@@ -39,13 +43,29 @@ export class FoodView {
   selectedFoods = toSignal(this.store.select(selectFoods));
   foodSearch = signal('');
 
+  editedFood = signal<Food>({} as Food);
+  modalOpen = signal(false);
+  amount = new FormControl(0);
+
   rowDimensions: RowDimension = {
     macroW: 80,
     nameW: 230
   }
 
-  onAddFood(food: Food) {
-    this.store.dispatch(FoodsActions.addFood({ food: food }));
+  onAddSpecificAmount(food: Food|undefined) {
+    const newFood = {...food};
+    newFood.quantity = this.amount.value as number;
+    this.store.dispatch(FoodsActions.addFood({ food: food as Food}));
+
+  }
+
+  onFoodRowClicked(food: Food) {
+    this.editedFood.set(food as Food);
+    this.modalOpen.set(true);
+  }
+
+  onAddFood(food: Food | undefined) {
+    this.store.dispatch(FoodsActions.addFood({ food: food as Food }));
   }
 
   addManualFood() {
@@ -79,4 +99,8 @@ export class FoodView {
       .toLowerCase(); // optionnel, pour ignorer aussi la casse
   }
 
+  @HostListener('document:keydown.escape', ['$event'])
+  onEsc(event: Event) {
+      this.modalOpen.set(false);
+  }
 }

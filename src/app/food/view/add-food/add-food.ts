@@ -1,30 +1,25 @@
 import {Component, inject, input, output} from '@angular/core';
-import {Food} from '../../model/food';
 import {FormControl, ReactiveFormsModule} from '@angular/forms';
+import {Food} from '../../model/food';
 import {FoodCalculator} from '../../service/food-calculator/food-calculator';
 
-export interface RowDimension {
-  nameW: number
-  macroW: number
-}
-
 @Component({
-  selector: 'app-food-row',
+  selector: 'app-add-food',
   imports: [
     ReactiveFormsModule
   ],
-  templateUrl: './food-row.html',
+  templateUrl: './add-food.html'
 })
-export class FoodRow {
+
+export class AddFood {
 
   private foodCalculator: FoodCalculator = inject(FoodCalculator);
 
-  amount = new FormControl(0);
+  foodAdded = output<Food>();
 
-  dimensions = input<RowDimension>();
   food = input<Food>();
 
-  foodAdded = output<Food>()
+  amount = new FormControl(0);
 
   addFood(food: Food | undefined) {
     if (food)
@@ -37,7 +32,7 @@ export class FoodRow {
     }
     const newFood = this.foodCalculator.calculateFromAmountAndUnit(
       food,
-      this.amount.value as number, this.food()?.unit as 'g' | 'u');
+      this.amount.value as number, this.food()?.unit as 'g' | 'u' | 'ml');
 
     if(newFood) {
       this.foodAdded.emit(newFood);

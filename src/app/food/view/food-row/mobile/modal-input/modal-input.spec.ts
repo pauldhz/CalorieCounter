@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FoodRow } from './food-row';
+import { ModalInput } from './modal-input';
 
-describe('FoodRow', () => {
-  let component: FoodRow;
-  let fixture: ComponentFixture<FoodRow>;
+describe('ModalInput', () => {
+  let component: ModalInput;
+  let fixture: ComponentFixture<ModalInput>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FoodRow]
+      imports: [ModalInput]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FoodRow);
+    fixture = TestBed.createComponent(ModalInput);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

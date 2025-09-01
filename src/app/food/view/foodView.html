@@ -1,92 +1,106 @@
-<div>
-  <div class="container">
-    <div class="flex-column">
-      <div class="header">
-        <app-food-list-header [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
-        <app-food-list-header class="header" [label]="'Protéines'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-        <app-food-list-header class="header" [label]="'Glucides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-        <app-food-list-header class="header" [label]="'Lipides'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-        <app-food-list-header class="header" [label]="'Calories'" [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-      </div>
+<app-modal-input [isOpen]="modalOpen()" (closed)="modalOpen.set(false)">
+  <app-macro-display [food]="editedFood()"></app-macro-display>
+  <app-add-food [food]="editedFood()" (foodAdded)="onAddFood($event)"></app-add-food>
+</app-modal-input>
+<div class="container">
+  <div class="header">
+    <app-food-list-header [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
+    <app-food-list-header class="header" [label]="'Protéines'"
+                          [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+    <app-food-list-header class="header" [label]="'Glucides'"
+                          [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+    <app-food-list-header class="header" [label]="'Lipides'"
+                          [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+    <app-food-list-header class="header" [label]="'Calories'"
+                          [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+  </div>
 
-      <ng-container *ngTemplateOutlet="manualInput"></ng-container>
+  <ng-container *ngTemplateOutlet="manualInput"></ng-container>
 
-      <app-search-bar (search)="onSearch($event)"></app-search-bar>
-      <div style="height: 90vh; overflow: scroll">
-        @for (food of foodsFiltered(); track food.name) {
-          <app-food-row [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-food-row>
-        }
-      </div>
-    </div>
-    <div class="preview flex-column">
-      <h2>Preview</h2>
-      <app-food-preview [foods]="selectedFoods()"
-                        (removeAll)="clearPreview()"
-                        (foodRemoved)="onRemoveFood($event)"></app-food-preview>
-    </div>
+  <app-search-bar (search)="onSearch($event)"></app-search-bar>
+  <div class="food-rows-container">
+    @for (food of foodsFiltered(); track food.name) {
+      <app-mobile-food-row (clicked)="onFoodRowClicked($event)" style="width: 90%" [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-mobile-food-row>
+<!--      <app-desktop-food-row [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-desktop-food-row>-->
+    }
+  </div>
+  <div class="preview flex-column">
+    <h2>Preview</h2>
+    <app-food-preview [foods]="selectedFoods()"
+                      (removeAll)="clearPreview()"
+                      (foodRemoved)="onRemoveFood($event)"></app-food-preview>
   </div>
 </div>
 
 <ng-template #manualInput>
   <div>
-    <input [formControl]="manualName" class="input" [style.width.px]="rowDimensions.nameW - 10" type="text" placeholder="nom"/>
-    <input [formControl]="manualProteins" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="protéines"/>
-    <input [formControl]="manualCarbs" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="glucides"/>
-    <input [formControl]="manualFat" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="lipides"/>
-    <input [formControl]="manualCalories" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10" type="number" placeholder="calories"/>
+    <input [formControl]="manualName" class="input" [style.width.px]="rowDimensions.nameW - 10" type="text"
+           placeholder="nom"/>
+    <input [formControl]="manualProteins" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
+           type="number" placeholder="protéines"/>
+    <input [formControl]="manualCarbs" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
+           type="number" placeholder="glucides"/>
+    <input [formControl]="manualFat" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
+           type="number" placeholder="lipides"/>
+    <input [formControl]="manualCalories" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
+           type="number" placeholder="calories"/>
     <input type="number" [formControl]="manualAmount" class="no-spinners specific-amount">
     <input type="text" disabled value="g" class="unit"/>
     <button type="button" (click)="addManualFood()" class="specific-amount-button">ajouter mesure</button>
 
   </div>
-
 </ng-template>
+  <style>
 
-<style>
+    .food-rows-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 90vh;
+      width: 98vw;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-  .input {
-    margin: 0 10px 0 0;
-    padding: 0;
-    padding-block: 0 !important;
-    padding-inline: 0 !important;
-  }
-  .header {
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-  }
+    .input {
+      margin: 0 10px 0 0;
+      padding: 0;
+      padding-block: 0 !important;
+      padding-inline: 0 !important;
+    }
 
-  .flex-column {
-    flex-direction: column;
-  }
+    .header {
+      display: flex;
+      flex-direction: row;
+      max-width: 100vw;
+      font-weight: bold;
+    }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .flex-column {
+      flex-direction: column;
+    }
 
-  .preview {
-    margin-left: 2vw;
-    justify-content: center;
-    width: 100%;
-  }
+    .preview {
+      margin-left: 2vw;
+      justify-content: center;
+      width: 100%;
+    }
 
-  h2 {
-    margin: 0;
-  }
+    h2 {
+      margin: 0;
+    }
 
-  .header {
-    margin: 0 2px 0 2px;
-  }
+    .header {
+      margin: 0 2px 0 2px;
+    }
 
-  .unit {
-    width: 10px;
-  }
+    .unit {
+      width: 10px;
+    }
 
-  .specific-amount {
-    margin-left: 10px;
-    width: 30px;
-  }
+    .specific-amount {
+      margin-left: 10px;
+      width: 30px;
+    }
 
-</style>
+  </style>
