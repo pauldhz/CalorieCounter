@@ -20,8 +20,8 @@
   <app-search-bar (search)="onSearch($event)"></app-search-bar>
   <div class="food-rows-container">
     @for (food of foodsFiltered(); track food.name) {
-      <app-mobile-food-row (clicked)="onFoodRowClicked($event)" style="width: 90%" [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-mobile-food-row>
-<!--      <app-desktop-food-row [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-desktop-food-row>-->
+      <app-mobile-food-row class="mobile" (clicked)="onFoodRowClicked($event)" style="width: 90%" [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-mobile-food-row>
+      <app-desktop-food-row class="desktop" [food]="food" [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-desktop-food-row>
     }
   </div>
   <div class="preview flex-column">
@@ -51,6 +51,14 @@
   </div>
 </ng-template>
   <style>
+
+    .mobile { display: none; }
+    .desktop { display: block; }
+
+    @media (max-width: 768px) {
+      .mobile { display: block; }
+      .desktop { display: none; }
+    }
 
     .food-rows-container {
       display: flex;

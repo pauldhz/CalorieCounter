@@ -45,18 +45,10 @@ export class FoodView {
 
   editedFood = signal<Food>({} as Food);
   modalOpen = signal(false);
-  amount = new FormControl(0);
 
   rowDimensions: RowDimension = {
     macroW: 80,
     nameW: 230
-  }
-
-  onAddSpecificAmount(food: Food|undefined) {
-    const newFood = {...food};
-    newFood.quantity = this.amount.value as number;
-    this.store.dispatch(FoodsActions.addFood({ food: food as Food}));
-
   }
 
   onFoodRowClicked(food: Food) {
