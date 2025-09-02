@@ -1,8 +1,6 @@
-import {Component, inject, input, output, signal} from '@angular/core';
+import {Component, input, output} from '@angular/core';
 import {Food} from '../../../model/food';
-import {FormControl, ReactiveFormsModule} from '@angular/forms';
-import {FoodCalculator} from '../../../service/food-calculator/food-calculator';
-import {ModalInput} from './modal-input/modal-input';
+import {ReactiveFormsModule} from '@angular/forms';
 import {MacrosDisplay} from './macro-values/macros-display.component';
 
 export interface RowDimension {

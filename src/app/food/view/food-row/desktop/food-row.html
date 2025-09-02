@@ -5,7 +5,7 @@
   <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.fat }} g</div>
   <div class="column" [style.width.px]=dimensions()?.macroW>{{ food()?.calories }} kcal</div>
 
-  <app-add-food [food]="food()" (foodAdded)="foodAdded.emit(food())"></app-add-food>
+  <app-add-food [food]="food()" (foodAdded)="foodAdded.emit($event)"></app-add-food>
 
 </div>
 

@@ -58,11 +58,12 @@ export class FoodView {
   }
 
   onAddFood(food: Food | undefined) {
-    this.store.dispatch(FoodsActions.addFood({ food: food as Food }));
+    this.store.dispatch(FoodsActions.addFood({food: food as Food}));
   }
 
   addManualFood() {
-    this.store.dispatch(FoodsActions.addFood({ food: {
+    this.store.dispatch(FoodsActions.addFood({
+      food: {
         name: this.manualName.value as string,
         protein: this.manualProteins.value as number,
         carbs: this.manualCarbs.value as number,
@@ -71,7 +72,8 @@ export class FoodView {
         unit: "g",
         quantity: this.manualAmount.value as number,
         id: ""
-      }}));
+      }
+    }));
   }
 
   onRemoveFood(food: Food) {
@@ -94,6 +96,6 @@ export class FoodView {
 
   @HostListener('document:keydown.escape', ['$event'])
   onEsc(event: Event) {
-      this.modalOpen.set(false);
+    this.modalOpen.set(false);
   }
 }
