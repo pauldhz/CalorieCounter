@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "calorieCounter:build:production"
+              "buildTarget": "calorie-counter:build:production"
             },
             "development": {
-              "buildTarget": "calorieCounter:build:development"
+              "buildTarget": "calorie-counter:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,66 @@
+<header class="site-header">
+  <div class="bar">
+
+    <nav class="nav">
+      <a routerLink="/compteur-calories"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}"
+      >Calcul</a>
+
+      <a routerLink="/about"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}"
+      >À propos</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  :host {
+    display: block;
+  }
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: .75rem 1rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    gap: .75rem;
+    padding: .75rem 0;
+  }
+
+  .nav a {
+    text-decoration: none;
+    opacity: .85;
+  }
+
+  .nav a.active {
+    font-weight: 600;
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0;
+    }
+  }
+</style>
