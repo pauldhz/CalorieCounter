@@ -1,12 +1,32 @@
-.mobile {
+.mobile-only {
   display: none;
 }
 
-.desktop {
+.desktop-only {
   display: block;
 }
 
+@media (min-width: 769px) {
+  .macro {
+    width: 10%;
+  }
+
+  .manual-container {
+    flex-direction: row;
+  }
+}
+
 @media (max-width: 768px) {
+
+  .manual-container {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .manual-input-container {
+    flex-direction: column;
+    gap: 4px;
+  }
 
   .container {
     padding: 8px 0;
@@ -30,16 +50,17 @@
   }
   .input {
     font-size: 1rem;
-    padding: 8px 12px;
+    padding: 4px 2px;
     margin-bottom: 8px;
     border-radius: 6px;
     border: 1px solid #e0e6ed;
     width: 100%;
+    max-height: 28px;
     box-sizing: border-box;
   }
   .specific-amount-button {
     font-size: 1rem;
-    padding: 10px 16px;
+    padding: 6px 10px;
     border-radius: 6px;
     background: #4caf50;
     color: #fff;
@@ -64,14 +85,23 @@
     padding-top: 8px;
   }
 
-  .mobile {
+  .mobile-only {
     display: block;
   }
 
-  .desktop {
+  .desktop-only {
     display: none;
   }
 }
+
+.manual-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.manual-input-container {
+  display: flex;
+  }
 
 .food-rows-container {
   display: flex;
@@ -84,9 +114,6 @@
 
 .input {
   margin: 0 10px 0 0;
-  padding: 0;
-  padding-block: 0 !important;
-  padding-inline: 0 !important;
 }
 
 .header {
@@ -121,4 +148,8 @@ h2 {
 .specific-amount {
   margin-left: 10px;
   width: 30px;
+}
+
+.food-row {
+  width: 100%;
 }

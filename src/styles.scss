@@ -1,6 +1,13 @@
 @use 'theme/buttons';
 @use 'theme/links';
+@use 'theme/input';
 @use 'theme/variables' as vars;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   background: vars.$background-color;
@@ -8,6 +15,13 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+h1 {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
 
 .no-spinners::-webkit-outer-spin-button,
 .no-spinners::-webkit-inner-spin-button {
@@ -29,8 +43,21 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  align-items: start;     /* centre verticalement */
-  min-height: 100vh;       /* prend toute la hauteur de la fenêtre */
-  max-width: 100vw;
+  align-items: start; /* centre verticalement */
+  min-height: 100vh; /* prend toute la hauteur de la fenêtre */
+  width: 100vw;
   background-color: #fbfbff; /* exemple */
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+app-header {
+  width: 100%;
+  display: block;
 }

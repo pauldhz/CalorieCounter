@@ -27,11 +27,11 @@ import {BottomPreview} from './food-row/mobile/bottom-preview/bottom-preview';
 export class FoodView {
 
   manualName = new FormControl('');
-  manualProteins = new FormControl(0);
-  manualCarbs = new FormControl(0);
-  manualFat = new FormControl(0);
-  manualCalories = new FormControl(0);
-  manualAmount = new FormControl(0);
+  manualProteins = new FormControl();
+  manualCarbs = new FormControl();
+  manualFat = new FormControl();
+  manualCalories = new FormControl();
+  manualAmount = new FormControl();
 
   private store = inject<Store<AppState>>(Store);
 
@@ -46,7 +46,8 @@ export class FoodView {
   foodSearch = signal('');
 
   editedFood = signal<Food>({} as Food);
-  modalOpen = signal(false);
+  mobileFoodInputModalOpen = signal(false);
+  manualFoodInputModalOpen = signal(false);
 
   rowDimensions: RowDimension = {
     macroW: 80,
@@ -55,7 +56,7 @@ export class FoodView {
 
   onFoodRowClicked(food: Food) {
     this.editedFood.set(food as Food);
-    this.modalOpen.set(true);
+    this.mobileFoodInputModalOpen.set(true);
   }
 
   onAddFood(food: Food | undefined) {
@@ -97,6 +98,7 @@ export class FoodView {
 
   @HostListener('document:keydown.escape', ['$event'])
   onEsc(event: Event) {
-    this.modalOpen.set(false);
+    this.mobileFoodInputModalOpen.set(false);
+    this.manualFoodInputModalOpen.set(false);
   }
 }
