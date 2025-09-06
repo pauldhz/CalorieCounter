@@ -16,6 +16,7 @@ export interface RowDimension {
   ],
   standalone: true,
   templateUrl: './mobile-food-row.html',
+  styleUrls: ['./mobile-food-row.scss']
 })
 export class MobileFoodRow {
 
