@@ -1,0 +1,25 @@
+@use 'variables' as vars;
+
+.food-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: vars.$background-light;
+  padding: 8px 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+  margin: 2px 0;
+  width: 100%;
+}
+
+.add-label {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #576371;
+  margin-right: 4px;
+  width: 20%;
+}
+
+.macro-display {
+  flex: 1 1 80%;
+}

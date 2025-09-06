@@ -1,0 +1,8 @@
+@if (isOpen()) {
+  <div class="modal-backdrop" (click)="close()"></div>
+
+  <div class="modal-content">
+    <span class="modal-close" (click)="close()">✖</span>
+    <ng-content></ng-content>
+  </div>
+}
