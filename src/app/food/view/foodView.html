@@ -1,30 +1,37 @@
 <div class="container">
   <div>
-    <div class="header">
-      <app-food-list-header [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
-      <app-food-list-header class="header" [label]="'Protéines'"
-                            [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-      <app-food-list-header class="header" [label]="'Glucides'"
-                            [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-      <app-food-list-header class="header" [label]="'Lipides'"
-                            [style.width.px]="rowDimensions.macroW"></app-food-list-header>
-      <app-food-list-header class="header" [label]="'Calories'"
-                            [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+    <button type="button"
+            class="specific-amount-button mobile-only"
+            (click)="manualFoodInputModalOpen.set(true)">ajouter mesure
+      manuelle
+    </button>
+    <div class="desktop-only">
+      <ng-container *ngTemplateOutlet="manualInput"></ng-container>
+      <div class="header">
+        <app-food-list-header [label]="'Nom'" [style.width.px]="rowDimensions.nameW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Protéines'"
+                              [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Glucides'"
+                              [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Lipides'"
+                              [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+        <app-food-list-header class="header" [label]="'Calories'"
+                              [style.width.px]="rowDimensions.macroW"></app-food-list-header>
+      </div>
     </div>
 
-    <ng-container *ngTemplateOutlet="manualInput"></ng-container>
-
     <app-search-bar (search)="onSearch($event)"></app-search-bar>
+
     <div class="food-rows-container">
       @for (food of foodsFiltered(); track food.name) {
-        <app-mobile-food-row class="mobile" (clicked)="onFoodRowClicked($event)" style="width: 90%" [food]="food"
+        <app-mobile-food-row class="mobile-only food-row" (clicked)="onFoodRowClicked($event)" [food]="food"
                              [dimensions]="rowDimensions" (foodAdded)="onAddFood($event)"></app-mobile-food-row>
-        <app-desktop-food-row class="desktop" [food]="food" [dimensions]="rowDimensions"
+        <app-desktop-food-row class="desktop-only" [food]="food" [dimensions]="rowDimensions"
                               (foodAdded)="onAddFood($event)"></app-desktop-food-row>
       }
     </div>
   </div>
-  <div class="desktop preview flex-column">
+  <div class="desktop-only preview flex-column">
     <h2>Preview</h2>
     <app-food-preview [foods]="selectedFoods()"
                       (removeAll)="clearPreview()"
@@ -32,12 +39,7 @@
   </div>
 </div>
 
-<app-modal-input [isOpen]="modalOpen()" (closed)="modalOpen.set(false)">
-  <app-macro-display [food]="editedFood()"></app-macro-display>
-  <app-add-food [food]="editedFood()" (foodAdded)="onAddFood($event)"></app-add-food>
-</app-modal-input>
-
-<app-bottom-preview [display]="true" class="mobile">
+<app-bottom-preview [display]="true" class="mobile-only">
   <div class="preview">
     <h2>Preview</h2>
     <app-food-preview [foods]="selectedFoods()"
@@ -48,20 +50,35 @@
 </app-bottom-preview>
 
 <ng-template #manualInput>
-  <div>
-    <input [formControl]="manualName" class="input" [style.width.px]="rowDimensions.nameW - 10" type="text"
-           placeholder="nom"/>
-    <input [formControl]="manualProteins" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
-           type="number" placeholder="protéines"/>
-    <input [formControl]="manualCarbs" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
-           type="number" placeholder="glucides"/>
-    <input [formControl]="manualFat" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
-           type="number" placeholder="lipides"/>
-    <input [formControl]="manualCalories" class="input no-spinners" [style.width.px]="rowDimensions.macroW - 10"
-           type="number" placeholder="calories"/>
-    <input type="number" [formControl]="manualAmount" class="no-spinners specific-amount">
-    <input type="text" disabled value="g" class="unit"/>
-    <button type="button" (click)="addManualFood()" class="specific-amount-button">ajouter mesure</button>
-
+  <div class="manual-container">
+    <div class="manual-input-container">
+      <input id="name" [formControl]="manualName" class="input" type="text" placeholder="nom"/>
+      <input id="proteins" [formControl]="manualProteins" class="input no-spinners macro"
+             type="number" placeholder="protéines"/>
+      <input id="carbs" [formControl]="manualCarbs" class="input no-spinners macro"
+             type="number" placeholder="glucides"/>
+      <input id="fat" [formControl]="manualFat" class="input no-spinners macro"
+             type="number" placeholder="lipides"/>
+      <input id="calories" [formControl]="manualCalories" class="input no-spinners macro"
+             type="number" placeholder="calories"/>
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 4px;">
+      <input id="amount" type="number" [formControl]="manualAmount"
+             class="no-spinners specific-amount input">
+      <input type="text" disabled value="g" class="unit input"/>
+      <button type="button" (click)="manualFoodInputModalOpen.set(true)" class="button">ajouter mesure
+        manuelle
+      </button>
+    </div>
   </div>
+
 </ng-template>
+
+<app-modal-input [isOpen]="manualFoodInputModalOpen()" (closed)="manualFoodInputModalOpen.set(false)">
+  <ng-container class="manual-input-container" *ngTemplateOutlet="manualInput"></ng-container>
+</app-modal-input>
+
+<app-modal-input [isOpen]="mobileFoodInputModalOpen()" (closed)="mobileFoodInputModalOpen.set(false)">
+  <app-macro-display [food]="editedFood()"></app-macro-display>
+  <app-add-food [food]="editedFood()" (foodAdded)="onAddFood($event)"></app-add-food>
+</app-modal-input>
