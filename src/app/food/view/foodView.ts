@@ -76,6 +76,7 @@ export class FoodView {
         id: ""
       }
     }));
+    this.manualFoodInputModalOpen.set(false);
   }
 
   onRemoveFood(food: Food) {

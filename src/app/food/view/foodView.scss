@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 .mobile-only {
   display: none;
 }
@@ -41,7 +43,7 @@
     justify-content: center;
   }
   .food-rows-container {
-    padding: 0 4px;
+    padding: 0 4px 200px;
     gap: 12px;
     height: 70vh;
     width: 100vw;
@@ -62,7 +64,6 @@
     font-size: 1rem;
     padding: 6px 10px;
     border-radius: 6px;
-    background: #4caf50;
     color: #fff;
     border: none;
     margin-top: 8px;
@@ -70,6 +71,8 @@
     box-sizing: border-box;
   }
   .preview {
+    position: fixed;
+    bottom: 0;
     padding: 12px 0;
   }
   .food-rows-container {
@@ -128,6 +131,7 @@
 }
 
 .preview {
+  background-color: vars.$white-pale;
   margin-left: 2vw;
   justify-content: center;
   width: 100%;

@@ -1,0 +1,14 @@
+@use 'variables' as vars;
+
+.tag {
+  background: vars.$primary-lighter; // vert très léger
+  color: vars.$primary-dark;
+  font-size: 1.20rem;
+  padding: 4px 12px;
+  border-radius: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(76,175,80,0.07);
+  margin-left: 8px;
+  user-select: none;
+  transition: background 0.2s, color 0.2s;
+}

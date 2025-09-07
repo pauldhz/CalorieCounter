@@ -1,13 +1,12 @@
 @use './variables' as vars;
 
 a {
-  color: vars.$primary-color;
   text-decoration: none;
   transition: color 0.2s;
+  color: vars.$grey-darker;
 
   &:hover,
   &:focus {
-    color: vars.$secondary-color;
     text-decoration: underline;
   }
 

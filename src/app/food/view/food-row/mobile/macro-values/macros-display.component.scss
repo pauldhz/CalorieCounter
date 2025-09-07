@@ -1,0 +1,48 @@
+.food-header {
+  padding: 4px;
+  width: 100%;
+}
+
+.macro-header {
+  gap: 4px;
+  margin-right: 0.75rem;
+}
+
+.food-header, .macro-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.macro-name {
+  color: #8f8f8f;
+  font-size: 12px;
+}
+
+.food-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.macro-value {
+  margin: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 24px;
+}
+
+.food-name {
+  width: 35%;
+}
+
+.macro-value {
+  text-align: center;
+}
+
+.macro-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

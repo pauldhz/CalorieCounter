@@ -4,7 +4,8 @@ import {Food} from '../../../../model/food';
 @Component({
   selector: 'app-macro-display',
   imports: [],
-  templateUrl: './macros-display.component.html'
+  templateUrl: './macros-display.component.html',
+  styleUrls: ['./macros-display.component.scss']
 })
 export class MacrosDisplay {
 

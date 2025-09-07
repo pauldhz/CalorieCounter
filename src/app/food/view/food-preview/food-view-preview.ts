@@ -6,7 +6,8 @@ import {CommonModule} from '@angular/common';
 @Component({
   selector: 'app-food-preview',
   imports: [CommonModule],
-  templateUrl: './food-view-preview.html'
+  templateUrl: './food-view-preview.html',
+  styleUrls: ['./food-view-preview.scss'],
 })
 export class FoodViewPreview {
 
@@ -30,6 +31,7 @@ export class FoodViewPreview {
   removeAll = output();
 
   removeFood(food: Food) {
+    console.log("clickec");
     this.foodRemoved.emit(food)
   }
 }

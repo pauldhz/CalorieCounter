@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: vars.$background-light;
+  background: vars.$white-pale;
   padding: 8px 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s;
@@ -13,19 +13,9 @@
 }
 
 .add-label {
-  background: rgba(76, 175, 80, 0.08); // vert très léger
-  color: #4caf50;
-  font-size: 0.80rem;
-  padding: 4px 12px;
-  border-radius: 16px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 1px 4px rgba(76,175,80,0.07);
-  margin-left: 8px;
-  user-select: none;
-  pointer-events: none;
-  transition: background 0.2s, color 0.2s;
+
 }
 
 .macro-display {
-  flex: 1 1 80%;
+  flex: 1 1 auto;
 }

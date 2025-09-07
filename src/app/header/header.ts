@@ -8,6 +8,7 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     RouterLink
   ],
   templateUrl: './header.html',
+  styleUrls: ['./header.scss'],
   standalone: true
 })
 export class Header {

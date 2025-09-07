@@ -1,6 +1,7 @@
 @use 'theme/buttons';
 @use 'theme/links';
 @use 'theme/input';
+@use 'theme/tags';
 @use 'theme/variables' as vars;
 
 *,
@@ -10,8 +11,8 @@
 }
 
 body {
-  background: vars.$background-color;
-  color: vars.$text-color;
+  background: vars.$white-pale;
+  color: vars.$grey-darker;
   font-family: 'Roboto', Arial, sans-serif;
 }
 
@@ -42,6 +43,7 @@ h2 {
 
 .container {
   display: flex;
+  position: fixed;
   flex-direction: row;
   align-items: start; /* centre verticalement */
   min-height: 100vh; /* prend toute la hauteur de la fenêtre */

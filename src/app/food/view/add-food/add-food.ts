@@ -8,7 +8,8 @@ import {FoodCalculator} from '../../service/food-calculator/food-calculator';
   imports: [
     ReactiveFormsModule
   ],
-  templateUrl: './add-food.html'
+  templateUrl: './add-food.html',
+  styleUrls: ['./add-food.scss']
 })
 
 export class AddFood {

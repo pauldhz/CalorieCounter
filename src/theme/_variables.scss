@@ -1,6 +1,69 @@
-$primary-color: #4CAF50;
-$secondary-color: #FFC107;
-$background-color: #F5F5F5;
-$text-color: #212121;
+// Couleurs principales
+$primary: #00c979;
+$primary-light: #6ee8a3;
+$primary-lighter: #f2fbf9;
+$primary-dark: #1c9164;
+$primary-darker: #012c1f;
 
-$background-light: #FEFEFE;
+// Couleurs secondaires
+$secondary: #FFC107;
+$secondary-light: #FFD54F;
+$secondary-lighter: #fbfbe5;
+$secondary-dark: #FFA000;
+$secondary-darker: #2c1d02;
+
+// Couleurs d'accent
+$accent: #2dbbf8;
+$accent-lighter: #daf1ff;
+$accent-light: #6ec6ff;
+$accent-dark: #0091ea;
+
+// Couleurs neutres
+$black: #000000;
+$white: #FFFFFF;
+$grey-light: #E0E0E0;
+$grey-medium: #9E9E9E;
+$grey-dark: #616161;
+$grey-darker: #212121;
+
+// Blancs
+$white-pale: #FEFEFE;
+$white-smoke: #F8F8F8;
+$white-ice: #F0F0F0;
+
+// États
+$states: (
+  success: #4CAF50,
+  error: #F44336,
+  warning: #FF9800,
+  info: #2196F3
+);
+
+$colors: (
+  primary: $primary,
+  primary-light: $primary-light,
+  primary-lighter: $primary-lighter,
+  primary-dark: $primary-dark,
+  secondary: $secondary,
+  secondary-light: $secondary-light,
+  secondary-lighter: $secondary-lighter,
+  secondary-dark: $secondary-dark,
+  secondary-darker: $secondary-darker,
+  accent: $accent,
+  accent-light: $accent-light,
+  accent-lighter: $accent-lighter,
+  accent-dark: $accent-dark,
+  black: $black,
+  white: $white,
+  grey-light: $grey-light,
+  grey-medium: $grey-medium,
+  grey-dark: $grey-dark,
+  grey-darker: $grey-darker,
+  white-pale: $white-pale,
+  white-smoke: $white-smoke,
+  white-ice: $white-ice,
+  success: map-get($states, success),
+  error: map-get($states, error),
+  warning: map-get($states, warning),
+  info: map-get($states, info)
+);

@@ -1,0 +1,45 @@
+.preview-container {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.select-elements-content {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  max-height: 15vh;
+  overflow: scroll;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.foods {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-elements-header {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selected-elements-header .button {
+  max-height: 28px !important;
+  height: 28px;
+}
+
+.button {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
