@@ -1,10 +1,30 @@
-<input class="searchbar" autocomplete="off" [placeholder]="placeholder()" id="searchbar" type="text" [formControl]="searchControl">
+<div class="searchbar" role="search">
+  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M21 21l-4.3-4.3m1.3-5.2a7 7 0 11-14 0 7 7 0 0114 0z" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
 
-<style>
-    .searchbar {
-      height: 20px;
-      margin: 8px 2px 8px 2px;
-      font-size: 14px;
-      min-width: 300px;
-    }
-</style>
+  <input
+    #searchInput
+    type="search"
+    [formControl]="searchControl"
+    [placeholder]="placeholder()"
+    aria-label="Rechercher"
+    enterkeyhint="search"
+  />
+
+  @if (hasValue) {
+    <button
+      type="button"
+      class="clear-btn"
+      (click)="clear(searchInput)"
+      aria-label="Effacer la recherche"
+      title="Effacer"
+    >
+      <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"/>
+      </svg>
+    </button>
+  }
+</div>

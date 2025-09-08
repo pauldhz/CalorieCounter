@@ -1,0 +1,18 @@
+// Base d’espacement (ajuste selon ton design system)
+$space-unit: 0.25rem;
+
+// Échelle demandée
+$space-scale: (1, 2, 3, 4);
+
+// Génération des classes:
+// - pt-{n} => padding-top
+// - mg-{n} => margin (tous côtés)
+@each $i in $space-scale {
+  .pt-#{$i} {
+    padding-top: $space-unit * $i;
+  }
+
+  .mg-#{$i} {
+    margin: $space-unit * $i;
+  }
+}

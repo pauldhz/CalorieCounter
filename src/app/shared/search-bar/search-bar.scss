@@ -1,0 +1,161 @@
+@use 'variables' as vars;
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  min-width: 300px;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #f8fafc;
+
+  box-shadow:
+    0 0 0 0 rgba(0,0,0,0),
+    0 1px 1px rgba(0, 0, 0, 0.03);
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease, transform .05s ease;
+
+  &:hover {
+    background: #ffffff;
+    border-color: #dbe4f0;
+  }
+
+  &:focus-within {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, .15);
+    background: #ffffff;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    color: #64748b;
+  }
+
+  input {
+    appearance: none;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+    flex: 1 1 auto;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0f172a;
+    padding: 0;
+
+    &::placeholder {
+      color: #94a3b8;
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      appearance: none;
+      display: none;
+    }
+  }
+
+  .clear-btn {
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 999px;
+    background: #e2e8f0;
+    color: #475569;
+    cursor: pointer;
+
+    transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+
+    .x-icon {
+      width: 12px;
+      height: 12px;
+    }
+
+    &:hover {
+      background: #cbd5e1;
+      color: #334155;
+    }
+
+    &:active {
+      background: #c1cbd9;
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, .25);
+    }
+  }
+}
+
+/* Réduction des animations si l’utilisateur l’a demandé */
+@media (prefers-reduced-motion: reduce) {
+  .searchbar {
+    transition: none;
+  }
+  .searchbar .clear-btn {
+    transition: none;
+  }
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .searchbar {
+    background: #0b1220;
+    border-color: #233043;
+
+    &:hover {
+      background: #0e1626;
+      border-color: #2b3a4f;
+    }
+
+    &:focus-within {
+      border-color: #60a5fa;
+      box-shadow: 0 0 0 3px rgba(96, 165, 250, .18);
+      background: #0e1626;
+    }
+
+    .icon {
+      color: #9aa8bd;
+    }
+
+    input {
+      color: #e6edf6;
+
+      &::placeholder {
+        color: #8aa0be;
+      }
+    }
+
+    .clear-btn {
+      background: #223049;
+      color: #b3c0d4;
+
+      &:hover {
+        background: #2a3a55;
+        color: #c7d2e3;
+      }
+
+      &:active {
+        background: #2f4060;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .searchbar {
+    min-width: 0;
+    padding: 8px 10px;
+  }
+}

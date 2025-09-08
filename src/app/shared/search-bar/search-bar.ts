@@ -7,7 +7,8 @@ import {debounceTime, distinctUntilChanged} from 'rxjs';
   imports: [
     ReactiveFormsModule
   ],
-  templateUrl: './search-bar.html'
+  templateUrl: './search-bar.html',
+  styleUrls: ['./search-bar.scss']
 })
 export class SearchBar implements OnInit {
 
@@ -15,6 +16,10 @@ export class SearchBar implements OnInit {
   searchControl = new FormControl('');
 
   search = output<string>();
+
+  get hasValue(): boolean {
+    return !!this.searchControl.value;
+  }
 
   ngOnInit(): void {
     this.searchControl.valueChanges
@@ -24,4 +29,9 @@ export class SearchBar implements OnInit {
       });
   }
 
+  clear(input: HTMLInputElement): void {
+    this.searchControl.setValue('');
+    // Replacer le focus pour enchaîner la saisie
+    queueMicrotask(() => input.focus());
+  }
 }

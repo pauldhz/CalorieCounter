@@ -1,16 +1,190 @@
-@use './variables' as vars;
+@use 'variables' as vars;
 
-.button {
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-weight: 600;
-  font-size: 1rem;
+// Design tokens (surcharge-les si besoin avant @use)
+$btn-radius: 10px !default;
+$btn-font-weight: 600 !default;
+
+$btn-h-sm: 30px !default;
+$btn-h-md: 36px !default;
+$btn-h-lg: 42px !default;
+
+$btn-px-sm: 10px !default;
+$btn-px-md: 14px !default;
+$btn-px-lg: 18px !default;
+
+$btn-gap: 8px !default;
+
+// Base
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: $btn-radius;
+  height: $btn-h-md;
+  padding: 0 $btn-px-md;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $btn-gap;
+
+  font-weight: $btn-font-weight;
+  line-height: 1;
+  white-space: nowrap;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  user-select: none;
+
+  color: white;
   background: vars.$primary-dark;
-  color: vars.$white-pale;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  outline: none;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, .04),
+    0 2px 6px rgba(0, 0, 0, .04);
+  transition:
+    background-color .15s ease,
+    color .15s ease,
+    border-color .15s ease,
+    box-shadow .15s ease,
+    transform .05s ease;
+
+  &:hover {
+    background: vars.$primary;
+    box-shadow:
+      0 2px 6px rgba(0, 0, 0, .06),
+      0 6px 18px rgba(0, 0, 0, .06);
+  }
+
+  &:active {
+    transform: translateY(0.5px);
+    background: vars.$primary-dark;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow:
+      0 0 0 2px vars.$white,
+      0 0 0 4px vars.$primary-dark;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: .65;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  // Icône (facultatif)
+  > .icon {
+    width: 1em;
+    height: 1em;
+    flex: 0 0 auto;
+  }
 }
 
+// Variantes
+.btn--primary {
+  @extend .btn;
+}
+
+.btn--neutral {
+  @extend .btn;
+  background: vars.$grey-light;
+  color: vars.$grey-darker;
+  border-color: vars.$grey-light;
+
+  &:hover { background: vars.$grey-light; }
+  &:active { background: vars.$grey-medium; }
+  &:focus-visible {
+    box-shadow:
+      0 0 0 2px vars.$white,
+      0 0 0 4px vars.$grey-darker
+  }
+}
+
+.btn--outline {
+  @extend .btn;
+  background: transparent;
+  color: vars.$grey-darker;
+  border-color: vars.$grey-light;
+
+  &:hover {
+    background: vars.$white-pale;
+  }
+  &:active {
+    background: vars.$white-pale;
+  }
+}
+
+.btn--ghost {
+  @extend .btn;
+  background: transparent;
+  color: vars.$grey-darker;
+  border-color: transparent;
+  box-shadow: none;
+
+  &:hover { background: vars.$white-pale; }
+  &:active { background: vars.$white-pale; }
+}
+
+// Tailles
+.btn--sm { height: $btn-h-sm; padding: 0 $btn-px-sm; font-size: 12px; }
+.btn--md { height: $btn-h-md; padding: 0 $btn-px-md; font-size: 14px; }
+.btn--lg { height: $btn-h-lg; padding: 0 $btn-px-lg; font-size: 16px; }
+
+// Bouton icône seul
+.btn--icon {
+  @extend .btn;
+  width: $btn-h-md;
+  padding: 0;
+  .label { display: none; }
+}
+
+// Pleine largeur (optionnel)
+.btn--block {
+  display: flex;
+  width: 100%;
+}
+
+// État de chargement (optionnel)
+.btn.is-loading {
+  pointer-events: none;
+  position: relative;
+  color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    width: 16px;
+    height: 16px;
+    margin-inline-start: -8px;
+    margin-block-start: -8px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.6);
+    border-top-color: rgba(255,255,255,1);
+    animation: btn-spin .7s linear infinite;
+  }
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+// Réduction des animations si demandée
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+    &:active { transform: none; }
+  }
+  .btn.is-loading::after { animation: none; }
+}
+
+// Alias pour compatibilité avec ton HTML existant
+.button { @extend .btn; }
+.button--neutral { @extend .btn--neutral; }
+.button--outline { @extend .btn--outline; }
+.button--ghost { @extend .btn--ghost; }
+.button--sm { @extend .btn--sm; }
+.button--md { @extend .btn--md; }
+.button--lg { @extend .btn--lg; }
+.button--icon { @extend .btn--icon; }
+.button--block { @extend .btn--block; }

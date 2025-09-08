@@ -39,6 +39,19 @@ $states: (
   info: #2196F3
 );
 
+$btn-radius: 10px !default;
+$btn-font-weight: 600 !default;
+
+$btn-h-sm: 30px !default;
+$btn-h-md: 36px !default;
+$btn-h-lg: 42px !default;
+
+$btn-px-sm: 10px !default;
+$btn-px-md: 14px !default;
+$btn-px-lg: 18px !default;
+
+$btn-gap: 8px !default;
+
 $colors: (
   primary: $primary,
   primary-light: $primary-light,
@@ -67,3 +80,4 @@ $colors: (
   warning: map-get($states, warning),
   info: map-get($states, info)
 );
+

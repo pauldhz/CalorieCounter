@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+    <app-search-bar class="mg-2" (search)="onSearch($event)"></app-search-bar>
 
     <div class="food-rows-container">
       @for (food of foodsFiltered(); track food.name) {
