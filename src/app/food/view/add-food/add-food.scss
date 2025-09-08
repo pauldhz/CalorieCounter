@@ -8,8 +8,10 @@
 
 .specific-amount {
   margin-left: 10px;
+  height: 100%;
+  vertical-align: middle;
+  max-width: 80px;
   font-size: 12px;
-  width: 30px;
 }
 
 .unit {
@@ -18,4 +20,5 @@
 
 .specific-amount-button {
   font-size: 12px;
+  white-space: nowrap;
 }

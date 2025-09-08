@@ -67,12 +67,12 @@ export class FoodView {
     this.store.dispatch(FoodsActions.addFood({
       food: {
         name: this.manualName.value as string,
-        protein: this.manualProteins.value as number,
-        carbs: this.manualCarbs.value as number,
-        fat: this.manualFat.value as number,
-        calories: this.manualCalories.value as number,
+        protein: this.manualProteins.value as number || 0,
+        carbs: this.manualCarbs.value as number || 0,
+        fat: this.manualFat.value as number || 0,
+        calories: this.manualCalories.value as number || 0,
         unit: "g",
-        quantity: this.manualAmount.value as number,
+        quantity: this.manualAmount.value as number || 0,
         id: ""
       }
     }));

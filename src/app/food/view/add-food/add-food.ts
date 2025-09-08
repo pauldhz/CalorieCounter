@@ -20,7 +20,7 @@ export class AddFood {
 
   food = input<Food>();
 
-  amount = new FormControl(0);
+  amount = new FormControl();
 
   addFood(food: Food | undefined) {
     if (food)

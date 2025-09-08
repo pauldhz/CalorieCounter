@@ -2,8 +2,7 @@
   <div>
     <button type="button"
             class="specific-amount-button mobile-only button"
-            (click)="manualFoodInputModalOpen.set(true)">ajouter mesure
-      manuelle
+            (click)="manualFoodInputModalOpen.set(true)">ajouter mesure manuelle
     </button>
     <div class="desktop-only">
       <ng-container *ngTemplateOutlet="manualInput"></ng-container>
@@ -63,10 +62,9 @@
              type="number" placeholder="calories"/>
     </div>
     <div style="display: flex; flex-direction: row; gap: 4px;">
-      <input id="amount" type="number" [formControl]="manualAmount"
+      <input placeholder="montant (g)" id="amount" type="number" [formControl]="manualAmount"
              class="no-spinners specific-amount input">
-      <input type="text" disabled value="g" class="unit input"/>
-      <button type="button" (click)="addManualFood()" class="button">ajouter mesure
+      <button type="button" (click)="addManualFood()" class="add-manual-button button">ajouter mesure
         manuelle
       </button>
     </div>
