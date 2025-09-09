@@ -1,7 +1,7 @@
 <div class="add-food-container">
   <button class="button specific-amount-button" type="button" (click)="addFood(food())">{{ food()?.quantity + '' + food()?.unit }}</button>
   <div style="display: flex; gap: 4px;">
-    <input [id]="'manual-amount-' + food()?.name" [placeholder]="'Montant (' + food()?.unit + ')' " type="number" [formControl]="amount" class="no-spinners specific-amount">
+    <input [id]="'manual-amount-' + food()?.name" [placeholder]="'qt (' + food()?.unit + ')' " type="number" [formControl]="amount" class="no-spinners specific-amount">
 
     <button type="button" (click)="addSpecificAmount(food())" class="specific-amount-button button">ajouter mesure</button>
   </div>
