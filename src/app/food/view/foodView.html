@@ -31,17 +31,16 @@
     </div>
   </div>
   <div class="desktop-only preview flex-column">
-    <h2>Preview</h2>
     <app-food-preview [foods]="selectedFoods()"
                       (removeAll)="clearPreview()"
                       (foodRemoved)="onRemoveFood($event)"></app-food-preview>
   </div>
 </div>
 
-<app-bottom-preview [display]="true" class="mobile-only">
+<app-bottom-preview [display]="true" class="mobile-only" [isCollapsed]="previewCollapsed()" (togglePreview)="onTogglePreview()">
   <div class="preview">
-    <h2>Preview</h2>
     <app-food-preview [foods]="selectedFoods()"
+                      [collapsed]="previewCollapsed()"
                       [mobileStyle]="true"
                       (removeAll)="clearPreview()"
                       (foodRemoved)="onRemoveFood($event)"></app-food-preview>

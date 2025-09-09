@@ -1,5 +1,10 @@
 @if (display()) {
-  <div class="preview-container bg-white">
-      <ng-content></ng-content>
+  <div class="preview-container bg-white" [ngClass]="{'collapsed': isCollapsed()}">
+    <button class="preview-toggle" (click)="toggle()" aria-label="Réduire/Agrandir le contenu">
+      <svg class="chevron-icon" [class.collapsed]="isCollapsed()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9l6 6 6-6" stroke="#616161" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <ng-content></ng-content>
   </div>
 }

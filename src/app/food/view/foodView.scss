@@ -73,7 +73,6 @@
   .preview {
     position: relative;
     bottom: 0;
-    padding: 12px 0;
   }
   .food-rows-container {
     display: flex;
@@ -83,6 +82,8 @@
     width: 98vw;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
   .food-rows-container {
     padding-top: 8px;

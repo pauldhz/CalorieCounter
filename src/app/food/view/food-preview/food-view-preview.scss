@@ -7,8 +7,10 @@
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
-  max-height: 15vh;
-  overflow: scroll;
+  max-height: 15dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 .flex-row {

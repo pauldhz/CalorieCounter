@@ -49,9 +49,15 @@ export class FoodView {
   mobileFoodInputModalOpen = signal(false);
   manualFoodInputModalOpen = signal(false);
 
+  previewCollapsed = signal(true);
+
   rowDimensions: RowDimension = {
     macroW: 80,
     nameW: 230
+  }
+
+  onTogglePreview() {
+    this.previewCollapsed.set(!this.previewCollapsed());
   }
 
   onFoodRowClicked(food: Food) {
