@@ -1,7 +1,7 @@
 <div class="add-food-container">
   <button class="button specific-amount-button" type="button" (click)="addFood(food())">{{ food()?.quantity + '' + food()?.unit }}</button>
   <div style="display: flex; gap: 4px; align-items: center;">
-    <input [id]="'manual-amount-' + food()?.name" [placeholder]="'qt (' + food()?.unit + ')' " type="number" [formControl]="amount" class="no-spinners specific-amount">
+    <input [id]="'manual-amount-' + food()?.name" [placeholder]="'qt (' + food()?.unit + ')' " type="number" [formControl]="amount" class="input no-spinners specific-amount">
 
     <button type="button" (click)="addSpecificAmount(food())" class="specific-amount-button button" aria-label="Ajouter cette quantité">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -7,17 +7,22 @@
 @use 'theme/utilities/widths';
 @use 'theme/variables' as vars;
 
+// Reset CSS basique
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background: vars.$white-pale;
   color: vars.$grey-darker;
   font-family: 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -26,6 +31,8 @@ h1 {
 
 h2 {
   font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .no-spinners::-webkit-outer-spin-button,
@@ -52,7 +59,6 @@ h2 {
   align-items: start; /* centre verticalement */
   min-height: 100vh; /* prend toute la hauteur de la fenêtre */
   width: 100vw;
-  background-color: #fbfbff; /* exemple */
 }
 
 header {

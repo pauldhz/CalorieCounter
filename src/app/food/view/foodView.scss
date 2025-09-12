@@ -1,4 +1,5 @@
 @use 'variables' as vars;
+@use "utilities/flex";
 
 .mobile-only {
   display: none;
@@ -8,24 +9,7 @@
   display: block;
 }
 
-@media (min-width: 769px) {
-
-  .manual-container {
-    flex-direction: row;
-  }
-}
-
 @media (max-width: 768px) {
-
-  .manual-container {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .manual-input-container {
-    flex-direction: column;
-    gap: 4px;
-  }
 
   .container {
     padding: 8px 0;
@@ -99,10 +83,6 @@
   display: flex;
   justify-content: flex-start;
 }
-
-.manual-input-container {
-  display: flex;
-  }
 
 .food-rows-container {
   display: flex;
