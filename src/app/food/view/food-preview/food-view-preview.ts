@@ -11,7 +11,7 @@ import {CommonModule} from '@angular/common';
 })
 export class FoodViewPreview {
 
-  collapsed = input<boolean>(false);
+  collapsed = input<boolean>(true);
   foods = input<Food[]| undefined >([]);
   mobileStyle = input<boolean>(false);
   foodPreview = computed(() => {
