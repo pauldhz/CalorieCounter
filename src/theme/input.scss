@@ -1,5 +1,83 @@
+@use 'variables' as vars;
+
+.input-group {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &.vertical {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 input {
   min-width: 20px;
   height: 24px;
   font-size: 16px;
+}
+
+.input {
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid vars.$grey-light;
+  border-radius: 8px;
+  background: vars.$white;
+  font-size: 16px; // Évite le zoom sur iOS
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:focus {
+    border-color: vars.$primary;
+    box-shadow: 0 0 0 3px rgba(vars.$primary, 0.1);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: vars.$grey-medium;
+  }
+}
+
+// Suppression des flèches des inputs number
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+  -moz-appearance: textfield;
+}
+
+.manual-container {
+  background: vars.$white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+
+  .manual-input-container {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      .input {
+        width: 100%;
+        &.macro {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.add-manual-button {
+  padding: 8px 16px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }

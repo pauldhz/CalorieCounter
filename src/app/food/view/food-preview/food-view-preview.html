@@ -1,5 +1,5 @@
 <div class="preview-container">
-  <h2>Preview</h2>
+  <h2>Mes macros</h2>
   <div [ngClass]="{'flex-row': mobileStyle()}">
     <div>Protéines : <b>{{ foodPreview().proteins | number:'1.0-1' }}</b></div>
     <div>Lipides : <b>{{ foodPreview().fat | number:'1.0-1' }}</b></div>
@@ -8,7 +8,7 @@
   </div>
   @if(collapsed()) {
     <div class="selected-elements-header">
-      <h2>Éléments sélectionnés</h2>
+      <h2>Aliments sélectionnés</h2>
       <button class="button" (click)="removeAll.emit()">Tout effacer</button>
     </div>
     <div class="foods">

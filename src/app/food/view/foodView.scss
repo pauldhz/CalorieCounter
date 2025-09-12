@@ -9,9 +9,6 @@
 }
 
 @media (min-width: 769px) {
-  .macro {
-    width: 15%;
-  }
 
   .manual-container {
     flex-direction: row;
@@ -148,12 +145,6 @@ h2 {
 
 .unit {
   width: 10px;
-}
-
-.specific-amount {
-  margin-left: 10px;
-  font-size: 12px;
-  width: 80px;
 }
 
 .food-row {

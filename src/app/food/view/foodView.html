@@ -49,22 +49,25 @@
 
 <ng-template #manualInput>
   <div class="manual-container">
-    <div class="manual-input-container">
-      <input id="name" [formControl]="manualName" class="input" type="text" placeholder="nom"/>
-      <input id="proteins" [formControl]="manualProteins" class="input no-spinners macro"
+    <div class="manual-input-container input-group">
+      <input id="name" [formControl]="manualName" class="input w-25" type="text" placeholder="nom"/>
+      <input id="proteins" [formControl]="manualProteins" class="input no-spinners w-xxs"
              type="number" placeholder="protéines"/>
-      <input id="carbs" [formControl]="manualCarbs" class="input no-spinners macro"
+      <input id="carbs" [formControl]="manualCarbs" class="input no-spinners w-xxs"
              type="number" placeholder="glucides"/>
-      <input id="fat" [formControl]="manualFat" class="input no-spinners macro"
+      <input id="fat" [formControl]="manualFat" class="input no-spinners w-xxs"
              type="number" placeholder="lipides"/>
-      <input id="calories" [formControl]="manualCalories" class="input no-spinners macro"
+      <input id="calories" [formControl]="manualCalories" class="input no-spinners w-xxs"
              type="number" placeholder="calories"/>
+      <input id="amount" [formControl]="manualAmount" class="input no-spinners w-xs"
+             type="number" placeholder="montant (g)"/>
     </div>
-    <div style="display: flex; flex-direction: row; gap: 4px;">
-      <input placeholder="montant (g)" id="amount" type="number" [formControl]="manualAmount"
-             class="no-spinners specific-amount input">
-      <button type="button" (click)="addManualFood()" class="add-manual-button button">ajouter mesure
-        manuelle
+    <div class="input-group">
+      <button type="button" (click)="addManualFood()" class="button add-manual-button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Ajouter</span>
       </button>
     </div>
   </div>

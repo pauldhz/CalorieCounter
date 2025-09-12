@@ -1,0 +1,37 @@
+@for $i from 1 through 20 {
+  $width: $i * 5;
+
+  .w-#{$width} {
+    width: unquote($width + "%") !important;
+  }
+
+  @media (max-width: 768px) {
+    .w-#{$width} {
+      width: 100% !important;
+    }
+  }
+}
+
+.w-xxs {
+  @extend .w-15;
+}
+
+.w-xs {
+  @extend .w-20;
+}
+
+.w-sm {
+  @extend .w-25;
+}
+
+.w-md {
+  @extend .w-50;
+}
+
+.w-lg {
+  @extend .w-75;
+}
+
+.w-full {
+  @extend .w-100;
+}
