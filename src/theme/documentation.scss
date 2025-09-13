@@ -1,0 +1,183 @@
+@use 'variables' as vars;
+
+// Styles globaux pour les pages documentaires
+.documentation-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+  color: vars.$grey-darker;
+
+  // Titres
+  h1 {
+    font-size: 2rem;
+    color: vars.$primary-dark;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: vars.$primary-darker;
+    margin: 2rem 0 1rem 0;
+    font-weight: 600;
+    border-left: 4px solid vars.$primary;
+    padding-left: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.75rem 0;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: vars.$grey-darker;
+    margin: 1.5rem 0 0.75rem 0;
+    font-weight: 600;
+  }
+
+  // Paragraphes
+  p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    text-align: justify;
+
+    @media (max-width: 768px) {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    // Texte en gras
+    strong {
+      color: vars.$primary-dark;
+      font-weight: 600;
+    }
+  }
+
+  // Liens
+  a {
+    color: vars.$primary;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: vars.$primary-dark;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 2px solid vars.$primary-lighter-variant;
+      outline-offset: 2px;
+    }
+  }
+
+  // Lien d'action principal (CTA)
+  .cta-link {
+    display: inline-block;
+    background: linear-gradient(135deg, vars.$primary 0%, vars.$primary-dark 100%);
+    color: vars.$white !important;
+    padding: 1rem 2rem;
+    border-radius: vars.$btn-radius;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 0 4px 15px rgba(0, 201, 121, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    max-width: 400px;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 201, 121, 0.4);
+      text-decoration: none;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      font-size: 1rem;
+      margin: 1.5rem 0;
+    }
+  }
+
+  // Listes
+  ul, ol {
+    margin: 1rem 0 1.25rem 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      &::marker {
+        color: vars.$primary;
+      }
+    }
+  }
+
+  // Citations ou encadrés
+  blockquote {
+    background: vars.$primary-lighter;
+    border-left: 4px solid vars.$primary;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    border-radius: 0 vars.$btn-radius vars.$btn-radius 0;
+  }
+
+  // Sections d'information
+  .info-section {
+    background: vars.$white;
+    border: 1px solid vars.$grey-light;
+    border-radius: vars.$btn-radius;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      margin-top: 0;
+      color: vars.$primary-dark;
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+
+    h1 {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// Classe pour centrer le contenu de façon élégante
+.documentation-container {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 80px); // Ajuster selon la hauteur du header
+  padding-top: 2rem;
+
+  @media (max-width: 768px) {
+    padding-top: 1rem;
+  }
+}
