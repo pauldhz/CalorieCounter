@@ -14,6 +14,11 @@ export const routes: Routes = [
   },
   {
     path: 'about',
+    redirectTo: '/about/',
+    component: About
+  },
+  {
+    path: 'about/',
     component: About
   }
 ];
