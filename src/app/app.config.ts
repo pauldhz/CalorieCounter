@@ -8,6 +8,7 @@ import {foodsReducer} from './food/store/preview.reducer';
 import {localStorageSyncReducer} from './app.reducer';
 import {provideStoreDevtools} from '@ngrx/store-devtools';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import {provideMarkdown} from 'ngx-markdown';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -20,6 +21,7 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient(), provideClientHydration(withEventReplay())
+    provideHttpClient(), provideClientHydration(withEventReplay()),
+    provideMarkdown()
   ],
 };

@@ -22,7 +22,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/app/assets/blog"
             ],
             "styles": [
               "src/styles.scss"
