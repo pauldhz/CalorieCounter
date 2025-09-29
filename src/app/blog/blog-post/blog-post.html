@@ -1,0 +1,9 @@
+@if (isBrowser) {
+  <div class="blog-post">
+  <markdown lineNumbers
+            [start]="5"
+            [data]="post$ | async"></markdown>
+  </div>
+} @else {
+  <div>Chargement du contenu...</div>
+}

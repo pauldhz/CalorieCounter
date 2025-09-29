@@ -34,6 +34,7 @@
     "@ngrx/effects": "^20.0.0",
     "@ngrx/store": "^20.0.0",
     "@ngrx/store-devtools": "^20.0.0",
+
     "express": "^5.1.0",
     "marked": "^16.3.0",
     "ngrx-store-localstorage": "^20.0.0",

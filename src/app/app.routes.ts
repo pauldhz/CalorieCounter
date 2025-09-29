@@ -13,13 +13,9 @@ export const routes: Routes = [
     path: 'compteur-calories',
     component: FoodView
   },
+
   {
     path: 'about',
-    redirectTo: '/about/',
-    component: About
-  },
-  {
-    path: 'about/',
     component: About
   },
   {
