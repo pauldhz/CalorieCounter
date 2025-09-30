@@ -13,7 +13,6 @@ export const routes: Routes = [
     path: 'compteur-calories',
     component: FoodView
   },
-
   {
     path: 'about',
     component: About

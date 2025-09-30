@@ -1,15 +1,16 @@
 import {Component, inject, Inject, PLATFORM_ID} from '@angular/core';
 import {AsyncPipe, isPlatformBrowser} from '@angular/common';
-import {MarkdownComponent} from 'ngx-markdown';
 import {HttpRawLoaderService} from '../../shared/service/http-raw-loader-service';
 import {map} from 'rxjs';
+import {MarkdownComponent} from "ngx-markdown";
+import matter from "gray-matter";
 
 
 @Component({
   selector: 'app-blog-post',
   imports: [
-    MarkdownComponent,
-    AsyncPipe
+    AsyncPipe,
+    MarkdownComponent
   ],
   templateUrl: './blog-post.html',
   styleUrl: './blog-post.css'
@@ -19,7 +20,7 @@ export class BlogPost {
   isBrowser: boolean;
   private httpRawLoaderService = inject(HttpRawLoaderService);
   post$ = this.httpRawLoaderService.get('app/assets/blog/2025-09-27_intro.md').pipe(map(
-    data => data
+    data => matter(data).content
   ));
 
 
