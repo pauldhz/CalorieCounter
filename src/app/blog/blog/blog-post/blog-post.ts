@@ -1,6 +1,6 @@
 import {Component, inject, Inject, PLATFORM_ID} from '@angular/core';
 import {AsyncPipe, isPlatformBrowser} from '@angular/common';
-import {HttpRawLoaderService} from '../../shared/service/http-raw-loader-service';
+import {HttpRawLoaderService} from '../../../shared/service/http-raw-loader-service';
 import {map} from 'rxjs';
 import {MarkdownComponent} from "ngx-markdown";
 import matter from "gray-matter";
