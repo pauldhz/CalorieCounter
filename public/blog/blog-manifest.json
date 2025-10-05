@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": "macro_micro_nutriment",
+      "title": "Intro à mon blog",
+      "description": "Première version du blog",
+      "tags": [
+        "angular",
+        "blog"
+      ],
+      "cover": "images/first.png",
+      "draft": true,
+      "lang": "fr",
+      "date": "2025-10-04",
+      "slug": "macro_micro_nutriment",
+      "filePath": "assets/blog/2025-10-04_macro_micro_nutriment.md",
+      "excerpt": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps !Macronutriments : glucides, protéines et lipides - Le carburant de votre corps Pourquoi c...",
+      "readingTime": 5
+    }
+  ],
+  "lastUpdated": "2025-10-05T09:31:51.307Z",
+  "totalPosts": 1
+}
