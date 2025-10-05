@@ -12,13 +12,13 @@ import {map} from 'rxjs';
     AsyncPipe
   ],
   templateUrl: './blog-post.html',
-  styleUrl: './blog-post.css'
+  styleUrl: './blog-post.scss'
 })
 export class BlogPost {
 
   isBrowser: boolean;
   private httpRawLoaderService = inject(HttpRawLoaderService);
-  post$ = this.httpRawLoaderService.get('app/assets/blog/2025-09-27_intro.md').pipe(map(
+  post$ = this.httpRawLoaderService.get('app/assets/blog/2025-10-04_macro_micro_nutriment.md').pipe(map(
     data => data
   ));
 
