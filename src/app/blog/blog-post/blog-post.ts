@@ -3,6 +3,7 @@ import {AsyncPipe, isPlatformBrowser} from '@angular/common';
 import {MarkdownComponent} from 'ngx-markdown';
 import {HttpRawLoaderService} from '../../shared/service/http-raw-loader-service';
 import {map} from 'rxjs';
+import matter from 'gray-matter';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class BlogPost {
   isBrowser: boolean;
   private httpRawLoaderService = inject(HttpRawLoaderService);
   post$ = this.httpRawLoaderService.get('app/assets/blog/2025-10-04_macro_micro_nutriment.md').pipe(map(
-    data => data
+    data => matter(data).content
   ));
 
 

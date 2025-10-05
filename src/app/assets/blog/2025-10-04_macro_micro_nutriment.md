@@ -8,7 +8,7 @@ lang: fr
 ---
 # Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps
 
-![Macronutriments : glucides, protéines et lipides - Le carburant de votre corps](/blog/nutrient-fioul.png)
+![Macronutriments : glucides, protéines et lipides - Le carburant de votre corps](/blog/images/nutrient-fioul.png)
 
 ## Pourquoi comprendre les macronutriments et les calories est essentiel pour maigrir
 
