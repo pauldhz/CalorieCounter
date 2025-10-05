@@ -1,0 +1,43 @@
+<div class="blog-home">
+  <h1>Blog</h1>
+
+  <div class="articles-grid">
+    @for (post of posts(); track post.id) {
+      <article>
+        <header>
+          <h2>
+            <a [routerLink]="['/blog', post.slug]">{{post.title}}</a>
+          </h2>
+          <div class="post-meta">
+            <time [dateTime]="post.date">{{ post.date | date:'mediumDate' }}</time>
+            <span class="reading-time">{{ post.readingTime }} min de lecture</span>
+            <span class="lang">{{ post.lang }}</span>
+          </div>
+        </header>
+
+        <div class="post-content">
+          @if (post.cover) {
+            <img [src]="post.cover" [alt]="post.title" class="post-cover">
+          }
+          <p class="post-description">{{ post.description }}</p>
+        </div>
+
+        <footer class="post-footer">
+          @if (post.tags.length > 0) {
+            <div class="tags">
+              @for (tag of post.tags; track tag) {
+                <span class="tag">{{ tag }}</span>
+              }
+            </div>
+          }
+
+          @if (post.draft) {
+            <span class="draft-badge">Brouillon</span>
+          }
+
+          <a [routerLink]="['/blog', post.slug]" class="read-more">Lire la suite →</a>
+        </footer>
+      </article>
+    }
+  </div>
+</div>

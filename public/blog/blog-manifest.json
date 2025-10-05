@@ -2,14 +2,19 @@
   "posts": [
     {
       "id": "macro_micro_nutriment",
-      "title": "Intro à mon blog",
-      "description": "Première version du blog",
+      "title": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps",
+      "description": "Découvrez comment équilibrer macronutriments, micronutriments et calories pour perdre du poids efficacement et transformer votre corps durablement.",
       "tags": [
-        "angular",
-        "blog"
+        "nutrition",
+        "macronutriments",
+        "micronutriments",
+        "calories",
+        "perte de poids",
+        "musculation",
+        "santé"
       ],
-      "cover": "images/first.png",
-      "draft": true,
+      "cover": "/blog/images/nutrient-fioul.png",
+      "draft": false,
       "lang": "fr",
       "date": "2025-10-04",
       "slug": "macro_micro_nutriment",
@@ -18,6 +23,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-05T09:31:51.307Z",
+  "lastUpdated": "2025-10-05T15:24:48.291Z",
   "totalPosts": 1
 }

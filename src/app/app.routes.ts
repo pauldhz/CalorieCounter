@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import {FoodView} from './food/view/foodView';
 import {About} from './about/about.component';
 import {BlogPost} from './blog/blog-post/blog-post';
+import {BlogHome} from './blog/blog-home/blog-home';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,10 @@ export const routes: Routes = [
   },
   {
     path: 'blog',
+    component: BlogHome
+  },
+  {
+    path: 'blog/:slug',
     component: BlogPost
   }
 ];

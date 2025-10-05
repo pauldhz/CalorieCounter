@@ -7,7 +7,16 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'blog',
-    renderMode: RenderMode.Prerender
+    renderMode: RenderMode.Client
+  },
+  {
+    path: 'blog/:slug',
+    renderMode: RenderMode.Prerender,
+    async getPrerenderParams() {
+      return [
+        {slug: 'intro-a-mon-blog'}
+      ];
+    },
   },
   {
     path: '',
