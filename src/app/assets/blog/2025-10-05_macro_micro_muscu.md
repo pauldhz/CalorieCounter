@@ -16,7 +16,7 @@ excerpt: "Les macronutriments et micronutriments sont les piliers d’une nutrit
 
 ![aliments, source d'énergie (affichés dans des piles)](/blog/images/food_boost.jpeg)
 
-Dans le monde de la **musculation** et de la **nutrition sportive**, il existe deux notions fondamentales : les **macronutriments** et les **micronutriments**. Ces éléments sont les véritables piliers de votre progression, que vous cherchiez à **perdre du poids**, **prendre du muscle**, ou simplement à **optimiser vos performances**. Trop souvent, les sportifs se concentrent uniquement sur la quantité de calories, sans comprendre la **qualité nutritionnelle** de ce qu’ils consomment. Pourtant, la différence entre une alimentation équilibrée et une alimentation efficace réside justement dans la maîtrise de ces nutriments.
+Dans le monde de la **musculation** et de la **nutrition sportive**, il existe deux notions fondamentales : les **macronutriments** et les **micronutriments**. Ces éléments sont les véritables piliers de votre progression, que vous cherchiez à **perdre du poids**, **prendre du muscle**, ou simplement à **optimiser vos performances**. Trop souvent, les sportifs se concentrent uniquement sur la quantité de calories, sans comprendre la **qualité nutritionnelle** de ce qu’ils consomment. Pourtant, une alimentation efficace réside dans la maîtrise de ces nutriments.
 
 Les **macronutriments** sont les carburants de votre corps : protéines, glucides et lipides. Les **micronutriments**, eux, sont les régulateurs invisibles qui assurent le bon fonctionnement de votre métabolisme : vitamines, minéraux, oligo-éléments. Ensemble, ils forment un duo indissociable pour progresser sainement. Cet article vous guidera pas à pas pour comprendre leur rôle, leur importance, et surtout, comment les équilibrer intelligemment selon vos objectifs en musculation.
 
@@ -26,7 +26,7 @@ Les **macronutriments** sont les carburants de votre corps : protéines, glucide
 
 Les **macronutriments** constituent la base énergétique de votre organisme. Ils représentent la “carburant box” de votre moteur métabolique. Sans eux, impossible de bâtir du muscle ou de récupérer efficacement après un entraînement.
 
-### Les protéines : les briques musculaires
+### Les protéines : la construction musculaire
 Les **protéines** sont composées d’acides aminés, essentiels à la **construction musculaire** et à la réparation des tissus après l’effort.
 - Chaque gramme de protéine apporte **4 kcal**.
 - Pour un sportif, il est recommandé de consommer **1,6 à 2,2 g de protéines par kilo de poids corporel**.
@@ -46,7 +46,7 @@ Préférez :
 Une étude publiée dans le *Journal of Strength and Conditioning Research* a montré que des apports suffisants en glucides améliorent la performance musculaire de **15 à 25 %** sur des cycles d’entraînement de 6 semaines.
 
 ### Les lipides : un allié souvent négligé
-Les **lipides** ne sont pas vos ennemis. Ils participent à la **production d’hormones** comme la testostérone, essentielle à la prise de muscle.
+Les **lipides** participent à la **production d’hormones** comme la testostérone, essentielle à la prise de muscle.
 - Chaque gramme de lipide apporte **9 kcal**.
 - Objectif : environ **1 g de lipide par kilo de poids corporel**.
 

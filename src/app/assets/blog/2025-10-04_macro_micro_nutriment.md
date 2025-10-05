@@ -11,6 +11,7 @@ date: "2025-10-04"
 filename: "2025-10-04_macro_micro_nutriment.md"
 excerpt: "Si vous cherchez à perdre du poids, prendre du muscle ou retrouver un équilibre alimentaire, comprendre les macronutriments, les micronutriments et les calories est essentiel. Toutes les calories ne se valent pas."
 ---
+
 # Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps
 
 ![Aliments en tant que distributeurs de carburant (station essence)](/blog/images/nutrient-fioul.jpeg)
@@ -18,7 +19,7 @@ excerpt: "Si vous cherchez à perdre du poids, prendre du muscle ou retrouver un
 ## Pourquoi comprendre les macronutriments et les calories est essentiel pour maigrir
 
 Si vous cherchez à **perdre du poids**, **prendre du muscle** ou simplement **retrouver un équilibre alimentaire**, comprendre les **macronutriments**, les **micronutriments** et les **calories** est une étape incontournable.  
-Beaucoup de personnes se concentrent uniquement les calories. En réalité, toutes les calories ne se valent pas. Ce que vous mangez influence directement votre métabolisme, votre énergie et vos résultats physiques.
+Beaucoup de personnes se concentrent uniquement sur les calories. En réalité, toutes les calories ne se valent pas. Ce que vous mangez influence directement votre métabolisme, votre énergie et vos résultats physiques.
 
 Les **macronutriments** — protéines, lipides et glucides — fournissent l’énergie nécessaire au fonctionnement de votre corps. Les **micronutriments** — vitamines et minéraux — jouent un rôle de régulation et de soutien métabolique. Ensemble, ils déterminent si votre corps stocke la graisse ou la brûle.
 
@@ -30,14 +31,14 @@ Cet article vous aidera à comprendre comment ajuster vos apports en **macronutr
 
 Les **macronutriments** sont les trois piliers de votre alimentation : **protéines**, **glucides** et **lipides**. Chacun a une fonction spécifique et un impact différent sur la **perte de poids** ou la **prise de muscle**.
 
-### Les protéines : le bâtisseur musculaire
+### Les protéines : la construction musculaire
 
 Les **protéines** sont indispensables à la **construction musculaire** et à la **satiété**. En période de perte de poids, elles permettent de préserver la masse musculaire tout en favorisant la combustion des graisses.
 
 - **Sources** : poulet, Oeufs, poisson, tofu, légumineuses...
 - **Exemple** : une personne de 70 kg souhaitant maigrir devrait consommer environ **1,6 à 2 g de protéines par kilo**, soit environ **120 à 140 g/jour**.
 
-### Les glucides : l’énergie du mouvement
+### Les glucides : l’énergie
 
 Les **glucides** alimentent vos muscles et votre cerveau. Les supprimer totalement ralentit le métabolisme. Privilégiez les glucides complexes (riz complet, flocons d’avoine, patate douce) plutôt que les sucres rapides.
 
@@ -58,7 +59,6 @@ Les **lipides** quant à eux participent à la production hormonale et à l’ab
 | Glucides | Énergie | 4 | Riz complet, flocons d’avoine, ... |
 | Lipides | Hormones, absorption des vitamines | 9 | Avocat, noix, ...                  |
 
----
 
 ## Les micronutriments – Les invisibles indispensables
 
