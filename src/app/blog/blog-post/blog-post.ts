@@ -2,8 +2,10 @@ import {Component, inject, Inject, PLATFORM_ID} from '@angular/core';
 import {AsyncPipe, isPlatformBrowser} from '@angular/common';
 import {MarkdownComponent} from 'ngx-markdown';
 import {HttpRawLoaderService} from '../../shared/service/http-raw-loader-service';
-import {map} from 'rxjs';
+import {map, switchMap, filter} from 'rxjs';
 import matter from 'gray-matter';
+import {ActivatedRoute} from '@angular/router';
+import {ManifestService} from '../service/manifest.service';
 
 
 @Component({
@@ -19,13 +21,22 @@ export class BlogPost {
 
   isBrowser: boolean;
   private httpRawLoaderService = inject(HttpRawLoaderService);
-  post$ = this.httpRawLoaderService.get('app/assets/blog/2025-10-04_macro_micro_nutriment.md').pipe(map(
-    data => matter(data).content
-  ));
+  private route = inject(ActivatedRoute);
+  private manifestService = inject(ManifestService);
 
+  post$ = this.route.paramMap.pipe(
+    map(params => params.get('slug')),
+    filter(slug => !!slug),
+    switchMap(slug => this.manifestService.getPostBySlug(slug!)),
+    filter(post => !!post),
+    switchMap(post =>
+      this.httpRawLoaderService.get("app/assets/blog/" + post!.filename).pipe(
+        map(data => matter(data).content)
+      )
+    )
+  );
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object,
-  ) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.isBrowser = isPlatformBrowser(this.platformId);
   }
 

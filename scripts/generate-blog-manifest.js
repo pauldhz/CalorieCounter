@@ -119,7 +119,7 @@ class BlogManifestGenerator {
       lang: metadata.lang || 'fr',
       date,
       slug,
-      filePath: `assets/${relativePath}`,
+      filename: fileName,
       excerpt,
       readingTime
     };

@@ -1,6 +1,31 @@
 {
   "posts": [
     {
+      "id": "macro_micro_muscu",
+      "title": "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation",
+      "description": "Apprenez à équilibrer macronutriments et micronutriments pour booster vos performances, favoriser la prise de muscle et améliorer votre nutrition sportive au quotidien.",
+      "tags": [
+        "macronutriments",
+        "micronutriments",
+        "nutrition musculation",
+        "prise de muscle",
+        "performance",
+        "protéines",
+        "vitamines",
+        "équilibre alimentaire",
+        "coach sportif",
+        "alimentation du sportif"
+      ],
+      "cover": "/blog/images/food_boost.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-05",
+      "slug": "macro_micro_muscu",
+      "filename": "2025-10-05_macro_micro_muscu.md",
+      "excerpt": "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation !aliments, source d'énergie (affichés dans des piles) Dans le monde de la musculation et de ...",
+      "readingTime": 6
+    },
+    {
       "id": "macro_micro_nutriment",
       "title": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps",
       "description": "Découvrez comment équilibrer macronutriments, micronutriments et calories pour perdre du poids efficacement et transformer votre corps durablement.",
@@ -13,16 +38,16 @@
         "musculation",
         "santé"
       ],
-      "cover": "/blog/images/nutrient-fioul.png",
+      "cover": "/blog/images/nutrient-fioul.jpeg",
       "draft": false,
       "lang": "fr",
       "date": "2025-10-04",
       "slug": "macro_micro_nutriment",
-      "filePath": "assets/blog/2025-10-04_macro_micro_nutriment.md",
-      "excerpt": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps !Macronutriments : glucides, protéines et lipides - Le carburant de votre corps Pourquoi c...",
+      "filename": "2025-10-04_macro_micro_nutriment.md",
+      "excerpt": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps !Aliments en tant que distributeurs de carburant (station essence) Pourquoi comprendre les...",
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-05T15:24:48.291Z",
-  "totalPosts": 1
+  "lastUpdated": "2025-10-05T16:38:09.701Z",
+  "totalPosts": 2
 }

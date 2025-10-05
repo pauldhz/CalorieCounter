@@ -53,6 +53,17 @@ export class ManifestService {
   }
 
   /**
+   * Récupère un article spécifique par son slug
+   * @param slug Le slug de l'article à récupérer
+   * @returns Observable contenant l'article ou undefined si non trouvé
+   */
+  getPostBySlug(slug: string): Observable<BlogPost | undefined> {
+    return this.readManifest().pipe(
+      map(manifest => manifest.posts.find(post => post.slug === slug))
+    );
+  }
+
+  /**
    * Récupère les métadonnées du manifeste
    * @returns Observable contenant les métadonnées (lastUpdated, totalPosts)
    */

@@ -8,7 +8,7 @@ export interface BlogPost {
   lang: string;
   date: string;
   slug: string;
-  filePath: string;
+  filename: string;
   excerpt: string;
   readingTime: number;
 }
