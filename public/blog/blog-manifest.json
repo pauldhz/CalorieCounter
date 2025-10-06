@@ -1,6 +1,31 @@
 {
   "posts": [
     {
+      "id": "macro_calcul",
+      "title": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires",
+      "description": "Découvrez comment créer un déficit calorique efficace, équilibrer vos macronutriments et calculer les calories de vos repas pour transformer vos habitudes alimentaires durablement.",
+      "tags": [
+        "déficit calorique",
+        "macronutriments",
+        "calcul calories",
+        "habitudes alimentaires",
+        "perte de poids",
+        "nutrition",
+        "musculation",
+        "protéines",
+        "glucides",
+        "lipides"
+      ],
+      "cover": "/blog/images/deficit_calorique_macronutriments.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-06",
+      "slug": "macro_calcul",
+      "filename": "2025-10-06_macro_calcul.md",
+      "excerpt": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires Introduction Le déficit calorique est au cœur de toute démarche de p...",
+      "readingTime": 6
+    },
+    {
       "id": "macro_micro_muscu",
       "title": "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation",
       "description": "Apprenez à équilibrer macronutriments et micronutriments pour booster vos performances, favoriser la prise de muscle et améliorer votre nutrition sportive au quotidien.",
@@ -48,6 +73,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-05T16:56:19.607Z",
-  "totalPosts": 2
+  "lastUpdated": "2025-10-06T19:59:41.951Z",
+  "totalPosts": 3
 }
