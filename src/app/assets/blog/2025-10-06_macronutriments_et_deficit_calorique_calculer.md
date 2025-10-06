@@ -3,24 +3,32 @@ id: "deficit-calorique-macronutriments-calcul-calories-repas"
 title: "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires"
 description: "Découvrez comment créer un déficit calorique efficace, équilibrer vos macronutriments et calculer les calories de vos repas pour transformer vos habitudes alimentaires durablement."
 tags: ["déficit calorique", "macronutriments", "calcul calories", "habitudes alimentaires", "perte de poids", "nutrition", "musculation", "protéines", "glucides", "lipides"]
-cover: "/blog/images/deficit_calorique_macronutriments.jpeg"
-slug: "deficit-calorique-macronutriments-calcul-calories-repas"
+cover: "/blog/images/3-measure_food.jpeg"
+slug: "macronutriments_et_deficit_calorique_calculer"
 draft: false
 lang: "fr"
 date: "2025-10-06"
-filename: "2025-10-06_macro_calcul.md"
+filename: "2025-10-06_macronutriments_et_deficit_calorique_calculer.md"
 excerpt: "Apprenez à calculer vos calories, à équilibrer vos macronutriments et à instaurer un déficit calorique adapté à vos objectifs. Un guide complet pour perdre du poids, prendre du muscle et adopter de meilleures habitudes alimentaires."
 readingTime: 10
 ---
 
 # Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires
 
-![Mesure d'un aliment (pomme)](/blog/images/3-food_boost.jpeg)
+![Mesure d'un aliment (pomme)](/blog/images/3-measure_food.jpeg)
 
 ## Introduction
 
-Le **déficit calorique** est au cœur de toute démarche de perte de poids, de recomposition corporelle ou d’optimisation de la performance. Pourtant, beaucoup de personnes peinent à comprendre comment ajuster leurs **macronutriments** et à **calculer les calories de leurs repas** de manière efficace.  
+Le **déficit calorique** est au coeur de la perte de poids, et plus précisément la perte de gras. Beaucoup de personnes aimeraient réussir leur régime. Toutefois, la plupart du temps :
+- Le régime est trop stricte et on finit par se démotiver.
+- On veut aller trop vite pour vite voir les chiffres de la balance descendre, pourtant, ces chiffres constituent pour la majorité une perte de muscle et d'eau.
+- On mange de bons aliments, mais trop sans le savoir
+
+La solution ? Commencer par **compter ses calories et ses macronutriments**.
+
+
 Si vous êtes un **sportif débutant**, une personne cherchant à **perdre du poids** ou à **prendre du muscle**, cet article vous aidera à structurer vos **habitudes alimentaires** pour atteindre vos objectifs.  
+
 Nous allons voir ensemble comment fonctionne le déficit calorique, comment équilibrer les macronutriments (protéines, lipides, glucides), et comment calculer concrètement les calories nécessaires à votre corps. Vous découvrirez également des exemples chiffrés, des repères simples et des conseils pratiques pour transformer durablement votre alimentation sans frustration.
 
 ---
@@ -31,41 +39,16 @@ Le **déficit calorique** se produit lorsque vous consommez moins de calories qu
 En d’autres termes :  
 > Si vos dépenses énergétiques journalières sont de 2 500 kcal et que vous consommez 2 000 kcal, vous créez un déficit de 500 kcal.
 
-Sur une semaine, cela représente environ 3 500 kcal, soit l’équivalent d’environ **500 g de graisse corporelle**.  
+Sur une semaine, cela représente environ 3 500 kcal, soit l’équivalent d’environ **400 g de graisse corporelle**.  
 Mais attention, créer un déficit trop important peut ralentir le métabolisme, provoquer de la fatigue et entraîner une perte de masse musculaire.
 
-### Les types de déficit
-- **Déficit léger (200–300 kcal/jour)** : idéal pour une perte de poids progressive et durable.  
-- **Déficit modéré (400–600 kcal/jour)** : efficace à court terme, mais à surveiller.  
-- **Déficit élevé (>700 kcal/jour)** : réservé aux cas particuliers et à court terme sous encadrement.
+Il est donc primordial de **compter ses calories**.
 
 L’objectif est de **trouver l’équilibre** entre progression visible et maintien d’une bonne énergie au quotidien.
 
 ---
 
-## Le rôle des **macronutriments** dans la gestion du déficit calorique
-
-Les **macronutriments** sont les piliers de votre alimentation : **protéines, glucides et lipides**.  
-Ils influencent directement la **composition corporelle**, les **performances sportives** et la **satiété**.
-
-### Les protéines : vos alliées pour préserver la masse musculaire
-- **4 kcal/g**
-- Sources : viandes maigres, poissons, œufs, produits laitiers, légumineuses.  
-- Objectif : 1,6 à 2,2 g/kg de poids corporel.  
-> Exemple : une personne de 70 kg devrait consommer environ **110 à 150 g de protéines** par jour.  
-Les protéines stimulent le métabolisme et réduisent la perte musculaire en période de **déficit calorique**.
-
-### Les glucides : le carburant de vos entraînements
-- **4 kcal/g**
-- Sources : riz, pâtes, fruits, légumineuses, avoine.  
-- Objectif : ajustez selon l’intensité de vos activités physiques.  
-Un sportif qui s’entraîne 4 à 5 fois par semaine peut viser **3 à 5 g/kg de poids corporel**.
-
-### Les lipides : essentiels au bon fonctionnement hormonal
-- **9 kcal/g**
-- Sources : huiles végétales, avocats, noix, poissons gras.  
-- Objectif : 0,8 à 1 g/kg de poids corporel.  
-Ne les négligez pas, car un **déficit trop fort en graisses** peut dérégler vos hormones et ralentir la perte de poids.
+Pour en savoir plus sur les macronutriments, consultez notre article sur [les macronutriments et micronutriments](blog/macronutriments_micronutriments_musculation).
 
 ---
 
@@ -116,6 +99,12 @@ Le **déficit calorique** ne doit pas être synonyme de privation. Pour qu’il 
 Remplacer un petit-déjeuner sucré (viennoiseries + jus) par :
 - 2 œufs + 40 g de flocons d’avoine + 1 fruit + café sans sucre.  
 Résultat : une meilleure satiété, 200 kcal de moins, plus d’énergie sur la matinée.
+
+### Calculer ses calories
+Nous avons développé un compteur de calories gratuit afin de simplifier le calcul des macronutriments et des calories de vos repas.
+Nous l'améliorons constamment en fonction de vos retours.
+
+<a class="cta-link" href="/compteur-calories">J'utilise le compteur de calories gratuit</a>
 
 ---
 

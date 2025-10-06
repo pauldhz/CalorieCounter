@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": "macro_calcul",
+      "id": "macronutriments_et_deficit_calorique_calculer",
       "title": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires",
       "description": "Découvrez comment créer un déficit calorique efficace, équilibrer vos macronutriments et calculer les calories de vos repas pour transformer vos habitudes alimentaires durablement.",
       "tags": [
@@ -16,17 +16,17 @@
         "glucides",
         "lipides"
       ],
-      "cover": "/blog/images/deficit_calorique_macronutriments.jpeg",
+      "cover": "/blog/images/3-measure_food.jpeg",
       "draft": false,
       "lang": "fr",
       "date": "2025-10-06",
-      "slug": "macro_calcul",
-      "filename": "2025-10-06_macro_calcul.md",
-      "excerpt": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires Introduction Le déficit calorique est au cœur de toute démarche de p...",
-      "readingTime": 6
+      "slug": "macronutriments_et_deficit_calorique_calculer",
+      "filename": "2025-10-06_macronutriments_et_deficit_calorique_calculer.md",
+      "excerpt": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires !Mesure d'un aliment (pomme) Introduction Le déficit calorique est a...",
+      "readingTime": 5
     },
     {
-      "id": "macro_micro_muscu",
+      "id": "macronutriments_micronutriments_musculation",
       "title": "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation",
       "description": "Apprenez à équilibrer macronutriments et micronutriments pour booster vos performances, favoriser la prise de muscle et améliorer votre nutrition sportive au quotidien.",
       "tags": [
@@ -41,17 +41,17 @@
         "coach sportif",
         "alimentation du sportif"
       ],
-      "cover": "/blog/images/food_boost.jpeg",
+      "cover": "/blog/images/2-food_boost.jpeg",
       "draft": false,
       "lang": "fr",
       "date": "2025-10-05",
-      "slug": "macro_micro_muscu",
-      "filename": "2025-10-05_macro_micro_muscu.md",
+      "slug": "macronutriments_micronutriments_musculation",
+      "filename": "2025-10-05_macronutriments_micronutriments_musculation.md",
       "excerpt": "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation !aliments, source d'énergie (affichés dans des piles) Dans le monde de la musculation et de ...",
       "readingTime": 6
     },
     {
-      "id": "macro_micro_nutriment",
+      "id": "macronutriments_micronutriment",
       "title": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps",
       "description": "Découvrez comment équilibrer macronutriments, micronutriments et calories pour perdre du poids efficacement et transformer votre corps durablement.",
       "tags": [
@@ -63,16 +63,16 @@
         "musculation",
         "santé"
       ],
-      "cover": "/blog/images/nutrient-fioul.jpeg",
+      "cover": "/blog/images/1-nutrient-fioul.jpeg",
       "draft": false,
       "lang": "fr",
       "date": "2025-10-04",
-      "slug": "macro_micro_nutriment",
-      "filename": "2025-10-04_macro_micro_nutriment.md",
+      "slug": "macronutriments_micronutriment",
+      "filename": "2025-10-04_macronutriments_micronutriment.md",
       "excerpt": "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps !Aliments en tant que distributeurs de carburant (station essence) Pourquoi comprendre les...",
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-06T19:59:41.951Z",
+  "lastUpdated": "2025-10-06T20:47:37.371Z",
   "totalPosts": 3
 }
