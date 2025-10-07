@@ -2,7 +2,7 @@
 id: "deficit-calorique-macronutriments-calcul-calories-repas"
 title: "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires"
 description: "Découvrez comment créer un déficit calorique efficace, équilibrer vos macronutriments et calculer les calories de vos repas pour transformer vos habitudes alimentaires durablement."
-tags: ["déficit calorique", "macronutriments", "calcul calories", "habitudes alimentaires", "perte de poids", "nutrition", "musculation", "protéines", "glucides", "lipides"]
+tags: ["déficit calorique", "macronutriments", "calcul calories", "habitudes alimentaires", "perte de poids", "nutrition"]
 cover: "/blog/images/3-measure_food.jpeg"
 slug: "macronutriments_et_deficit_calorique_calculer"
 draft: false
@@ -48,7 +48,7 @@ L’objectif est de **trouver l’équilibre** entre progression visible et main
 
 ---
 
-Pour en savoir plus sur les macronutriments, consultez notre article sur [les macronutriments et micronutriments](blog/macronutriments_micronutriments_musculation).
+Pour en savoir plus sur les macronutriments, consultez notre article sur [les macronutriments et micronutriments](blog/macronutriments_micronutriment).
 
 ---
 

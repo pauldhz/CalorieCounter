@@ -1,6 +1,47 @@
 {
   "posts": [
     {
+      "id": "besoin-calorique-calcul-repas-transformation-physique",
+      "title": "Besoin calorique, calcul des repas et progression : maîtrisez les chiffres pour une transformation physique efficace",
+      "description": "Apprenez à calculer vos besoins caloriques et à structurer vos repas pour transformer votre corps durablement. Une méthode claire et chiffrée pour la perte de poids, la prise de muscle et l’amélioration des performances.",
+      "tags": [
+        "calcul calories",
+        "transformation physique",
+        "nutrition",
+        "perte de poids",
+        "prise de muscle"
+      ],
+      "cover": "/blog/images/4-progression.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-07",
+      "slug": "besoin-calorique-calcul-repas-transformation-physique",
+      "filename": "2025-10-07_besoin-calorique-calcul-repas-transformation-physique.md",
+      "excerpt": "Besoin calorique, calcul des repas et progression : maîtrisez les chiffres pour une transformation physique efficace !Courbe de progression Introduction La transformation physique ne dépend pas unique...",
+      "readingTime": 5
+    },
+    {
+      "id": "calories-par-jour-seche-musculaire-guide-coach",
+      "title": "Combien de calories par jour pour réussir sa sèche musculaire : le guide complet du coach",
+      "description": "Découvrez combien de calories consommer chaque jour pour réussir votre sèche musculaire. Un guide complet pour préserver votre masse musculaire tout en éliminant la graisse, avec des exemples concrets et des conseils de coach.",
+      "tags": [
+        "sèche musculaire",
+        "calories",
+        "calcul calories",
+        "perte de gras",
+        "nutrition",
+        "déficit calorique"
+      ],
+      "cover": "/blog/images/5-glacon.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-07",
+      "slug": "calories-par-jour-seche-musculaire-guide-coach",
+      "filename": "2025-10-07_calories-par-jour-seche-musculaire-guide-coach.md",
+      "excerpt": "Combien de calories par jour pour réussir sa sèche musculaire : le guide complet du coach !Courbe de progression Introduction La sèche musculaire est une étape cruciale pour beaucoup de sportifs : ell...",
+      "readingTime": 6
+    },
+    {
       "id": "macronutriments_et_deficit_calorique_calculer",
       "title": "Déficit calorique et macronutriments : comment calculer les calories de vos repas pour adopter de meilleures habitudes alimentaires",
       "description": "Découvrez comment créer un déficit calorique efficace, équilibrer vos macronutriments et calculer les calories de vos repas pour transformer vos habitudes alimentaires durablement.",
@@ -10,11 +51,7 @@
         "calcul calories",
         "habitudes alimentaires",
         "perte de poids",
-        "nutrition",
-        "musculation",
-        "protéines",
-        "glucides",
-        "lipides"
+        "nutrition"
       ],
       "cover": "/blog/images/3-measure_food.jpeg",
       "draft": false,
@@ -37,9 +74,7 @@
         "performance",
         "protéines",
         "vitamines",
-        "équilibre alimentaire",
-        "coach sportif",
-        "alimentation du sportif"
+        "équilibre alimentaire"
       ],
       "cover": "/blog/images/2-food_boost.jpeg",
       "draft": false,
@@ -73,6 +108,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-06T20:47:37.371Z",
-  "totalPosts": 3
+  "lastUpdated": "2025-10-07T21:13:39.665Z",
+  "totalPosts": 5
 }
