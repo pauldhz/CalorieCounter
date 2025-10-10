@@ -1,6 +1,30 @@
 {
   "posts": [
     {
+      "id": "difficulte-prise-de-masse-besoin-calorique",
+      "title": "Difficulté à prendre du muscle : ajustez votre besoin calorique pour une prise de masse efficace",
+      "description": "Vous avez du mal à prendre du muscle ? Découvrez comment ajuster votre besoin calorique pour réussir votre prise de masse. Un guide complet pour comprendre, calculer et adapter vos apports afin de stimuler votre croissance musculaire.",
+      "tags": [
+        "prise de masse",
+        "ectomorphe",
+        "difficulté à prendre du muscle",
+        "besoin calorique",
+        "calcul calories",
+        "prise de poids",
+        "musculation",
+        "nutrition sportive",
+        "surplus calorique"
+      ],
+      "cover": "/blog/images/6-ectomorphe.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-08",
+      "slug": "difficulte-prise-de-masse-besoin-calorique",
+      "filename": "2025-10-08_difficulte-prise-de-masse-besoin-calorique.md",
+      "excerpt": "Difficulté à prendre du muscle : ajustez votre besoin calorique pour une prise de masse efficace !Profils ectomorphe, mésomorphe et endomorphe Introduction Vous avez du mal à prendre du muscle malgré ...",
+      "readingTime": 6
+    },
+    {
       "id": "besoin-calorique-calcul-repas-transformation-physique",
       "title": "Besoin calorique, calcul des repas et progression : maîtrisez les chiffres pour une transformation physique efficace",
       "description": "Apprenez à calculer vos besoins caloriques et à structurer vos repas pour transformer votre corps durablement. Une méthode claire et chiffrée pour la perte de poids, la prise de muscle et l’amélioration des performances.",
@@ -108,6 +132,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-07T21:13:39.665Z",
-  "totalPosts": 5
+  "lastUpdated": "2025-10-08T20:50:54.800Z",
+  "totalPosts": 6
 }
