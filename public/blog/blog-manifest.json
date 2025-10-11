@@ -1,6 +1,53 @@
 {
   "posts": [
     {
+      "id": "perdre-graisse-abdominale-calcul-calories",
+      "title": "Perdre la graisse abdominale : pourquoi c’est difficile et pourquoi le calcul des calories fait la différence",
+      "description": "Découvrez pourquoi la graisse abdominale est la plus difficile à éliminer, et comment le calcul précis de vos calories peut enfin vous aider à perdre du ventre durablement sans frustration.",
+      "tags": [
+        "perte de graisse abdominale",
+        "calcul calories",
+        "motivation perte de poids",
+        "déficit calorique",
+        "nutrition",
+        "sport",
+        "perte de poids durable",
+        "alimentation équilibrée"
+      ],
+      "cover": "/blog/images/8-abdominaux.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-11",
+      "slug": "perdre-graisse-abdominale-calcul-calories",
+      "filename": "2025-10-11_perdre-graisse-abdominale-calcul-calories.md",
+      "excerpt": "Perdre la graisse abdominale : pourquoi c’est difficile et pourquoi le calcul des calories fait la différence !Abdominaux Introduction La perte de graisse abdominale est probablement l’un des objectif...",
+      "readingTime": 6
+    },
+    {
+      "id": "petit_dejeuner_proteine_macronutriments",
+      "title": "Comment préparer un petit déjeuner riche en protéines pour atteindre vos objectifs en terme de macronutriments",
+      "description": "Découvrez comment composer un petit déjeuner riche en protéines et équilibré en macronutriments pour soutenir vos objectifs de perte de poids, de prise de muscle ou de performance sportive.",
+      "tags": [
+        "petit déjeuner",
+        "recettes riches en protéines",
+        "macronutriments",
+        "nutrition sportive",
+        "prise de muscle",
+        "perte de poids",
+        "protéines",
+        "glucides",
+        "lipides"
+      ],
+      "cover": "/blog/images/7-petit-dejeuner-proteine.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-10",
+      "slug": "petit_dejeuner_proteine_macronutriments",
+      "filename": "2025-10-10_petit_dejeuner_proteine_macronutriments.md",
+      "excerpt": "Comment préparer un petit déjeuner riche en protéines pour atteindre vos objectifs en terme de macronutriments !Petit déjeuner (oeuf et shaker) Introduction Le petit déjeuner est souvent qualifié de r...",
+      "readingTime": 6
+    },
+    {
       "id": "difficulte-prise-de-masse-besoin-calorique",
       "title": "Difficulté à prendre du muscle : ajustez votre besoin calorique pour une prise de masse efficace",
       "description": "Vous avez du mal à prendre du muscle ? Découvrez comment ajuster votre besoin calorique pour réussir votre prise de masse. Un guide complet pour comprendre, calculer et adapter vos apports afin de stimuler votre croissance musculaire.",
@@ -132,6 +179,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-08T20:50:54.800Z",
-  "totalPosts": 6
+  "lastUpdated": "2025-10-11T09:43:35.466Z",
+  "totalPosts": 8
 }
