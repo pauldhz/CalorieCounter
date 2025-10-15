@@ -1,6 +1,75 @@
 {
   "posts": [
     {
+      "id": "perdre-poids-alimentation-sportive",
+      "title": "Perdre du poids grâce à une alimentation sportive adaptée : conseils et erreurs à éviter",
+      "description": "Découvrez comment adapter votre alimentation sportive pour perdre du poids efficacement sans sacrifier vos performances. Conseils de coach, astuces pratiques et erreurs à éviter pour des résultats durables.",
+      "tags": [
+        "alimentation sportive",
+        "perte de poids",
+        "nutrition",
+        "déficit calorique",
+        "musculation",
+        "santé",
+        "macronutriments",
+        "habitudes alimentaires"
+      ],
+      "cover": "/blog/images/alimentation_sportive_perte_poids.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-15",
+      "slug": "perdre-poids-alimentation-sportive",
+      "filename": "2025-10-15_perdre-poids-alimentation-sportive.md",
+      "excerpt": "Perdre du poids grâce à une alimentation sportive adaptée : conseils et erreurs à éviter !Sac de sport Introduction La perte de poids ne dépend pas seulement du sport, mais surtout d’une alimentation ...",
+      "readingTime": 6
+    },
+    {
+      "id": "fibres-et-calories-comprendre-alimentation",
+      "title": "Fibres et calories : comprendre leur interaction pour mieux contrôler votre alimentation",
+      "description": "Découvrez comment les fibres alimentaires influencent les calories des aliments, la satiété et la gestion du poids. Un guide complet pour mieux équilibrer votre alimentation et atteindre vos objectifs sportifs.",
+      "tags": [
+        "fibres alimentaires",
+        "calories des aliments",
+        "nutrition",
+        "perte de poids",
+        "satiété",
+        "alimentation équilibrée",
+        "prise de muscle",
+        "digestion"
+      ],
+      "cover": "/blog/images/11-fibres.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-13",
+      "slug": "fibres-et-calories-comprendre-alimentation",
+      "filename": "2025-10-13_fibres-et-calories-comprendre-alimentation.md",
+      "excerpt": "Fibres et calories : comprendre leur interaction pour mieux contrôler votre alimentation !Aliments sources de fibres Introduction Vous avez probablement déjà entendu dire que les fibres alimentaires é...",
+      "readingTime": 6
+    },
+    {
+      "id": "astuces_compter_ses_calories",
+      "title": "Compter ses calories : 10 astuces pour y parvenir facilement",
+      "description": "Découvrez 10 astuces simples et efficaces pour apprendre à compter vos calories sans frustration et atteindre vos objectifs de perte de poids ou de prise de muscle durablement.",
+      "tags": [
+        "compter ses calories",
+        "astuces nutrition",
+        "déficit calorique",
+        "perte de poids",
+        "prise de muscle",
+        "calcul calories",
+        "nutrition",
+        "habitudes alimentaires"
+      ],
+      "cover": "/blog/images/9-beans.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-11",
+      "slug": "astuces_compter_ses_calories",
+      "filename": "2025-10-11_astuces_compter_ses_calories.md",
+      "excerpt": "Compter ses calories : 10 astuces pour y parvenir facilement !Haricots Introduction Compter ses calories est l’une des méthodes les plus efficaces pour perdre du poids, prendre du muscle ou simplement...",
+      "readingTime": 6
+    },
+    {
       "id": "perdre-graisse-abdominale-calcul-calories",
       "title": "Perdre la graisse abdominale : pourquoi c’est difficile et pourquoi le calcul des calories fait la différence",
       "description": "Découvrez pourquoi la graisse abdominale est la plus difficile à éliminer, et comment le calcul précis de vos calories peut enfin vous aider à perdre du ventre durablement sans frustration.",
@@ -21,6 +90,30 @@
       "slug": "perdre-graisse-abdominale-calcul-calories",
       "filename": "2025-10-11_perdre-graisse-abdominale-calcul-calories.md",
       "excerpt": "Perdre la graisse abdominale : pourquoi c’est difficile et pourquoi le calcul des calories fait la différence !Abdominaux Introduction La perte de graisse abdominale est probablement l’un des objectif...",
+      "readingTime": 6
+    },
+    {
+      "id": "top-10-superaliments-alimentation-sportive",
+      "title": "Le top 10 des superaliments pour une alimentation sportive équilibrée et durable",
+      "description": "Découvrez les 10 superaliments essentiels pour une alimentation sportive équilibrée, naturelle et durable. Boostez vos performances, votre récupération et votre santé à long terme.",
+      "tags": [
+        "superaliments",
+        "alimentation sportive",
+        "santé",
+        "nutrition",
+        "performances",
+        "prise de muscle",
+        "perte de poids",
+        "micronutriments",
+        "énergie durable"
+      ],
+      "cover": "/blog/images/10-brocolis-muscle.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-11",
+      "slug": "top-10-superaliments-alimentation-sportive",
+      "filename": "2025-10-11_top-10-superaliments-alimentation-sportive.md",
+      "excerpt": "Le top 10 des superaliments pour une alimentation sportive équilibrée et durable !Brocolis musclé Introduction Les superaliments ne sont pas des produits miracles, mais des aliments naturellement rich...",
       "readingTime": 6
     },
     {
@@ -179,6 +272,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-11T09:43:35.466Z",
-  "totalPosts": 8
+  "lastUpdated": "2025-10-15T20:30:46.146Z",
+  "totalPosts": 12
 }
