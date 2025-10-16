@@ -3,7 +3,6 @@ import {FoodView} from './food/view/foodView';
 import {About} from './about/about.component';
 import {BlogPost} from './blog/blog-post/blog-post';
 import {BlogHome} from './blog/blog-home/blog-home';
-import {BlogTitleResolver} from './blog/resolvers/blog-title-resolver';
 
 export const routes: Routes = [
   {
@@ -26,11 +25,11 @@ export const routes: Routes = [
   {
     path: 'blog',
     component: BlogHome,
-    title: 'Blog de compter-mes-calories.fr : astuces et conseils nutrition'
+    title: 'Blog d\'astuces sur la nutrition et la musculation'
   },
   {
     path: 'blog/:slug',
     component: BlogPost,
-    title: BlogTitleResolver
+    title: 'Article - Blog nutrition et musculation'
   }
 ];

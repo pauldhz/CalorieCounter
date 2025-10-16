@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://compter-mes-calories.fr/sitemap.xml
+
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+Crawl-delay: 1
