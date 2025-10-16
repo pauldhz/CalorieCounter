@@ -1,8 +1,10 @@
 <div class="blog-home">
   <h1>Blog d'astuces sur la nutrition et la musculation</h1>
 
+  <app-search-bar [placeholder]="'Rechercher un article de blog'" class="mg-2" (search)="onSearch($event)"></app-search-bar>
+
   <div class="articles-grid">
-    @for (post of posts(); track post.id) {
+    @for (post of postsFiltered(); track post.id) {
       <article>
         <header>
           <h2>
