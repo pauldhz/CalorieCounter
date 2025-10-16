@@ -3,7 +3,7 @@ id: "perdre-poids-alimentation-sportive"
 title: "Perdre du poids grâce à une alimentation sportive adaptée : conseils et erreurs à éviter"
 description: "Découvrez comment adapter votre alimentation sportive pour perdre du poids efficacement sans sacrifier vos performances. Conseils de coach, astuces pratiques et erreurs à éviter pour des résultats durables."
 tags: ["alimentation sportive", "perte de poids", "nutrition", "déficit calorique", "musculation", "santé", "macronutriments", "habitudes alimentaires"]
-cover: "/blog/images/alimentation_sportive_perte_poids.jpeg"
+cover: "/blog/images/12-sac.jpeg"
 slug: "perdre-poids-alimentation-sportive"
 draft: false
 lang: "fr"
