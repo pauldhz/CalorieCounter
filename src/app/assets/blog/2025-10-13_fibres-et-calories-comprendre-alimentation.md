@@ -2,7 +2,7 @@
 id: "fibres-et-calories-comprendre-alimentation"
 title: "Fibres et calories : comprendre leur interaction pour mieux contrôler votre alimentation"
 description: "Découvrez comment les fibres alimentaires influencent les calories des aliments, la satiété et la gestion du poids. Un guide complet pour mieux équilibrer votre alimentation et atteindre vos objectifs sportifs."
-tags: ["fibres alimentaires", "calories des aliments", "nutrition", "perte de poids", "satiété", "alimentation équilibrée", "prise de muscle", "digestion"]
+tags: ["fibres alimentaires", "calories des aliments", "nutrition", "perte de gras", "satiété", "alimentation", "prise de muscle", "digestion"]
 cover: "/blog/images/11-fibres.jpeg"
 slug: "fibres-et-calories-comprendre-alimentation"
 draft: false

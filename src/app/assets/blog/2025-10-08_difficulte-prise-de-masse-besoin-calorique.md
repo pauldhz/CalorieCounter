@@ -2,7 +2,7 @@
 id: "difficulte-prise-de-masse-besoin-calorique"
 title: "Difficulté à prendre du muscle : ajustez votre besoin calorique pour une prise de masse efficace"
 description: "Vous avez du mal à prendre du muscle ? Découvrez comment ajuster votre besoin calorique pour réussir votre prise de masse. Un guide complet pour comprendre, calculer et adapter vos apports afin de stimuler votre croissance musculaire."
-tags: ["prise de masse", "ectomorphe", "difficulté à prendre du muscle", "besoin calorique", "calcul calories", "prise de poids", "musculation", "nutrition sportive", "surplus calorique"]
+tags: ["prise de muscle", "ectomorphe", "difficulté à prendre du muscle", "besoin calorique", "calcul calories", "musculation", "nutrition sportive", "surplus calorique"]
 cover: "/blog/images/6-ectomorphe.jpeg"
 slug: "difficulte-prise-de-masse-besoin-calorique"
 draft: false

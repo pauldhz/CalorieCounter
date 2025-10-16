@@ -2,7 +2,7 @@
 id: "regime-proteine-suivre-macros"
 title: "Régime protéiné : pourquoi calculer ses macros et suivre ses protéines change tout"
 description: "Découvrez pourquoi le suivi des macros et des protéines est essentiel pour réussir votre régime protéiné. Une approche scientifique et pratique pour maigrir efficacement sans perdre de muscle."
-tags: ["régime protéiné", "suivre ses macros", "protéines", "alimentation pour maigrir", "nutrition sportive", "déficit calorique", "prise de muscle", "perte de poids"]
+tags: ["alimentation", "suivre ses macros", "protéines", "nutrition sportive", "déficit calorique", "prise de muscle", "perte de gras"]
 cover: "/blog/images/13-oeufs-peses.jpeg"
 slug: "regime-proteine-suivre-macros"
 draft: false

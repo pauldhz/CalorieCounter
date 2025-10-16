@@ -1,15 +1,15 @@
 ---
 id: "perte-graisse-abdominale-calcul-calories"
-title: "Perdre la graisse abdominale : pourquoi c’est difficile et pourquoi le calcul des calories fait la différence"
+title: "Perdre la graisse abdominale : pourquoi c'est difficile et pourquoi le calcul des calories fait la différence"
 description: "Découvrez pourquoi la graisse abdominale est la plus difficile à éliminer, et comment le calcul précis de vos calories peut enfin vous aider à perdre du ventre durablement sans frustration."
-tags: ["perte de graisse abdominale", "calcul calories", "motivation perte de poids", "déficit calorique", "nutrition", "sport", "perte de poids durable", "alimentation équilibrée"]
+tags: ["perte de gras", "calcul calories", "motivation perte de gras", "déficit calorique", "nutrition", "sport", "alimentation"]
 cover: "/blog/images/8-abdominaux.jpeg"
 slug: "perdre-graisse-abdominale-calcul-calories"
 draft: false
 lang: "fr"
 date: "2025-10-11"
 filename: "2025-10-11_perdre-graisse-abdominale-calcul-calories.md"
-excerpt: "La perte de graisse abdominale est l’un des objectifs les plus recherchés — mais aussi l’un des plus complexes. Comprenez pourquoi elle est si tenace et comment le calcul des calories peut changer votre approche et vos résultats."
+excerpt: "La perte de graisse abdominale est l'un des objectifs les plus recherchés — mais aussi l'un des plus complexes. Comprenez pourquoi elle est si tenace et comment le calcul des calories peut changer votre approche et vos résultats."
 readingTime: 10
 ---
 

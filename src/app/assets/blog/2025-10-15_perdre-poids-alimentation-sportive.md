@@ -2,7 +2,7 @@
 id: "perdre-poids-alimentation-sportive"
 title: "Perdre du poids grâce à une alimentation sportive adaptée : conseils et erreurs à éviter"
 description: "Découvrez comment adapter votre alimentation sportive pour perdre du poids efficacement sans sacrifier vos performances. Conseils de coach, astuces pratiques et erreurs à éviter pour des résultats durables."
-tags: ["alimentation sportive", "perte de poids", "nutrition", "déficit calorique", "musculation", "santé", "macronutriments", "habitudes alimentaires"]
+tags: ["alimentation", "perte de gras", "nutrition", "déficit calorique", "musculation", "santé", "macronutriments", "habitudes alimentaires"]
 cover: "/blog/images/12-sac.jpeg"
 slug: "perdre-poids-alimentation-sportive"
 draft: false
@@ -89,7 +89,7 @@ L’activité physique représente 15 à 30 % de votre dépense énergétique to
 Le reste vient de votre **métabolisme de base** et de vos **habitudes alimentaires**.  
 En clair : vous ne pouvez pas “compenser” une mauvaise alimentation avec plus de sport.
 
-> 🔗 À lire également : [**Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps**](https://compter-mes-calories.fr/blog/macronutriments_micronutriment)
+> 🔗 À lire également : [**Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps**](https://compter-mes-calories.fr/blog/macronutriments_micronutrient)
 
 ---
 
