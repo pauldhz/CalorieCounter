@@ -51,22 +51,22 @@ export class BlogHome {
 
   /**
    * Filtre les posts en fonction des catégories de tags sélectionnées
+   * Si plusieurs catégories sont sélectionnées, le post doit avoir au moins un tag de CHAQUE catégorie
    */
   private filterPostsBySelectedTags(posts: BlogPost[], selectedMainTags: string[]): BlogPost[] {
-    // Récupérer tous les tags inclus dans les catégories sélectionnées
-    const allTagsToMatch: string[] = [];
-
-    selectedMainTags.forEach(mainTag => {
+    // Pour chaque catégorie sélectionnée, récupérer ses tags
+    const categoriesWithTags = selectedMainTags.map(mainTag => {
       const category = tagCategoriesData.categorization.find(cat => cat.main === mainTag);
-      if (category) {
-        allTagsToMatch.push(...category.tags);
-      }
-    });
+      return category ? category.tags : [];
+    }).filter(tags => tags.length > 0);
 
-    // Filtrer les posts qui ont au moins un tag correspondant
-    return posts.filter(post =>
-      post.tags.some(postTag => allTagsToMatch.includes(postTag))
-    );
+    // Filtrer les posts : ils doivent avoir au moins un tag de CHAQUE catégorie sélectionnée
+    return posts.filter(post => {
+      // Pour chaque catégorie, vérifier que le post a au moins un tag de cette catégorie
+      return categoriesWithTags.every(categoryTags =>
+        post.tags.some(postTag => categoryTags.includes(postTag))
+      );
+    });
   }
 
   onSearch(text: string) {
