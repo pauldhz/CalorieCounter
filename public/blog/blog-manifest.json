@@ -1,6 +1,75 @@
 {
   "posts": [
     {
+      "id": "reequilibrage-alimentaire-regime-proteine",
+      "title": "Comment associer rééquilibrage alimentaire et régime protéiné pour transformer durablement votre corps",
+      "description": "Apprenez à combiner efficacement rééquilibrage alimentaire et régime protéiné pour perdre du poids, préserver votre masse musculaire et adopter des habitudes saines sur le long terme.",
+      "tags": [
+        "rééquilibrage alimentaire",
+        "régime protéiné",
+        "perte de poids",
+        "prise de muscle",
+        "nutrition",
+        "macronutriments",
+        "protéines",
+        "habitudes alimentaires"
+      ],
+      "cover": "/blog/images/16-balanced_food.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-19",
+      "slug": "reequilibrage-alimentaire-regime-proteine",
+      "filename": "2025-10-19_reequilibrage-alimentaire-regime-proteine.md",
+      "excerpt": "Comment associer rééquilibrage alimentaire et régime protéiné pour transformer durablement votre corps !Alimentation équilibrée Introduction Vous souhaitez perdre du poids, raffermir votre silhouette ...",
+      "readingTime": 6
+    },
+    {
+      "id": "metabolisme-calories-perdre-poids",
+      "title": "Perdre du poids sans ralentir son métabolisme : combien de calories faut-il vraiment consommer ?",
+      "description": "Découvrez comment perdre du poids efficacement sans ralentir votre métabolisme. Apprenez à calculer vos besoins caloriques, ajuster votre alimentation et préserver votre énergie pour une perte de poids durable.",
+      "tags": [
+        "métabolisme",
+        "calories",
+        "perte de poids",
+        "nutrition",
+        "déficit calorique",
+        "musculation",
+        "prise de muscle",
+        "alimentation équilibrée"
+      ],
+      "cover": "/blog/images/15-running_man.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-18",
+      "slug": "metabolisme-calories-perdre-poids",
+      "filename": "2025-10-18_metabolisme-calories-perdre-poids.md",
+      "excerpt": "Perdre du poids sans ralentir son métabolisme : combien de calories faut-il vraiment consommer ? !Homme qui court Introduction Vous faites attention à votre alimentation, vous bougez plus, et pourtant...",
+      "readingTime": 6
+    },
+    {
+      "id": "alimentation-intuitive-calcul-calories",
+      "title": "Vers une alimentation intuitive : pourquoi calculer ses calories au début est la stratégie gagnante pour maigrir durablement",
+      "description": "Découvrez pourquoi commencer par calculer vos calories est la clé pour comprendre votre alimentation, apprendre à écouter votre corps et réussir votre transition vers une alimentation intuitive durable.",
+      "tags": [
+        "alimentation intuitive",
+        "calcul calories",
+        "perte de poids",
+        "motivation",
+        "nutrition",
+        "déficit calorique",
+        "habitudes alimentaires",
+        "satiété"
+      ],
+      "cover": "/blog/images/14-no_balance.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-17",
+      "slug": "alimentation-intuitive-calcul-calories",
+      "filename": "2025-10-17_alimentation-intuitive-calcul-calories.md",
+      "excerpt": "Vers une alimentation intuitive : pourquoi calculer ses calories au début est la stratégie gagnante pour maigrir durablement !Balance barrée Introduction L’alimentation intuitive fait rêver : manger s...",
+      "readingTime": 6
+    },
+    {
       "id": "regime-proteine-suivre-macros",
       "title": "Régime protéiné : pourquoi calculer ses macros et suivre ses protéines change tout",
       "description": "Découvrez pourquoi le suivi des macros et des protéines est essentiel pour réussir votre régime protéiné. Une approche scientifique et pratique pour maigrir efficacement sans perdre de muscle.",
@@ -292,6 +361,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-16T20:46:15.062Z",
-  "totalPosts": 13
+  "lastUpdated": "2025-10-19T17:37:55.833Z",
+  "totalPosts": 16
 }

@@ -1,0 +1,10 @@
+<div class="flex gap-1 flex-wrap justify-center">
+@for (tag of displayTags(); track tag.tagName) {
+  <app-tag
+    [tagName]="tag.tagName"
+    [selected]="tag.selected"
+    (tagClicked)="onTagClick($event)"
+    class="pt-2">
+  </app-tag>
+}
+</div>
