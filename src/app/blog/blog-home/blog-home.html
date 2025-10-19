@@ -1,14 +1,15 @@
 <div class="blog-home">
   <h1>Blog d'astuces sur la nutrition et la musculation</h1>
-
-  <app-search-bar [placeholder]="'Rechercher un article de blog'" class="mg-2" (search)="onSearch($event)"></app-search-bar>
+  <app-tags-search (tagsSelected)="onTagSelected($event)" style="margin-bottom: 20px"></app-tags-search>
+  <app-search-bar [placeholder]="'Rechercher un article de blog'" class="mg-2"
+                  (search)="onSearch($event)"></app-search-bar>
 
   <div class="articles-grid">
     @for (post of postsFiltered(); track post.id) {
       <article>
         <header>
           <h2>
-            <a [routerLink]="['/blog', post.slug]">{{post.title}}</a>
+            <a [routerLink]="['/blog', post.slug]">{{ post.title }}</a>
           </h2>
           <div class="post-meta">
             <time [dateTime]="post.date">{{ post.date | date:'mediumDate' }}</time>
