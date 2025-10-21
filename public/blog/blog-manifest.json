@@ -1,6 +1,167 @@
 {
   "posts": [
     {
+      "id": "calcul-imc-suivi-calories-perte-poids",
+      "title": "Calcul de l'IMC et suivi des calories : les clés pour réussir votre perte de poids",
+      "description": "Découvrez comment utiliser le calcul de l'IMC et le suivi des calories pour atteindre vos objectifs de perte de poids. Un guide pratique et motivant pour comprendre votre corps et progresser durablement.",
+      "tags": [
+        "calcul IMC",
+        "suivi des calories",
+        "motivation perte de poids",
+        "nutrition",
+        "déficit calorique",
+        "perte de poids durable",
+        "santé",
+        "forme physique"
+      ],
+      "cover": "/blog/images/23-imc.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-26",
+      "slug": "calcul-imc-suivi-calories-perte-poids",
+      "filename": "2025-10-26_calcul-imc-suivi-calories-perte-poids.md",
+      "excerpt": "Calcul de l'IMC et suivi des calories : les clés pour réussir votre perte de poids !Calcul IMC et balance Introduction Beaucoup de personnes cherchent à perdre du poids sans savoir par où commencer. E...",
+      "readingTime": 5
+    },
+    {
+      "id": "hydratation-sante-bruler-graisses",
+      "title": "Boire plus pour brûler plus : le rôle essentiel de l’hydratation dans la perte de graisse",
+      "description": "Découvrez pourquoi l’hydratation joue un rôle clé dans la combustion des graisses et la santé globale. Conseils, chiffres et stratégies concrètes pour boire mieux et maigrir durablement.",
+      "tags": [
+        "hydratation et santé",
+        "brûler les graisses",
+        "perte de poids",
+        "nutrition",
+        "métabolisme",
+        "eau",
+        "sport",
+        "bien-être"
+      ],
+      "cover": "/blog/images/22-bottle-of-watter.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-25",
+      "slug": "hydratation-sante-bruler-graisses",
+      "filename": "2025-10-25_hydratation-sante-bruler-graisses.md",
+      "excerpt": "Boire plus pour brûler plus : le rôle essentiel de l’hydratation dans la perte de graisse !Gourde d'eau Introduction Si vous cherchez à brûler les graisses plus efficacement, il y a fort à parier que ...",
+      "readingTime": 5
+    },
+    {
+      "id": "bruler-graisses-suivi-calories",
+      "title": "Brûler les graisses sans frustration : optez pour le suivi des calories",
+      "description": "Découvrez comment le suivi des calories peut vous aider à brûler les graisses durablement, sans frustration ni privation. Une méthode efficace, claire et motivante, expliquée par un coach sportif.",
+      "tags": [
+        "suivi des calories",
+        "brûler les graisses",
+        "perte de poids",
+        "déficit calorique",
+        "nutrition sportive",
+        "motivation",
+        "habitudes alimentaires",
+        "calcul calories"
+      ],
+      "cover": "/blog/images/21-body_fat_burning.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-24",
+      "slug": "bruler-graisses-suivi-calories",
+      "filename": "2025-10-24_bruler-graisses-suivi-calories.md",
+      "excerpt": "Brûler les graisses sans frustration : optez pour le suivi des calories !Corps brûlant des graisses Introduction Brûler les graisses ne se résume pas à faire du sport ou à supprimer les féculents. C’e...",
+      "readingTime": 5
+    },
+    {
+      "id": "menus-equilibres-semaine-astuces-motivation",
+      "title": "Menus équilibrés sur la semaine : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation",
+      "description": "Apprenez à planifier des menus équilibrés sur la semaine pour maigrir, garder la motivation et atteindre vos objectifs sans frustration. Conseils de coach, astuces pratiques et exemples concrets.",
+      "tags": [
+        "menus équilibrés semaine",
+        "astuces pour maigrir",
+        "motivation perte de poids",
+        "nutrition",
+        "organisation alimentaire",
+        "alimentation équilibrée",
+        "perte de poids durable",
+        "plan nutritionnel"
+      ],
+      "cover": "/blog/images/20-batch_cooking.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-23",
+      "slug": "menus-equilibres-semaine-astuces-motivation",
+      "filename": "2025-10-23_menus-equilibres-semaine-astuces-motivation.md",
+      "excerpt": "Menus équilibrés sur la semaine !Batch cooking et préparation de repas : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation !Oeufs sur une balance Introduction Planifier se...",
+      "readingTime": 6
+    },
+    {
+      "id": "astuces-pour-maigrir-recettes-sportives-desserts-healthy",
+      "title": "Motivation, plaisir et résultats : mes astuces pour maigrir grâce à des recettes sportives et desserts sains",
+      "description": "Découvrez comment perdre du poids sans frustration grâce à des recettes sportives équilibrées, des desserts healthy et des astuces simples pour garder la motivation tout au long de votre transformation physique.",
+      "tags": [
+        "astuces pour maigrir",
+        "recettes sportives",
+        "desserts healthy",
+        "motivation perte de poids",
+        "nutrition sportive",
+        "perte de poids",
+        "plaisir alimentaire",
+        "habitudes saines"
+      ],
+      "cover": "/blog/images/19-full_of_food.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-22",
+      "slug": "astuces-pour-maigrir-recettes-sportives-desserts-healthy",
+      "filename": "2025-10-22_astuces-pour-maigrir-recettes-sportives-desserts-healthy.md",
+      "excerpt": "Motivation, plaisir et résultats : mes astuces pour maigrir grâce à des recettes sportives et desserts sains !Assiette pleine d'aliments sains Introduction Perdre du poids ne signifie pas se priver de...",
+      "readingTime": 6
+    },
+    {
+      "id": "densite-nutritionnelle-perte-de-poids",
+      "title": "Alimentation de qualité plutôt que quantité : pourquoi la densité nutritionnelle change tout dans la perte de poids",
+      "description": "Découvrez comment la densité nutritionnelle influence directement la perte de poids et la motivation. Apprenez à choisir des aliments de qualité pour transformer votre corps sans frustration ni carences.",
+      "tags": [
+        "densité nutritionnelle",
+        "perte de poids",
+        "motivation perte de poids",
+        "alimentation équilibrée",
+        "nutrition sportive",
+        "qualité alimentaire",
+        "satiété",
+        "micronutriments"
+      ],
+      "cover": "/blog/images/18-balanced_fish_quality.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-21",
+      "slug": "densite-nutritionnelle-perte-de-poids",
+      "filename": "2025-10-21_densite-nutritionnelle-perte-de-poids.md",
+      "excerpt": "Alimentation de qualité plutôt que quantité : pourquoi la densité nutritionnelle change tout dans la perte de poids !Poisson et aliments équilibrés Introduction Vous essayez de perdre du poids, mais v...",
+      "readingTime": 6
+    },
+    {
+      "id": "entrainement-regime-proteine-perte-poids",
+      "title": "Perte de poids efficace : alliez entraînement et régime protéiné pour transformer votre corps",
+      "description": "Découvrez comment combiner entraînement, régime protéiné et nutrition sportive pour accélérer votre perte de poids, préserver votre masse musculaire et améliorer vos performances.",
+      "tags": [
+        "exercices pour perdre du poids",
+        "régime protéiné",
+        "nutrition sportive",
+        "perte de poids",
+        "prise de muscle",
+        "déficit calorique",
+        "entraînement",
+        "macronutriments"
+      ],
+      "cover": "/blog/images/17-dumbell_with_shaker.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-20",
+      "slug": "entrainement-regime-proteine-perte-poids",
+      "filename": "2025-10-20_entrainement-regime-proteine-perte-poids.md",
+      "excerpt": "Perte de poids efficace : alliez entraînement et régime protéiné pour transformer votre corps !Haltère avec shaker de protéines Introduction Perdre du poids ne se résume pas à manger moins. C’est avan...",
+      "readingTime": 5
+    },
+    {
       "id": "reequilibrage-alimentaire-regime-proteine",
       "title": "Comment associer rééquilibrage alimentaire et régime protéiné pour transformer durablement votre corps",
       "description": "Apprenez à combiner efficacement rééquilibrage alimentaire et régime protéiné pour perdre du poids, préserver votre masse musculaire et adopter des habitudes saines sur le long terme.",
@@ -361,6 +522,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-19T17:37:55.833Z",
-  "totalPosts": 16
+  "lastUpdated": "2025-10-20T14:53:17.858Z",
+  "totalPosts": 23
 }
