@@ -2,7 +2,7 @@
 id: "astuces-pour-maigrir-recettes-sportives-desserts-healthy"
 title: "Motivation, plaisir et résultats : mes astuces pour maigrir grâce à des recettes sportives et desserts sains"
 description: "Découvrez comment perdre du poids sans frustration grâce à des recettes sportives équilibrées, des desserts healthy et des astuces simples pour garder la motivation tout au long de votre transformation physique."
-tags: ["astuces pour maigrir", "recettes sportives", "desserts healthy", "motivation perte de poids", "nutrition sportive", "perte de poids", "plaisir alimentaire", "habitudes saines"]
+tags: ["habitudes alimentaires", "recettes riches en protéines", "motivation perte de gras", "nutrition sportive", "perte de gras", "motivation"]
 cover: "/blog/images/19-full_of_food.jpeg"
 slug: "astuces-pour-maigrir-recettes-sportives-desserts-healthy"
 draft: false

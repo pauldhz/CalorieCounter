@@ -2,7 +2,7 @@
 id: "densite-nutritionnelle-perte-de-poids"
 title: "Alimentation de qualité plutôt que quantité : pourquoi la densité nutritionnelle change tout dans la perte de poids"
 description: "Découvrez comment la densité nutritionnelle influence directement la perte de poids et la motivation. Apprenez à choisir des aliments de qualité pour transformer votre corps sans frustration ni carences."
-tags: ["densité nutritionnelle", "perte de poids", "motivation perte de poids", "alimentation équilibrée", "nutrition sportive", "qualité alimentaire", "satiété", "micronutriments"]
+tags: ["nutrition", "perte de gras", "motivation perte de gras", "alimentation", "satiété", "micronutriments"]
 cover: "/blog/images/18-balanced_fish_quality.jpeg"
 slug: "densite-nutritionnelle-perte-de-poids"
 draft: false
