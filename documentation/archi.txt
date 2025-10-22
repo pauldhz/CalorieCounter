@@ -1,0 +1,53 @@
+@startuml
+skinparam shadowing false
+skinparam componentStyle rectangle
+title Architecture MVP – Angular sur Vercel + Supabase (EU)
+
+actor "Utilisateur\n(navigateur)" as User
+
+node "Vercel (CDN/Edge)" as Vercel {
+  [Angular App\n(SSR ou statique)] as FE
+  component "Middleware/Edge\n(personnalisation légère)" as Edge
+  component "Serverless Function\n/api/personalization" as API1
+  component "Serverless Function\n/api/events" as API2
+}
+
+cloud "Supabase (EU)" as Supa {
+  database "Postgres\nprofiles, prefs, events, targets" as PG
+  component "Auth\n(email/social)" as AUTH
+  component "Row Level Security\n(RLS)" as RLS
+}
+
+cloud "Feature flags\n(GrowthBook/Unleash)" as Flags
+cloud "CMS (optionnel)\nStrapi/Sanity/Contentful" as CMS
+
+User --> FE : HTTPS\nGET app
+FE -[hidden]--> Edge
+Edge --> FE : Variantes/headers\n(cookies, pays, segment)
+User --> FE : Interactions UI
+
+FE --> API1 : GET /api/personalization\n(X-Anonymous-Id)
+API1 --> PG : SELECT profil/targets
+API1 --> CMS : (option) contenu segmenté
+API1 --> Flags : lire flags
+API1 --> FE : json {targets, flags, nudges, suggestions}
+
+FE --> API2 : POST /api/events\n(log actions)
+API2 --> PG : INSERT event (jsonb)
+
+AUTH -[hidden]down- RLS
+PG -[hidden]down- RLS
+
+note right of Edge
+  Ex : bannière, CTA, thème,
+  redirections, geoloc
+end note
+
+note right of PG
+  Tables :
+  - profiles, prefs
+  - events (jsonb)
+  - targets
+  Sécurité : RLS
+end note
+@enduml
