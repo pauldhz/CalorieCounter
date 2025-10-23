@@ -13,11 +13,9 @@ excerpt: "Découvrez comment construire vos menus équilibrés sur la semaine po
 readingTime: 9
 ---
 
-# Menus équilibrés sur la semaine
+# Menus équilibrés sur la semaine : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation
 
-![Batch cooking et préparation de repas](/blog/images/20-batch_cooking.jpeg) : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation
-
-![Oeufs sur une balance](/blog/images/13-oeufs-peses.jpeg)
+![Batch cooking et préparation de repas](/blog/images/20-batch_cooking.jpeg)
 
 ## Introduction
 

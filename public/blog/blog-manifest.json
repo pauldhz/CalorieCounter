@@ -1,6 +1,33 @@
 {
   "posts": [
     {
+      "id": "menus-equilibres-semaine-astuces-motivation",
+      "title": "Menus équilibrés sur la semaine : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation",
+      "description": "Apprenez à planifier des menus équilibrés sur la semaine pour maigrir, garder la motivation et atteindre vos objectifs sans frustration. Conseils de coach, astuces pratiques et exemples concrets.",
+      "tags": [
+        "alimentation",
+        "alimentation équilibrée",
+        "rééquilibrage alimentaire",
+        "perte de gras",
+        "perte de poids",
+        "motivation perte de gras",
+        "nutrition",
+        "déficit calorique",
+        "habitudes alimentaires",
+        "motivation",
+        "transformation physique",
+        "santé"
+      ],
+      "cover": "/blog/images/20-batch_cooking.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-23",
+      "slug": "menus-equilibres-semaine-astuces-motivation",
+      "filename": "2025-10-23_menus-equilibres-semaine-astuces-motivation.md",
+      "excerpt": "Menus équilibrés sur la semaine : mes astuces pour atteindre vos objectifs durablement sans perdre la motivation !Batch cooking et préparation de repas Introduction Planifier ses menus équilibrés sur ...",
+      "readingTime": 6
+    },
+    {
       "id": "astuces-pour-maigrir-recettes-sportives-desserts-healthy",
       "title": "Motivation, plaisir et résultats : mes astuces pour maigrir grâce à des recettes sportives et desserts sains",
       "description": "Découvrez comment perdre du poids sans frustration grâce à des recettes sportives équilibrées, des desserts healthy et des astuces simples pour garder la motivation tout au long de votre transformation physique.",
@@ -426,6 +453,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-22T20:03:05.678Z",
-  "totalPosts": 19
+  "lastUpdated": "2025-10-23T19:43:33.285Z",
+  "totalPosts": 20
 }
