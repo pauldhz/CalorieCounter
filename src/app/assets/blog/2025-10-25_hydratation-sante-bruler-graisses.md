@@ -3,7 +3,7 @@ id: "hydratation-sante-bruler-graisses"
 title: "Boire plus pour brûler plus : le rôle essentiel de l’hydratation dans la perte de graisse"
 description: "Découvrez pourquoi l’hydratation joue un rôle clé dans la combustion des graisses et la santé globale. Conseils, chiffres et stratégies concrètes pour boire mieux et maigrir durablement."
 tags: ["hydratation et santé", "brûler les graisses", "perte de poids", "nutrition", "métabolisme", "eau", "sport", "bien-être"]
-cover: "/blog/images/22-bottle-of-watter.jpeg"
+cover: "/blog/images/22-bottle_of_watter.jpeg"
 slug: "hydratation-sante-bruler-graisses"
 draft: false
 lang: "fr"
@@ -15,7 +15,7 @@ readingTime: 8
 
 # Boire plus pour brûler plus : le rôle essentiel de l’hydratation dans la perte de graisse
 
-![Gourde d'eau](/blog/images/22-bottle-of-watter.jpeg)
+![Gourde d'eau](/blog/images/22-bottle_of_watter.jpeg)
 
 ## Introduction
 
