@@ -10,7 +10,5 @@ if (typeof global !== 'undefined') {
   global.Buffer = Buffer;
 }
 
-// For module environments
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = Buffer;
-}
+// Export as ES module
+export default Buffer;
