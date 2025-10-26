@@ -1,6 +1,29 @@
 {
   "posts": [
     {
+      "id": "calcul-imc-suivi-calories-perte-poids",
+      "title": "Calcul de l'IMC et suivi des calories : les clés pour réussir votre perte de poids",
+      "description": "Découvrez comment utiliser le calcul de l'IMC et le suivi des calories pour atteindre vos objectifs de perte de poids. Un guide pratique et motivant pour comprendre votre corps et progresser durablement.",
+      "tags": [
+        "calcul IMC",
+        "suivi des calories",
+        "motivation perte de poids",
+        "nutrition",
+        "déficit calorique",
+        "perte de poids durable",
+        "santé",
+        "forme physique"
+      ],
+      "cover": "/blog/images/23-imc.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-26",
+      "slug": "calcul-imc-suivi-calories-perte-poids",
+      "filename": "2025-10-26_calcul-imc-suivi-calories-perte-poids.md",
+      "excerpt": "Calcul de l'IMC et suivi des calories : les clés pour réussir votre perte de poids !Calcul IMC et balance Introduction Beaucoup de personnes cherchent à perdre du poids sans savoir par où commencer. E...",
+      "readingTime": 5
+    },
+    {
       "id": "hydratation-sante-bruler-graisses",
       "title": "Boire plus pour brûler plus : le rôle essentiel de l’hydratation dans la perte de graisse",
       "description": "Découvrez pourquoi l’hydratation joue un rôle clé dans la combustion des graisses et la santé globale. Conseils, chiffres et stratégies concrètes pour boire mieux et maigrir durablement.",
@@ -499,6 +522,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-25T16:04:17.102Z",
-  "totalPosts": 22
+  "lastUpdated": "2025-10-26T12:15:32.929Z",
+  "totalPosts": 23
 }
