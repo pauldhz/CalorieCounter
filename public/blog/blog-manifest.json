@@ -1,6 +1,75 @@
 {
   "posts": [
     {
+      "id": "metabolisme-calculateur-calories-perte-de-poids",
+      "title": "Boostez votre métabolisme et atteignez vos objectifs : comment le calculateur de calories peut transformer votre perte de poids",
+      "description": "Découvrez comment comprendre et stimuler votre métabolisme grâce à un calculateur de calories. Une approche simple, motivante et scientifique pour perdre du poids durablement sans frustration.",
+      "tags": [
+        "métabolisme",
+        "perte de poids",
+        "calcul calories",
+        "déficit calorique",
+        "nutrition",
+        "santé",
+        "motivation perte de poids",
+        "transformation physique"
+      ],
+      "cover": "/blog/images/26-metabolisme-calculateur.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-29",
+      "slug": "metabolisme-calculateur-calories-perte-de-poids",
+      "filename": "2025-10-29_metabolisme-calculateur-calories-perte-de-poids.md",
+      "excerpt": "Boostez votre métabolisme et atteignez vos objectifs : comment le calculateur de calories peut transformer votre perte de poids !Tableau de bord des aliments Introduction Si vous avez déjà eu l’impres...",
+      "readingTime": 5
+    },
+    {
+      "id": "recettes-proteinees-rapides-saines",
+      "title": "Recettes protéinées faciles : des plats sains et équilibrés prêts en moins de 20 minutes",
+      "description": "Découvrez des recettes protéinées rapides, équilibrées et savoureuses pour garder la forme, perdre du poids ou prendre du muscle sans passer des heures en cuisine. L’équilibre, la santé et le plaisir au cœur de chaque repas.",
+      "tags": [
+        "recettes riches en protéines",
+        "alimentation équilibrée",
+        "nutrition",
+        "alimentation sportive",
+        "santé",
+        "motivation",
+        "prise de muscle",
+        "perte de poids"
+      ],
+      "cover": "/blog/images/25-repas-proteine-equilibre.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-28",
+      "slug": "recettes-proteinees-rapides-saines",
+      "filename": "2025-10-28_recettes-proteinees-rapides-saines.md",
+      "excerpt": "Recettes protéinées faciles : des plats sains et équilibrés prêts en moins de 20 minutes !Montre avec un repas à l'intérieur Introduction Vous pensez que bien manger prend forcément du temps ? Détromp...",
+      "readingTime": 5
+    },
+    {
+      "id": "motivation-plaisir-seche-recettes-healthy",
+      "title": "Motivation et plaisir en période de sèche : mes meilleures recettes healthy pour tenir sur la durée",
+      "description": "Découvrez comment rester motivé pendant votre sèche grâce à des recettes healthy savoureuses et simples à préparer. Alliez plaisir, performance et résultats durables sans frustration.",
+      "tags": [
+        "recettes healthy",
+        "repas de sèche",
+        "motivation",
+        "nutrition sportive",
+        "perte de poids",
+        "alimentation équilibrée",
+        "protéines",
+        "déficit calorique"
+      ],
+      "cover": "/blog/images/24-repas-seche.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-27",
+      "slug": "motivation-plaisir-seche-recettes-healthy",
+      "filename": "2025-10-27_motivation-plaisir-seche-recettes-healthy.md",
+      "excerpt": "Motivation et plaisir en période de sèche : mes meilleures recettes healthy pour tenir sur la durée !Assiette équilibrée Introduction La sèche est une étape exigeante. Vous cherchez à perdre de la gra...",
+      "readingTime": 5
+    },
+    {
       "id": "calcul-imc-suivi-calories-perte-poids",
       "title": "Calcul de l'IMC et suivi des calories : les clés pour réussir votre perte de poids",
       "description": "Découvrez comment utiliser le calcul de l'IMC et le suivi des calories pour atteindre vos objectifs de perte de poids. Un guide pratique et motivant pour comprendre votre corps et progresser durablement.",
@@ -522,6 +591,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-26T12:15:32.929Z",
-  "totalPosts": 23
+  "lastUpdated": "2025-10-30T14:15:45.670Z",
+  "totalPosts": 26
 }
