@@ -1,6 +1,51 @@
 {
   "posts": [
     {
+      "id": "comprendre-ce-que-vous-mangez-transformation-physique",
+      "title": "Comprendre ce que vous mangez : le premier pas vers une transformation physique durable",
+      "description": "Apprenez à comprendre ce que vous mangez pour construire une alimentation équilibrée et atteindre une transformation physique durable. Le guide complet pour maîtriser vos apports et progresser sans frustration.",
+      "tags": [
+        "alimentation équilibrée",
+        "transformation physique",
+        "calcul calories",
+        "macronutriments",
+        "habitudes alimentaires",
+        "motivation"
+      ],
+      "cover": "/blog/images/28-cerveau-aliments.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-31",
+      "slug": "comprendre-ce-que-vous-mangez-transformation-physique",
+      "filename": "2025-10-31_comprendre-ce-que-vous-mangez-transformation-physique.md",
+      "excerpt": "Comprendre ce que vous mangez : le premier pas vers une transformation physique durable !Penser aliments Introduction La majorité des personnes qui entament une transformation physique commettent la m...",
+      "readingTime": 5
+    },
+    {
+      "id": "hygiene-de-vie-saine-suivre-ses-macros",
+      "title": "Adopter une hygiène de vie saine sans frustration grâce au suivi des macros",
+      "description": "Découvrez comment suivre vos macros peut vous aider à adopter une hygiène de vie saine, à garder la motivation et à atteindre vos objectifs sans frustration. Une méthode concrète, durable et motivante.",
+      "tags": [
+        "suivre ses macros",
+        "hygiène de vie",
+        "nutrition",
+        "perte de poids",
+        "motivation",
+        "alimentation équilibrée",
+        "protéines",
+        "glucides",
+        "lipides"
+      ],
+      "cover": "/blog/images/27-hygiene-de-vie-macros.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-10-30",
+      "slug": "hygiene-de-vie-saine-suivre-ses-macros",
+      "filename": "2025-10-30_hygiene-de-vie-saine-suivre-ses-macros.md",
+      "excerpt": "Adopter une hygiène de vie saine sans frustration grâce au suivi des macros !Table d'aliments bons et gourmands Introduction Adopter une hygiène de vie saine ne signifie pas se priver, peser chaque al...",
+      "readingTime": 5
+    },
+    {
       "id": "metabolisme-calculateur-calories-perte-de-poids",
       "title": "Boostez votre métabolisme et atteignez vos objectifs : comment le calculateur de calories peut transformer votre perte de poids",
       "description": "Découvrez comment comprendre et stimuler votre métabolisme grâce à un calculateur de calories. Une approche simple, motivante et scientifique pour perdre du poids durablement sans frustration.",
@@ -591,6 +636,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-30T14:15:45.670Z",
-  "totalPosts": 26
+  "lastUpdated": "2025-10-31T22:12:30.917Z",
+  "totalPosts": 28
 }
