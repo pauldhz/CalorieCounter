@@ -29,12 +29,12 @@ jobs:
       - name: Checkout deployment repository
         uses: actions/checkout@v4
         with:
-          repository: pauldhz/calorieCounterDeployment
+          repository: pauldhz/calorieCounterDeployment # Temp
           path: deployment
           token: ${{ secrets.DEPLOYMENT_TOKEN }}
 
       - name: Run deployment script
-        working-directory: deployment
+        working-directory: deployment/prod/deployment
         run: ./deployment.sh
         env:
           # Ajoutez ici vos variables d'environnement nécessaires
