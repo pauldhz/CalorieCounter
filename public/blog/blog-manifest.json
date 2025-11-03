@@ -1,6 +1,28 @@
 {
   "posts": [
     {
+      "id": "calcul-besoin-calorique-transformation-physique",
+      "title": "Calcul du besoin calorique : la base incontournable pour atteindre vos objectifs de transformation physique",
+      "description": "Découvrez pourquoi le calcul précis de votre besoin calorique est essentiel pour réussir votre transformation physique. Apprenez à ajuster vos apports pour perdre du poids, prendre du muscle ou stabiliser votre corps durablement.",
+      "tags": [
+        "calcul besoin calorique",
+        "transformation physique",
+        "déficit calorique",
+        "prise de muscle",
+        "nutrition",
+        "habitudes alimentaires",
+        "motivation"
+      ],
+      "cover": "/blog/images/29-calculette.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-11-03",
+      "slug": "calcul-besoin-calorique-transformation-physique",
+      "filename": "2025-11-03_calcul-besoin-calorique-transformation-physique.md",
+      "excerpt": "Calcul du besoin calorique : la base incontournable pour atteindre vos objectifs de transformation physique !Calculette d'aliments Introduction Vous pouvez vous entraîner dur, suivre les meilleures sé...",
+      "readingTime": 5
+    },
+    {
       "id": "comprendre-ce-que-vous-mangez-transformation-physique",
       "title": "Comprendre ce que vous mangez : le premier pas vers une transformation physique durable",
       "description": "Apprenez à comprendre ce que vous mangez pour construire une alimentation équilibrée et atteindre une transformation physique durable. Le guide complet pour maîtriser vos apports et progresser sans frustration.",
@@ -636,6 +658,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-10-31T22:12:30.917Z",
-  "totalPosts": 28
+  "lastUpdated": "2025-11-03T21:02:20.566Z",
+  "totalPosts": 29
 }
