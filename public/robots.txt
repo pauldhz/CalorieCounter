@@ -1,20 +1,15 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://compter-mes-calories.fr/sitemap.xml
 
-# Optimisation pour les moteurs de recherche
-# Autoriser l'accès aux CSS et JS pour un meilleur rendu
 Allow: /assets/
 Allow: /*.css$
 Allow: /*.js$
 
-# Bloquer les fichiers sensibles (si présents)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
 Disallow: /api/
 
-# Délai recommandé entre les requêtes (en secondes)
 Crawl-delay: 1

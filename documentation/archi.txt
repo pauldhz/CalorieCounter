@@ -1,0 +1,29 @@
+@startuml
+skinparam shadowing false
+skinparam componentStyle rectangle
+title MVP Auth + Objectifs – Angular + Vercel + Supabase (EU)
+
+actor "Utilisateur" as User
+
+node "Vercel (CDN/Edge)" as Vercel {
+  [Angular App] as FE
+  component "Serverless API\n/api/targets" as ApiTargets
+  component "Serverless API\n/api/profile" as ApiProfile
+}
+
+cloud "Supabase (EU)" as Supa {
+  component "Auth" as Auth
+  database "Postgres\nprofiles, targets, targets_history" as PG
+  component "RLS" as RLS
+}
+
+User --> FE : HTTPS\nOuvre app / login
+FE --> Auth : Signup/Login (email, OAuth)
+Auth --> FE : JWT (access) / session
+FE --> ApiProfile : GET/POST /api/profile\n(headers: Authorization)
+ApiProfile --> PG : SELECT/UPSERT profile
+FE --> ApiTargets : POST /api/targets\n(body: objectifs)
+ApiTargets --> PG : INSERT/UPSERT targets + history
+
+RLS -[hidden]- PG
+@enduml

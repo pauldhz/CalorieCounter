@@ -13,7 +13,7 @@ export const reducers: ActionReducerMap<AppState> = {
 // Meta-reducer de sync localStorage
 export function localStorageSyncReducer(reducer: any): any {
   if (typeof window === 'undefined') {
-    return;
+    return reducer; // Retourner le reducer original côté serveur
   }
   return localStorageSync({
     keys: [

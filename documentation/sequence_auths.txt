@@ -1,0 +1,34 @@
+@startuml
+title Séquence : Auth + Saisie des objectifs
+
+actor Utilisateur
+participant "Angular App" as FE
+participant "Supabase Auth" as AUTH
+participant "API /api/profile" as API_PROF
+participant "API /api/targets" as API_TGT
+participant "DB Postgres" as DB
+
+== Auth ==
+Utilisateur -> FE : Saisit email / OAuth
+FE -> AUTH : signIn/signUp
+AUTH --> FE : access token (JWT)
+
+== Création/lecture profil ==
+FE -> API_PROF : GET /api/profile\nAuthorization: Bearer <JWT>
+API_PROF -> DB : SELECT profiles WHERE user_id
+DB --> API_PROF : (existe ?)
+alt profil inexistant
+  FE -> API_PROF : POST /api/profile {age, taille, poids, préférences}
+  API_PROF -> DB : UPSERT profiles
+end
+
+== Saisie objectifs ==
+Utilisateur -> FE : Remplit kcal/prot/lip/gluc/poids_cible
+FE -> API_TGT : POST /api/targets {kcal, p, l, g, poids_cible}
+API_TGT -> DB : UPSERT targets (courant)
+API_TGT -> DB : INSERT targets_history (audit)
+API_TGT --> FE : 200 {daily_targets, next_check_date}
+
+== Affichage ==
+FE -> Utilisateur : UI avec objectifs enregistrés + rappel hebdo
+@enduml

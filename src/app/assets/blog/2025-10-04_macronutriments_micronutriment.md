@@ -2,7 +2,7 @@
 id: "macro-micro-nutriments-calories-maigrir"
 title: "Macronutriments, micronutriments et calories pour maigrir : comprendre les bases pour transformer votre corps"
 description: "Découvrez comment équilibrer macronutriments, micronutriments et calories pour perdre du poids efficacement et transformer votre corps durablement."
-tags: ["nutrition", "macronutriments", "micronutriments", "calories", "perte de poids", "musculation", "santé"]
+tags: ["nutrition", "macronutriments", "micronutriments", "calories", "perte de gras", "musculation", "santé"]
 cover: "/blog/images/1-nutrient-fioul.jpeg"
 slug: "macronutriments_micronutriment"
 draft: false

@@ -2,7 +2,7 @@
 id: "besoin-calorique-calcul-repas-transformation-physique"
 title: "Besoin calorique, calcul des repas et progression : maîtrisez les chiffres pour une transformation physique efficace"
 description: "Apprenez à calculer vos besoins caloriques et à structurer vos repas pour transformer votre corps durablement. Une méthode claire et chiffrée pour la perte de poids, la prise de muscle et l’amélioration des performances."
-tags: ["calcul calories", "transformation physique", "nutrition", "perte de poids", "prise de muscle"]
+tags: ["calcul calories", "transformation physique", "nutrition", "perte de gras", "prise de muscle"]
 cover: "/blog/images/4-progression.jpeg"
 slug: "besoin-calorique-calcul-repas-transformation-physique"
 draft: false

@@ -2,7 +2,7 @@
 id: "petit-dejeuner-proteine-macronutriments"
 title: "Comment préparer un petit déjeuner riche en protéines pour atteindre vos objectifs en terme de macronutriments"
 description: "Découvrez comment composer un petit déjeuner riche en protéines et équilibré en macronutriments pour soutenir vos objectifs de perte de poids, de prise de muscle ou de performance sportive."
-tags: ["petit déjeuner", "recettes riches en protéines", "macronutriments", "nutrition sportive", "prise de muscle", "perte de poids", "protéines", "glucides", "lipides"]
+tags: ["petit déjeuner", "recettes riches en protéines", "macronutriments", "nutrition sportive", "prise de muscle", "perte de gras", "protéines", "glucides", "lipides"]
 cover: "/blog/images/7-petit-dejeuner-proteine.jpeg"
 slug: "petit-dejeuner-proteine-macronutriments"
 draft: false

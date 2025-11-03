@@ -1,0 +1,32 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+title ER – Auth + Objectifs
+
+class auth_users {
+  + id: uuid
+  + email: text
+  + createdAt: datetime
+}
+
+class profiles {
+  + user_id: uuid (FK=auth_users.id)
+  age: int
+  height_cm: int
+  weight_kg: numeric
+  updatedAt: datetime
+}
+
+class goal {
+  + user_id: uuid (FK=auth_users.id)
+  kcal: int
+  protein_g: int
+  carbs_g: int
+  fat_g: int
+  weight_goal_kg: int
+  updatedAt: datetime
+}
+
+auth_users ||--|| profiles : owns >
+auth_users ||--|| goal : current >
+@enduml

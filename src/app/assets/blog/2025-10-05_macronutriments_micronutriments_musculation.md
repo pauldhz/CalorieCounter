@@ -1,15 +1,15 @@
 ---
 id: "macronutriments-micronutriments-nutrition-musculation"
-title: "Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation"
+title: "Comprendre les macronutriments et micronutriments : la clé d'une nutrition intelligente pour la musculation"
 description: "Apprenez à équilibrer macronutriments et micronutriments pour booster vos performances, favoriser la prise de muscle et améliorer votre nutrition sportive au quotidien."
-tags: ["macronutriments", "micronutriments", "nutrition musculation", "prise de muscle", "performance", "protéines", "vitamines", "équilibre alimentaire"]
+tags: ["macronutriments", "micronutriments", "nutrition musculation", "prise de muscle", "performances", "protéines", "vitamines", "équilibre alimentaire"]
 cover: "/blog/images/2-food_boost.jpeg"
 slug: "macronutriments_micronutriments_musculation"
 draft: false
 lang: "fr"
 date: "2025-10-05"
 filename: "2025-10-05_macronutriments_micronutriments_musculation.md"
-excerpt: "Les macronutriments et micronutriments sont les piliers d’une nutrition réussie en musculation. Découvrez comment les comprendre et les équilibrer pour favoriser la prise de muscle, la perte de gras et la performance."
+excerpt: "Les macronutriments et micronutriments sont les piliers d'une nutrition réussie en musculation. Découvrez comment les comprendre et les équilibrer pour favoriser la prise de muscle, la perte de gras et la performance."
 ---
 
 # Comprendre les macronutriments et micronutriments : la clé d’une nutrition intelligente pour la musculation

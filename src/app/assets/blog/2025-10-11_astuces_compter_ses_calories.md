@@ -2,7 +2,7 @@
 id: "astuces-compter-ses-calories"
 title: "Compter ses calories : 10 astuces pour y parvenir facilement"
 description: "Découvrez 10 astuces simples et efficaces pour apprendre à compter vos calories sans frustration et atteindre vos objectifs de perte de poids ou de prise de muscle durablement."
-tags: ["compter ses calories", "astuces nutrition", "déficit calorique", "perte de poids", "prise de muscle", "calcul calories", "nutrition", "habitudes alimentaires"]
+tags: ["compter ses calories", "astuces nutrition", "déficit calorique", "perte de gras", "prise de muscle", "calcul calories", "nutrition", "habitudes alimentaires"]
 cover: "/blog/images/9-beans.jpeg"
 slug: "compter-ses-calories-10-astuces"
 draft: false
