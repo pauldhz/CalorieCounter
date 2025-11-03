@@ -1,0 +1,41 @@
+name: Deploy Article
+
+on:
+  push:
+    branches:
+      - develop
+  workflow_dispatch: # Permet de déclencher manuellement
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build blog
+        run: yarn build:blog
+
+      - name: Checkout deployment repository
+        uses: actions/checkout@v4
+        with:
+          repository: pauldhz/votre-repo-deployment
+          path: deployment
+          token: ${{ secrets.DEPLOYMENT_TOKEN }}
+
+      - name: Run deployment script
+        working-directory: deployment
+        run: ./deployment.sh
+        env:
+          # Ajoutez ici vos variables d'environnement nécessaires
+          BUILD_PATH: ${{ github.workspace }}/dist
