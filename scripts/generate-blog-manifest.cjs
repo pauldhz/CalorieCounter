@@ -26,13 +26,23 @@ class BlogManifestGenerator {
     console.log(`📝 Found ${markdownFiles.length} markdown files`);
 
     const posts = [];
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Minuit pour comparer uniquement les dates
 
     for (const filePath of markdownFiles) {
       try {
         const post = this.parseMarkdownFile(filePath);
         if (post) {
-          posts.push(post);
-          console.log(`✅ Processed: ${post.title}`);
+          // Filtrer les articles avec une date future
+          const postDate = new Date(post.date);
+          postDate.setHours(0, 0, 0, 0);
+
+          if (postDate <= today) {
+            posts.push(post);
+            console.log(`✅ Processed: ${post.title} (${post.date})`);
+          } else {
+            console.log(`⏭️  Skipped (future date): ${post.title} (${post.date})`);
+          }
         }
       } catch (error) {
         console.error(`❌ Error processing ${filePath}:`, error.message);
