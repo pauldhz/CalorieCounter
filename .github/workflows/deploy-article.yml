@@ -53,3 +53,4 @@ jobs:
             VPS_HOST: ${{ vars.VPS_HOST }}
             VPS_PORT: ${{ vars.VPS_PORT }}
             REMOTE_DIR: ${{ vars.REMOTE_DIR }}
+            BUILD_PATH: ${{ github.workspace }}/dist
