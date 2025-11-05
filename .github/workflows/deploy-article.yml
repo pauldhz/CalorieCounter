@@ -29,6 +29,9 @@ jobs:
       - name: Build blog
         run: yarn build:blog
 
+      - name: Build for production
+        run: yarn build --configuration=production
+
       - name: Checkout deployment repository
         uses: actions/checkout@v4
         with:
@@ -36,9 +39,17 @@ jobs:
           path: deployment
           token: ${{ secrets.DEPLOYMENT_TOKEN }}
 
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
       - name: Run deployment script
         working-directory: deployment/prod/deployment
         run: ./deployment.sh
         env:
-          # Ajoutez ici vos variables d'environnement nécessaires
-          BUILD_PATH: ${{ github.workspace }}/dist
+            APP_NAME: ${{ vars.APP_NAME }}
+            DOMAIN: ${{ vars.DOMAIN }}
+            VPS_USER: ${{ vars.VPS_USER }}
+            VPS_HOST: ${{ vars.VPS_HOST }}
+            VPS_PORT: ${{ vars.VPS_PORT }}
+            REMOTE_DIR: ${{ vars.REMOTE_DIR }}
