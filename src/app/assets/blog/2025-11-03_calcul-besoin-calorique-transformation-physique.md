@@ -111,7 +111,7 @@ C’est ce sentiment de contrôle qui vous permet de **tenir sur la durée**.
 
 Une étude de *Harvard Health Publishing* (2023) montre que les personnes qui suivent leurs apports avec un calculateur de calories sont **2,5 fois plus susceptibles** d’atteindre leurs objectifs de transformation que celles qui mangent “au feeling”.
 
-👉 Pour aller plus loin, découvrez **[Brûler les graisses sans frustration : optez pour le suivi des calories](/blog/bruler-graisses-suivi-calories)**.
+👉 Pour aller plus loin, découvrez **[Brûler les graisses sans frustration : optez pour le suivi des calories](/blog/suivi-des-calories-bruler-les-graisses)**.
 
 ---
 
