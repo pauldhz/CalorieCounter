@@ -3,7 +3,7 @@ id: "alimentation-faible-en-sucre-equilibre-transformation"
 title: "Alimentation faible en sucre : la clé d’un équilibre alimentaire optimal pour une transformation physique"
 description: "Découvrez comment adopter une alimentation faible en sucre peut rétablir votre équilibre alimentaire, booster vos performances et transformer votre corps durablement, sans frustration."
 tags: ["alimentation faible en sucre", "équilibre alimentaire", "perte de poids", "nutrition", "transformation physique", "motivation perte de gras", "santé", "habitudes alimentaires"]
-cover: "/blog/images/17-faible-sucre.jpeg"
+cover: "/blog/images/31-chateau-sucre.jpeg"
 draft: false
 lang: "fr"
 date: "2025-11-08"
@@ -13,6 +13,8 @@ readingTime: 7
 ---
 
 # **Alimentation faible en sucre : la clé d’un équilibre alimentaire optimal pour une transformation physique**
+
+![Chateau de sucre démoli](/blog/images/31-chateau-sucre.jpeg)
 
 ## **Introduction**
 
