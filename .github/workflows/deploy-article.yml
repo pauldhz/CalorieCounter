@@ -1,13 +1,9 @@
 name: Deploy Article
 
 on:
-  push:
-    branches:
-      - develop
   schedule:
     - cron: '0 9 * * *'  # Tous les jours à 10h heure de Paris (9h UTC en hiver, 8h UTC en été)
-  workflow_dispatch: # Permet de déclencher manuellement
-
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
