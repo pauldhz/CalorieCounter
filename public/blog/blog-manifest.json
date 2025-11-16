@@ -1,6 +1,100 @@
 {
   "posts": [
     {
+      "id": "2025-11-13-alimentation-durable-manger-sain-long-terme",
+      "title": "Alimentation durable : les bases pour manger sainement sans contrainte et sur le long terme",
+      "description": "Découvrez comment adopter une alimentation durable, saine et simple, qui soutient votre transformation physique sans frustration. Un guide clair pour les sportifs débutants et toutes celles et ceux souhaitant perdre du poids ou prendre du muscle durablement.",
+      "tags": [
+        "alimentation",
+        "alimentation durable",
+        "habitudes alimentaires",
+        "équilibre alimentaire",
+        "motivation",
+        "nutrition",
+        "santé",
+        "énergie durable",
+        "perte de poids durable"
+      ],
+      "cover": "/blog/images/33-balance-equilibre.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-11-13",
+      "slug": "2025-11-13-alimentation-durable-manger-sain-long-terme",
+      "filename": "2025-11-13-alimentation-durable-manger-sain-long-terme.md",
+      "excerpt": "Alimentation durable : les bases pour manger sainement sans contrainte et sur le long terme !Balance : équilibre entre plats sains et cheat meal sur le long terme Introduction Adopter une alimentation...",
+      "readingTime": 6
+    },
+    {
+      "id": "2025-11-12-batch-cooking-sain-motivation-organisation-semaine",
+      "title": "Batch cooking sain : gardez la motivation toute la semaine grâce à une organisation simple et efficace",
+      "description": "Découvrez comment le batch cooking sain peut transformer votre motivation, votre équilibre alimentaire et vos résultats physiques grâce à une organisation simple et durable.",
+      "tags": [
+        "alimentation",
+        "alimentation équilibrée",
+        "habitudes alimentaires",
+        "motivation",
+        "hygiène de vie",
+        "nutrition",
+        "perte de poids",
+        "performances",
+        "suivi des calories",
+        "recettes healthy",
+        "équilibre alimentaire"
+      ],
+      "cover": "/blog/images/32-planning-aliments.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-11-12",
+      "slug": "2025-11-12-batch-cooking-sain-motivation-organisation-semaine",
+      "filename": "2025-11-12-batch-cooking-sain-motivation-organisation-semaine.md",
+      "excerpt": "Batch cooking sain : gardez la motivation toute la semaine grâce à une organisation simple et efficace !Planning de repas Introduction Adopter un batch cooking sain est l’une des stratégies les plus e...",
+      "readingTime": 6
+    },
+    {
+      "id": "alimentation-faible-en-sucre-equilibre-transformation",
+      "title": "Alimentation faible en sucre : la clé d’un équilibre alimentaire optimal pour une transformation physique",
+      "description": "Découvrez comment adopter une alimentation faible en sucre peut rétablir votre équilibre alimentaire, booster vos performances et transformer votre corps durablement, sans frustration.",
+      "tags": [
+        "alimentation faible en sucre",
+        "équilibre alimentaire",
+        "perte de poids",
+        "nutrition",
+        "transformation physique",
+        "motivation perte de gras",
+        "santé",
+        "habitudes alimentaires"
+      ],
+      "cover": "/blog/images/31-chateau-sucre.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-11-08",
+      "slug": "alimentation-faible-en-sucre-equilibre-transformation",
+      "filename": "2025-11-08_alimentation-faible-en-sucre-equilibre-transformation.md",
+      "excerpt": "Alimentation faible en sucre : la clé d’un équilibre alimentaire optimal pour une transformation physique !Chateau de sucre démoli Introduction Le sucre est partout : dans les produits industriels, le...",
+      "readingTime": 5
+    },
+    {
+      "id": "calculateur-calories-aliments-equilibre-conscience",
+      "title": "Mieux connaître les calories des aliments grâce au calculateur de calories : la clé d’une alimentation équilibrée et consciente",
+      "description": "Apprenez à utiliser un calculateur de calories simple et efficace pour mieux comprendre les calories des aliments, atteindre vos objectifs de perte de poids ou de prise de muscle, et adopter une alimentation équilibrée et durable.",
+      "tags": [
+        "calculateur de calories",
+        "calories des aliments",
+        "besoin calorique",
+        "alimentation équilibrée",
+        "nutrition sportive",
+        "transformation physique"
+      ],
+      "cover": "/blog/images/30-zoom-aliments.jpeg",
+      "draft": false,
+      "lang": "fr",
+      "date": "2025-11-05",
+      "slug": "calculateur-calories-aliments-equilibre-conscience",
+      "filename": "2025-11-05_calculateur-calories-aliments-equilibre-conscience.md",
+      "excerpt": "Mieux connaître les calories des aliments grâce au calculateur de calories : la clé d’une alimentation équilibrée et consciente !Zoom d'aliments Introduction Manger mieux, ce n’est pas manger moins — ...",
+      "readingTime": 5
+    },
+    {
       "id": "calcul-besoin-calorique-transformation-physique",
       "title": "Calcul du besoin calorique : la base incontournable pour atteindre vos objectifs de transformation physique",
       "description": "Découvrez pourquoi le calcul précis de votre besoin calorique est essentiel pour réussir votre transformation physique. Apprenez à ajuster vos apports pour perdre du poids, prendre du muscle ou stabiliser votre corps durablement.",
@@ -658,6 +752,6 @@
       "readingTime": 5
     }
   ],
-  "lastUpdated": "2025-11-03T21:02:20.566Z",
-  "totalPosts": 29
+  "lastUpdated": "2025-11-12T23:10:27.660Z",
+  "totalPosts": 33
 }
