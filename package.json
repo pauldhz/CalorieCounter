@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:blog": "node scripts/generate-blog-manifest.cjs",
+    "build:blog-all": "node scripts/generate-blog-manifest-all.cjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:calorie-counter": "node dist/calorie-counter/server/server.mjs"

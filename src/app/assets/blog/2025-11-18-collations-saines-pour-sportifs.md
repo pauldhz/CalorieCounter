@@ -24,7 +24,7 @@ Dans cet article, je vous partage une approche simple, professionnelle et durabl
 
 ---
 
-## ## Les collations saines : un pilier de l’alimentation sportive durable
+## Les collations saines : un pilier de l’alimentation sportive durable
 
 ### Pourquoi les collations saines sont essentielles pour les sportifs ?
 
@@ -46,7 +46,7 @@ Les collations saines permettent justement de créer cette structure sans contra
 
 ---
 
-## ## Avant l’entraînement : choisir des collations saines pour optimiser votre énergie
+## Avant l’entraînement : choisir des collations saines pour optimiser votre énergie
 
 ### Comment bien manger avant l’effort ?
 
@@ -81,7 +81,7 @@ Ces collations permettent de maintenir une énergie stable sans surcharge digest
 
 ---
 
-## ## Après l’entraînement : des collations saines pour optimiser la récupération
+## Après l’entraînement : des collations saines pour optimiser la récupération
 
 ### Pourquoi manger juste après votre séance ?
 
@@ -111,7 +111,7 @@ Les recherches montrent qu’un ratio **1:3** (1 g de protéines pour 3 g de glu
 
 ---
 
-## ## Comment intégrer les collations saines dans des habitudes alimentaires durables ?
+## Comment intégrer les collations saines dans des habitudes alimentaires durables ?
 
 ### Collations saines et objectifs physiques
 
@@ -135,7 +135,7 @@ Articles utiles :
 
 ---
 
-## ## Stratégies pour préparer vos collations saines à l’avance
+## Stratégies pour préparer vos collations saines à l’avance
 
 ### Le secret : anticiper
 
@@ -161,7 +161,7 @@ Exemple simple :
 
 ---
 
-## ## Quelles collations saines éviter ?
+## Quelles collations saines éviter ?
 
 Certaines collations semblent “fitness” mais ne sont pas adaptées :
 

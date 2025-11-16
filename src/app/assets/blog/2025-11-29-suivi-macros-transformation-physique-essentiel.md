@@ -24,7 +24,7 @@ Que vous soyez sportif débutant, en phase de perte de graisse ou en pleine pris
 
 ---
 
-## ## Suivre ses **macros** : la base d’une **transformation physique** réussie
+## Suivre ses **macros** : la base d’une **transformation physique** réussie
 
 Suivre ses **macros** revient à contrôler la répartition de vos **protéines**, **glucides**, et **lipides** dans votre alimentation. C’est un outil bien plus puissant que le simple suivi des calories, car deux repas de 500 kcal n’ont pas du tout le même effet selon leur composition.
 
@@ -43,7 +43,7 @@ En maîtrisant vos macros, vous influencez directement la **composition de votre
 
 ---
 
-## ## Le rôle des **protéines** dans votre **transformation physique**
+## Le rôle des **protéines** dans votre **transformation physique**
 
 Les protéines sont le macronutriment le plus stratégique si vous cherchez à transformer votre corps. Suivre ses macros permet d’éviter le piège fréquent d’un apport trop faible — une erreur majeure chez les personnes souhaitant perdre du poids.
 
@@ -68,7 +68,7 @@ Pour approfondir cette notion, vous pouvez consulter mon article :
 
 ---
 
-## ## Comment suivre ses **macros** améliore la **perte de graisse**
+## Comment suivre ses **macros** améliore la **perte de graisse**
 
 Contrairement à un régime restrictif classique, suivre ses macros ne consiste pas à “manger moins”, mais à **manger mieux**. L’objectif est de maintenir un **léger déficit calorique contrôlé** tout en préservant la masse musculaire.
 
@@ -85,7 +85,7 @@ Pour explorer le lien entre métabolisme et calories :
 
 ---
 
-## ## Comment suivre ses **macros** aide à la **prise de muscle**
+## Comment suivre ses **macros** aide à la **prise de muscle**
 
 Pour prendre du muscle, il ne suffit pas de manger “plus”. Il faut manger **mieux réparti**.
 
@@ -105,7 +105,7 @@ Ce type de répartition, ajusté individuellement, fournit un cadre puissant et 
 
 ---
 
-## ## Suivre ses **macros** de manière simple : l’approche sans prise de tête
+## Suivre ses **macros** de manière simple : l’approche sans prise de tête
 
 Contrairement à ce que l’on pense, suivre ses macros n’est pas réservé aux sportifs confirmés. Avec les bons outils, cela devient simple et presque automatique.
 
