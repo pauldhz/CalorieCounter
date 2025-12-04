@@ -19,17 +19,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const { email, password } = req.body;
 
-  // Validation des champs
   if (!email || !password) {
     return res.status(400).json({ error: 'Email and password are required' });
   }
 
   try {
-    // Vérifier que l'utilisateur existe dans Firebase
     const user = await getAuth().getUserByEmail(email);
 
-    // Note: Firebase Admin SDK ne peut pas vérifier directement le mot de passe
-    // Il faut utiliser Firebase Client SDK côté serveur ou l'API REST de Firebase
     const signInUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env['FIREBASE_API_KEY']}`;
 
     const response = await fetch(signInUrl, {
@@ -51,7 +47,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       });
     }
 
-    // Créer un custom token pour l'utilisateur
     const customToken = await getAuth().createCustomToken(user.uid);
 
     return res.status(200).json({
