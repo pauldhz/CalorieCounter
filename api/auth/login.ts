@@ -19,13 +19,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const { email, password } = req.body;
 
+  // Validation des champs
   if (!email || !password) {
     return res.status(400).json({ error: 'Email and password are required' });
   }
 
   try {
-    const user = await getAuth().getUserByEmail(email);
-
+    // Authentification via l'API REST Firebase
     const signInUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env['FIREBASE_API_KEY']}`;
 
     const response = await fetch(signInUrl, {
@@ -47,12 +47,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       });
     }
 
-    const customToken = await getAuth().createCustomToken(user.uid);
+    // Récupérer les informations utilisateur
+    const user = await getAuth().getUserByEmail(email);
 
     return res.status(200).json({
       success: true,
-      token: customToken,
-      idToken: data.idToken,
+      token: data.idToken,
       uid: user.uid,
       email: user.email
     });
@@ -64,3 +64,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
   }
 }
+

@@ -18,8 +18,7 @@
 ```json
 {
   "success": true,
-  "token": "custom_token_here",
-  "idToken": "firebase_id_token_here",
+  "token": "firebase_id_token_here",
   "uid": "user_uid",
   "email": "user@example.com"
 }
@@ -41,7 +40,7 @@
 
 **Headers**:
 ```
-Authorization: Bearer <idToken>
+Authorization: Bearer <token>
 ```
 
 **Réponse succès (200)**:
@@ -84,7 +83,7 @@ export class AuthService {
     return this.http.post(`${this.API_URL}/auth`, { email, password })
       .pipe(tap(response => {
         if (response.success) {
-          localStorage.setItem('auth_token', response.idToken);
+          localStorage.setItem('auth_token', response.token);
           localStorage.setItem('user_uid', response.uid);
         }
       }));
@@ -168,8 +167,7 @@ FIREBASE_API_KEY="AIzaSyBYuak-XGMIcuNGnuZI3lMM3FKW-d3goCw"
 
 ## Notes importantes
 
-- Le `idToken` retourné par `/api/auth/auth` doit être utilisé dans le header `Authorization: Bearer <idToken>`
-- Le token expire après 1 heure par défaut
+- Le `token` retourné par `/api/auth/auth` est un **idToken** Firebase à utiliser dans le header `Authorization: Bearer <token>`
+- Le token expire après **1 heure** par défaut
 - Utilisez `/api/auth/verify` pour vérifier la validité du token avant chaque requête protégée
 - N'exposez jamais `FIREBASE_PRIVATE_KEY` côté client
-
