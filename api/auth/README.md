@@ -171,3 +171,56 @@ FIREBASE_API_KEY="AIzaSyBYuak-XGMIcuNGnuZI3lMM3FKW-d3goCw"
 - Le token expire après **1 heure** par défaut
 - Utilisez `/api/auth/verify` pour vérifier la validité du token avant chaque requête protégée
 - N'exposez jamais `FIREBASE_PRIVATE_KEY` côté client
+
+## Support
+```plantuml
+@startuml
+actor User
+participant "Angular App" as Angular
+participant "API Vercel\n/api/auth/auth" as AuthAPI
+participant "Firebase Auth\nREST API" as Firebase
+participant "API Vercel\n/api/auth/verify" as VerifyAPI
+database "localStorage" as Storage
+
+== Connexion ==
+User -> Angular: Saisit email + password
+Angular -> AuthAPI: POST { email, password }
+AuthAPI -> Firebase: POST signInWithPassword
+Firebase --> AuthAPI: { idToken, uid, email }
+AuthAPI --> Angular: { success, token, uid, email }
+Angular -> Storage: Stocke token + uid
+Angular --> User: Affiche page d'accueil
+
+== Requête protégée ==
+User -> Angular: Accède à une page protégée
+Angular -> Angular: authGuard() vérifie
+Angular -> Storage: Récupère token
+Angular -> VerifyAPI: GET avec Authorization: Bearer <token>
+VerifyAPI -> VerifyAPI: getAuth().verifyIdToken(token)
+
+alt Token valide
+    VerifyAPI --> Angular: { authenticated: true, uid, email }
+    Angular --> User: Affiche la page
+else Token invalide ou expiré
+    VerifyAPI --> Angular: 401 { authenticated: false }
+    Angular -> Storage: Supprime token
+    Angular --> User: Redirige vers /login
+end
+
+== Requête API avec intercepteur ==
+User -> Angular: Appelle une API (ex: GET /api/users/profile)
+Angular -> Angular: authInterceptor() ajoute header
+Angular -> Storage: Récupère token
+Angular -> "API Vercel\n/api/users/profile": GET avec Authorization: Bearer <token>
+"API Vercel\n/api/users/profile" -> "API Vercel\n/api/users/profile": Vérifie token
+"API Vercel\n/api/users/profile" --> Angular: { user: {...} }
+Angular --> User: Affiche profil
+
+== Déconnexion ==
+User -> Angular: Clique sur "Logout"
+Angular -> Storage: Supprime token + uid
+Angular --> User: Redirige vers /login
+
+@enduml
+
+```
